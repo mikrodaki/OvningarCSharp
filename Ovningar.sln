@@ -35,13 +35,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.3", "Övning 5.3\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.5", "Övning 5.5\Övning 5.5.csproj", "{FFFE7ED3-DFEC-43CF-8F98-F7920E4263FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.9", "Övning 4.9\Övning 4.9.csproj", "{F79879BC-35DD-4118-93FF-51432B6D5D01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EADA0A8D-DAE5-4444-B8FB-CE4E95B9C18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -108,5 +107,15 @@ Global
 		{FFFE7ED3-DFEC-43CF-8F98-F7920E4263FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFFE7ED3-DFEC-43CF-8F98-F7920E4263FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFFE7ED3-DFEC-43CF-8F98-F7920E4263FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79879BC-35DD-4118-93FF-51432B6D5D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79879BC-35DD-4118-93FF-51432B6D5D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79879BC-35DD-4118-93FF-51432B6D5D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79879BC-35DD-4118-93FF-51432B6D5D01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98FDAF83-B320-4382-AC24-9C7735B0C9A8}
 	EndGlobalSection
 EndGlobal
