@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
+﻿using System;
 
 namespace Övning_5._12
 {
@@ -8,54 +7,61 @@ namespace Övning_5._12
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Välkommen till sten, sax, påse");
-			Console.WriteLine("------------------");
+			Console.WriteLine("-------------------------------");
+
 			int playerScore = 0;
 			int cmpScore = 0;
 			int cmpChoice = 0;
 			int playerChoice = 0;
-			var rnd = new Random();
 
-			for (int i = 0; i < 3; i++)
+			var rnd = new Random();
+			string[] tools = { "", "sten", "sax", "påse" };
+
+			for (int i = 0; i < 5; i++)
 			{
-				cmpChoice = rnd.Next(1, 4); // 1, 2 eller 3
+				cmpChoice = rnd.Next(1, 4); // datorn väljer (1–3)
 				Console.Write("Ange 1 för sten, 2 för sax eller 3 för påse: ");
 				string input = Console.ReadLine();
-				if (int.TryParse(input, out playerChoice))
+
+				// Kontrollera att inmatningen är ett heltal mellan 1–3
+				if (int.TryParse(input, out playerChoice) && playerChoice >= 1 && playerChoice <= 3)
 				{
-					if (playerChoice >= 1 && playerChoice <= 3)
+					Console.WriteLine($"Du valde {tools[playerChoice]} och datorn valde {tools[cmpChoice]}");
+
+					if (playerChoice == cmpChoice)
 					{
-						switch (playerChoice)
-						{
-							case (1):
-								Console.WriteLine($"Du valde {playerChoice} (sten) och datorn valde {cmpChoice}");
-								break;
-							case (2):
-								Console.WriteLine($"Du valde {playerChoice} (sax) och datorn valde {cmpChoice}");
-								break;
-							case (3):
-								Console.WriteLine($"Du valde {playerChoice} (påse) och datorn valde {cmpChoice}");
-								break;
-						}
+						Console.WriteLine("Oavgjort!");
 					}
-					else 
-					{ 
-						Console.WriteLine("Ogiltigt val, du förlorade rundan");
+					else if ((playerChoice == 1 && cmpChoice == 2) ||
+							 (playerChoice == 2 && cmpChoice == 3) ||
+							 (playerChoice == 3 && cmpChoice == 1))
+					{
+						Console.WriteLine("Du vann rundan!");
+						playerScore++;
+					}
+					else
+					{
+						Console.WriteLine("Datorn vann rundan!");
 						cmpScore++;
 					}
 				}
 				else
 				{
-					Console.WriteLine("Ogiltigt val, du förlorade rundan");
+					// Ogiltigt val – användaren förlorar rundan
+					Console.WriteLine("Ogiltigt val, du förlorade rundan!");
 					cmpScore++;
 				}
+
+				Console.WriteLine();
 			}
 
-			string calculateScore (int choice1, int choice2) 
-			{
-				if (choice1 == choice2)
-					return "draw";
-				return "";
-			}
+			// Slutresultat
+			if (playerScore > cmpScore)
+				Console.WriteLine($"Du vann matchen med {playerScore} mot {cmpScore}!");
+			else if (cmpScore > playerScore)
+				Console.WriteLine($"Datorn vann matchen med {cmpScore} mot {playerScore}!");
+			else
+				Console.WriteLine($"Oavgjort! Slutresultat {playerScore} - {cmpScore}.");
 		}
 	}
 }
