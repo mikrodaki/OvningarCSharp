@@ -6,26 +6,35 @@
 		{
 			int y = 5;
 			int x = 0;
-			int i,j,k;
 
 			Console.BackgroundColor = ConsoleColor.Gray;
 			Console.Clear();
 
-			for (i = 1; i <= 3; i++)
+			// Yttre loopen ändrar färg
+			for (int i = 1; i <= 3; i++)
 			{
-				for (j = 1; j <= 6; j++)
+				switch (i) 
+				{
+					case 1:
+						Console.BackgroundColor = ConsoleColor.Black;
+						break;
+					case 2:
+						Console.BackgroundColor = ConsoleColor.Red;
+						break;
+					case 3:
+						Console.BackgroundColor = ConsoleColor.Yellow;
+						break;
+				}
+
+				// Mellersta loopen byter rad
+				for (int j = 1; j <= 6; j++)
 				{
 					x = Console.WindowWidth / 2 - 30;
-					for (k = 1; k <= 60; k++)
-					{
-						if (i == 1)
-							Console.BackgroundColor = ConsoleColor.Black;
-						else if (i == 2 )
-							Console.BackgroundColor = ConsoleColor.Red;
-						else if (i == 3)
-							Console.BackgroundColor = ConsoleColor.Yellow;
 
-						Console.SetCursorPosition(x, y);
+					// Innersta loopen ritar raderna
+					Console.SetCursorPosition(x, y);
+					for (int k = 1; k <= 60; k++)
+					{
 						Console.Write(" ");
 						x++;
 					}
@@ -33,9 +42,7 @@
 					y++;
 				}
 			}
-			Console.ForegroundColor = ConsoleColor.Gray;
-			Console.BackgroundColor = ConsoleColor.Gray;
-			Console.CursorVisible = false;
+			Console.ReadKey();
 		}
 	}
 }
