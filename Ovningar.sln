@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.7 - Fredriks faci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.8 - Flying bird", "Övning 8.8 - Flying bird\Övning 8.8 - Flying bird.csproj", "{FC07FCEF-77D2-4780-A5C8-D9BBDC82FD50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.9 - Ball", "8.9 - Ball\8.9 - Ball.csproj", "{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,10 @@ Global
 		{FC07FCEF-77D2-4780-A5C8-D9BBDC82FD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC07FCEF-77D2-4780-A5C8-D9BBDC82FD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC07FCEF-77D2-4780-A5C8-D9BBDC82FD50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
