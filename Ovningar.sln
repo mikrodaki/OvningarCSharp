@@ -81,6 +81,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.8 - Flying bird",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.9 - Ball", "8.9 - Ball\8.9 - Ball.csproj", "{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.9 Ball - Fredriks facit", "8.9 Ball - Fredriks facit\8.9 Ball - Fredriks facit.csproj", "{00DAEACF-75C1-4758-96E0-39AF8FBC31F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.10 - Moving droid", "Övning 8.10 - Moving droid\Övning 8.10 - Moving droid.csproj", "{8D69AEC0-9BC4-4E26-B231-DBEE931E11A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +247,14 @@ Global
 		{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DAEACF-75C1-4758-96E0-39AF8FBC31F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DAEACF-75C1-4758-96E0-39AF8FBC31F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DAEACF-75C1-4758-96E0-39AF8FBC31F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DAEACF-75C1-4758-96E0-39AF8FBC31F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D69AEC0-9BC4-4E26-B231-DBEE931E11A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D69AEC0-9BC4-4E26-B231-DBEE931E11A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D69AEC0-9BC4-4E26-B231-DBEE931E11A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D69AEC0-9BC4-4E26-B231-DBEE931E11A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,7 +22,7 @@
 			int maxY = 22;
 
 			// The current direction of the ball
-			Direction direction = Direction.RightUp;
+			Direction direction = Direction.LeftDown;
 			
 			Console.Clear();
 			Console.CursorVisible = false;
