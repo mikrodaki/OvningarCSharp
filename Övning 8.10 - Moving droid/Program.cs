@@ -37,15 +37,16 @@ namespace Övning_8._10___Moving_droid
 				ConsoleKeyInfo key = Console.ReadKey(true); // true = visa inte knappen
 				char direction = char.ToLower(key.KeyChar);
 
-				// Delete droid
-				Console.SetCursorPosition(x, y);
-				Console.Write("     ");
-				Console.SetCursorPosition(x, y + 1);
-				Console.Write("     ");
-				Console.SetCursorPosition(x, y + 2);
-				Console.Write("     ");
 
 				while (numberOfSteps < 20 && !breakLoop) {
+
+					// Delete droid
+					Console.SetCursorPosition(x, y);
+					Console.Write("     ");
+					Console.SetCursorPosition(x, y + 1);
+					Console.Write("     ");
+					Console.SetCursorPosition(x, y + 2);
+					Console.Write("     ");
 	
 					switch (direction)
 					{
@@ -92,13 +93,6 @@ namespace Övning_8._10___Moving_droid
 					// Pause
 					System.Threading.Thread.Sleep(20);
 
-					// Delete droid
-					Console.SetCursorPosition(x, y);
-					Console.Write("     ");
-					Console.SetCursorPosition(x, y + 1);
-					Console.Write("     ");
-					Console.SetCursorPosition(x, y + 2);
-					Console.Write("     ");
 					numberOfSteps++;
 				}
 			}
