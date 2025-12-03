@@ -6,10 +6,11 @@
 		{
 			while (true)
 			{
-				Console.WriteLine("Välkommen till primtalslistningen!\n------------------------------\n");
+				int userNumber = 0;
+				Console.WriteLine("Välkommen till primtalslistningen!\n-----------------------------\n");
 				Console.Write("Ange ett primtal: ");
 				string input = Console.ReadLine();
-				bool success = int.TryParse(input, out int userNumber);
+				bool success = int.TryParse(input, out userNumber);
 
 				while (!success)
 				{
@@ -22,67 +23,75 @@
 
 				if (userNumber == 2)
 				{
-					Console.Write($"Talet {userNumber} är ett primtal");
+					Console.Write($"\nTalet {userNumber} är ett primtal");
 				}
 				else if (userNumber <= 1)
 				{
-					Console.Write($"Talet {userNumber} är inte ett primtal");
+					Console.Write($"\nTalet {userNumber} är inte ett primtal");
 				}
 				else if (userNumber % 2 == 0)
 				{
-					Console.Write($"Talet {userNumber} är jämnt och således inte ett primtal");
+					Console.Write($"\nTalet {userNumber} är jämnt och således inte ett primtal");
+				}
+				else if (isPrimeMethod(userNumber))
+				{
+					Console.WriteLine($"\nHär följer en lista av primtal upp till primtalet {userNumber}\n");
+					Console.Write("2 ");
+					int printThePrime = 3;
+					int rowCounter = 1;
+					while (printThePrime < userNumber)
+					{
+						if (isPrimeMethod(printThePrime))
+						{
+							Console.Write($"{printThePrime} ");
+							if (rowCounter % 15 == 0)
+							{
+								Console.WriteLine("\n");
+							}
+							rowCounter++;
+						}
+						printThePrime += 2;
+					}
+					Console.Write(userNumber);
+				}
+				else
+					Console.Write($"\nTalet {userNumber} är inte ett primtal");
+				Console.ReadKey();
+				Console.Clear();
+			}
+
+			static bool isPrimeMethod(int number)
+			{
+				bool isNumberPrime = true;
+
+				if (number == 2)
+				{
+					isNumberPrime = true;
+				}
+				else if (number <= 1)
+				{
+					isNumberPrime = false;
+				}
+				else if (number % 2 == 0)
+				{
+					isNumberPrime = false;
 				}
 				else
 				{
-					bool isPrime = true;
-					double squareRoot = Math.Sqrt(userNumber);
+					double squareRoot = Math.Sqrt(number);
 
 					for (int i = 2; i <= squareRoot; i++)
 					{
-						if (userNumber % i == 0)
+						if (number % i == 0)
 						{
-							isPrime = false;
+							isNumberPrime = false;
 							break;
 						}
 					}
-
-					if (isPrime) 
-					{
-						Console.WriteLine($"\nHär följer en lista av primtal upp till primtalet {userNumber}\n");
-						Console.Write("2 ");
-						int printThePrime = 3;
-						int rowCounter = 1;
-						while (printThePrime < userNumber) 
-						{
-							isPrime = true;
-							double squareRoot2 = Math.Sqrt(printThePrime);
-							for (int i = 2; i <= squareRoot2; i++)
-							{
-								if (printThePrime % i == 0) 
-								{ 
-									isPrime = false;
-									break;
-								}
-							}
-							if (isPrime) 
-							{ 
-								Console.Write($"{printThePrime} ");
-								if (rowCounter % 15 == 0) 
-								{ 
-									Console.WriteLine("\n");
-								}
-								rowCounter++;
-							}
-							printThePrime += 2;
-						}
-						Console.Write(userNumber);
-					}
-					else
-						Console.Write($"Talet {userNumber} är inte ett primtal");
 				}
-				Console.ReadKey();
-				Console.Clear();
+				return isNumberPrime;
 			}
 		}
 	}
 }
+
