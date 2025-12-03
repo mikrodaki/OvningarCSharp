@@ -79,8 +79,6 @@ namespace Övning_8._10___Moving_droid
 							break;
 					}
 
-					Console.CursorVisible = false;
-
 					// Draw droid
 					Console.ForegroundColor = ConsoleColor.Blue;
 					Console.SetCursorPosition(x, y);
