@@ -48,7 +48,7 @@
 
 					if (isPrime) 
 					{
-						Console.WriteLine($"\nHär följer en lista av primtal upp till {userNumber}\n");
+						Console.WriteLine($"\nHär följer en lista av primtal upp till primtalet {userNumber}\n");
 						Console.Write("2 ");
 						int printThePrime = 3;
 						int rowCounter = 1;
