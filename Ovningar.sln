@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.10 - Moving droid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.11 - Lista primtal", "Övning 8.11 - Lista primtal\Övning 8.11 - Lista primtal.csproj", "{77034026-FB6F-4A32-85B6-7A276E2F64D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.13 - Ghost moving", "Övning 8.13 - Ghost moving\Övning 8.13 - Ghost moving.csproj", "{98B63187-AF14-4DDE-B937-5770D47107B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,10 @@ Global
 		{77034026-FB6F-4A32-85B6-7A276E2F64D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77034026-FB6F-4A32-85B6-7A276E2F64D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77034026-FB6F-4A32-85B6-7A276E2F64D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B63187-AF14-4DDE-B937-5770D47107B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B63187-AF14-4DDE-B937-5770D47107B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B63187-AF14-4DDE-B937-5770D47107B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B63187-AF14-4DDE-B937-5770D47107B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
