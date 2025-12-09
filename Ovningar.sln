@@ -89,6 +89,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.11 - Lista primta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.13 - Ghost moving", "Övning 8.13 - Ghost moving\Övning 8.13 - Ghost moving.csproj", "{98B63187-AF14-4DDE-B937-5770D47107B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.3 - Space wars", "Övning 9.3 - Space wars\Övning 9.3 - Space wars.csproj", "{6436031C-EB1F-4A35-AC7B-E0D768A2E9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.4 - Sjörövarspråket", "Övning 9.4 - Sjörövarspråket\Övning 9.4 - Sjörövarspråket.csproj", "{A9C2F678-3305-4023-A007-DB44D7AFC026}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +271,14 @@ Global
 		{98B63187-AF14-4DDE-B937-5770D47107B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98B63187-AF14-4DDE-B937-5770D47107B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98B63187-AF14-4DDE-B937-5770D47107B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6436031C-EB1F-4A35-AC7B-E0D768A2E9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6436031C-EB1F-4A35-AC7B-E0D768A2E9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6436031C-EB1F-4A35-AC7B-E0D768A2E9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6436031C-EB1F-4A35-AC7B-E0D768A2E9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C2F678-3305-4023-A007-DB44D7AFC026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C2F678-3305-4023-A007-DB44D7AFC026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C2F678-3305-4023-A007-DB44D7AFC026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C2F678-3305-4023-A007-DB44D7AFC026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
