@@ -95,6 +95,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.4 - Sjörövarspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.5 - Robot bug", "Övning 9.5 - Robot bug\Övning 9.5 - Robot bug.csproj", "{D6B70630-498E-4968-A402-53C1E9A87FBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.7 - Personnummertest", "Övning 9.7 - Personnummertest\Övning 9.7 - Personnummertest.csproj", "{CCA809C5-A3C3-4804-A398-739D9EEEC582}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -285,6 +287,10 @@ Global
 		{D6B70630-498E-4968-A402-53C1E9A87FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6B70630-498E-4968-A402-53C1E9A87FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6B70630-498E-4968-A402-53C1E9A87FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA809C5-A3C3-4804-A398-739D9EEEC582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA809C5-A3C3-4804-A398-739D9EEEC582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA809C5-A3C3-4804-A398-739D9EEEC582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA809C5-A3C3-4804-A398-739D9EEEC582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
