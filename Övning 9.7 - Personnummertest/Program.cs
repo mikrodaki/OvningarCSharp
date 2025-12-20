@@ -6,21 +6,26 @@
 		{
 			while (true)
 			{
-				bool inputOk = false;
 				string userInput = "";
 				int totalSum = 0;
 				bool personalNumberOk;
 				int controlDigit;
 
 				// Loop until the user submitted a ten digit number
-				while (!inputOk)
+				while (true)
 				{
 					Console.Clear();
 					Console.WriteLine("PERSONNUMMERTEST\n--------------");
 					Console.Write("Ange ett tiosiffrigt personnummer: ");
 					userInput = Console.ReadLine();
-					inputOk = checkUserInput();
+
+					if (checkUserInput())
+						break;
+
+					Console.WriteLine("Ogiltigt inmatning. Försök igen.");
+					Console.ReadKey();
 				}
+
 
 				// The last digit in the person number
 				controlDigit = int.Parse(userInput[9].ToString());
@@ -52,35 +57,26 @@
 					totalSum += sum;
 				}
 
-				// If the total sum is dividable by 10 and the last number is 0 the number is ok
-				if (totalSum % 10 == 0 && controlDigit == 0)
-				{
-					personalNumberOk = true;
-				}
-				else
-				{
-					int number = 1;
 
-					/* Loop until we find a number that can be added to the total sum to make 
-					 * the new sum diviable by 10
-					*/
-					while ((totalSum + number) % 10 != 0)
-					{
-						number++;
-					}
+				/* Loop until we find a number that can be added to the total sum to make 
+				 * the new sum diviable by 10
+				*/
+				int number = 0;
 
-					// If the number that we found is equal to the contol digit the person number is
-					// valid, otherwise not. 
-					if (controlDigit == number)
-						personalNumberOk = true;
-					else
-						personalNumberOk = false;
+				while ((totalSum + number) % 10 != 0)
+				{
+					number++;
 				}
 
-				if (personalNumberOk)
-					Console.WriteLine($"Personnumret {userInput} är ett giltigt personnummer");
-				else
-					Console.WriteLine($"Personnumret {userInput} är inte ett giltigt personnummer");
+				// If the number that we found is equal to the contol digit the person number is
+				// valid, otherwise not. 
+				personalNumberOk = controlDigit == number;
+
+				Console.WriteLine(
+					personalNumberOk
+						? $"Personnumret {userInput} är ett giltigt personnummer"
+						: $"Personnumret {userInput} är inte ett giltigt personnummer"
+				);
 
 				Console.ReadKey();
 
