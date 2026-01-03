@@ -99,6 +99,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.7 - Personnummert
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.8 - Palindrom", "Övning 9.8 - Palindrom\Övning 9.8 - Palindrom.csproj", "{1C49BA26-48C5-42D8-8959-17E2684CF102}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10e", "Övning 10e\Övning 10e.csproj", "{63B0A83A-99F3-4925-B3DD-20A908019BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.2 - Division", "Övning 10.2 - Division\Övning 10.2 - Division.csproj", "{7172BC39-67D2-4A60-BF02-CE212D10FBF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -297,6 +301,14 @@ Global
 		{1C49BA26-48C5-42D8-8959-17E2684CF102}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C49BA26-48C5-42D8-8959-17E2684CF102}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C49BA26-48C5-42D8-8959-17E2684CF102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B0A83A-99F3-4925-B3DD-20A908019BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B0A83A-99F3-4925-B3DD-20A908019BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B0A83A-99F3-4925-B3DD-20A908019BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B0A83A-99F3-4925-B3DD-20A908019BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7172BC39-67D2-4A60-BF02-CE212D10FBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7172BC39-67D2-4A60-BF02-CE212D10FBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7172BC39-67D2-4A60-BF02-CE212D10FBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7172BC39-67D2-4A60-BF02-CE212D10FBF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
