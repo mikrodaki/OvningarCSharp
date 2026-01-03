@@ -103,6 +103,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10e", "Övning 10e\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.2 - Division", "Övning 10.2 - Division\Övning 10.2 - Division.csproj", "{7172BC39-67D2-4A60-BF02-CE212D10FBF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.3 - Text Scroller", "Övning 10.3 - Text Scroller\Övning 10.3 - Text Scroller.csproj", "{8FC9F8C4-EC5B-421C-A5DB-EF33BA963117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.4 - Binärtalsomvandlare", "Övning 10.4 - Binärtalsomvandlare\Övning 10.4 - Binärtalsomvandlare.csproj", "{D6A40246-A33C-4B41-A254-DADAB5122948}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -309,6 +313,14 @@ Global
 		{7172BC39-67D2-4A60-BF02-CE212D10FBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7172BC39-67D2-4A60-BF02-CE212D10FBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7172BC39-67D2-4A60-BF02-CE212D10FBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC9F8C4-EC5B-421C-A5DB-EF33BA963117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC9F8C4-EC5B-421C-A5DB-EF33BA963117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC9F8C4-EC5B-421C-A5DB-EF33BA963117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC9F8C4-EC5B-421C-A5DB-EF33BA963117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A40246-A33C-4B41-A254-DADAB5122948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A40246-A33C-4B41-A254-DADAB5122948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A40246-A33C-4B41-A254-DADAB5122948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A40246-A33C-4B41-A254-DADAB5122948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
