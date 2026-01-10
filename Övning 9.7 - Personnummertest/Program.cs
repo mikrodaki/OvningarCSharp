@@ -27,23 +27,27 @@
 				}
 
 
-				// The last digit in the person number
+				// The last (number 10) digit in the person number is the control digit
 				controlDigit = int.Parse(userInput[9].ToString());
 
 				/* Loop through the 9 first digits of the person number and do calculations to get the
 				 * total sum
 				 */
-				for (int i = 0; i < 9; i++)
+
+				// Multiply every other number by two
+				bool multiplyByTwo = true;
+
+				// Loop from the right and skip the control digit
+				for (int i = userInput.Length - 2; i > 0; i--)
 				{
 					// Set sum to the value of the digit in the current position
 					var sum = int.Parse(userInput[i].ToString());
 
-					// If the positon of the digit is even, multiply sum by two
-					if (i % 2 == 0)
+					if (multiplyByTwo)
 						sum *= 2;
 
 					/*
-					 * If the sum of the multiplication is greater than ten we must sum the
+					 * If the sum of the multiplication is greater than ten (or equal than ten) we must sum the
 					 * digits of that number
 					 * */
 					if (sum >= 10)
@@ -55,6 +59,8 @@
 
 					// Add the sum of the calculation for the current lap to the total sum
 					totalSum += sum;
+
+					multiplyByTwo = !multiplyByTwo;
 				}
 
 
@@ -68,6 +74,12 @@
 					number++;
 				}
 
+				/* Matematisk version av ovanstående
+				 * 
+				 * int number = (10 - (totalSum % 10)) % 10;
+				 *	
+				 */
+
 				// If the number that we found is equal to the contol digit the person number is
 				// valid, otherwise not. 
 				personalNumberOk = controlDigit == number;
@@ -75,7 +87,7 @@
 				Console.WriteLine(
 					personalNumberOk
 						? $"Personnumret {userInput} är ett giltigt personnummer"
-						: $"Personnumret {userInput} är inte ett giltigt personnummer"
+						: $"Personnumret {userInput} är INTE ett giltigt personnummer"
 				);
 
 				Console.ReadKey();
