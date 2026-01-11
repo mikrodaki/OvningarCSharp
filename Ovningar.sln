@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 11.10 - 11.12", "Ö
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 11.13", "Övning 11.13\Övning 11.13.csproj", "{7B63A402-D920-40A9-B0C8-7DE2330290E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.7  - Välj räknesätt", "10.7  - Välj räknesätt\10.7  - Välj räknesätt.csproj", "{0565D5F8-A7DC-478C-BF9D-8ADD91312FA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +335,10 @@ Global
 		{7B63A402-D920-40A9-B0C8-7DE2330290E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B63A402-D920-40A9-B0C8-7DE2330290E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B63A402-D920-40A9-B0C8-7DE2330290E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0565D5F8-A7DC-478C-BF9D-8ADD91312FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0565D5F8-A7DC-478C-BF9D-8ADD91312FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0565D5F8-A7DC-478C-BF9D-8ADD91312FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0565D5F8-A7DC-478C-BF9D-8ADD91312FA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
