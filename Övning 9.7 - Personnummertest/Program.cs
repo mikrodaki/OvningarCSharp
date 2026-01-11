@@ -38,7 +38,7 @@
 				bool multiplyByTwo = true;
 
 				// Loop from the right and skip the control digit
-				for (int i = userInput.Length - 2; i > 0; i--)
+				for (int i = userInput.Length - 2; i >= 0; i--)
 				{
 					// Set sum to the value of the digit in the current position
 					var sum = int.Parse(userInput[i].ToString());
@@ -50,7 +50,7 @@
 					 * If the sum of the multiplication is greater than ten (or equal than ten) we must sum the
 					 * digits of that number
 					 * */
-					if (sum >= 10)
+					if (sum > 9)
 					{
 						int tensDigit = sum / 10;
 						int onesDigit = sum % 10;
