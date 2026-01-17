@@ -5,17 +5,25 @@
 		static void Main(string[] args)
 		{
 			Console.WriteLine("DAGAR MELLAN TVÅ DATUM\n---------------------------------");
-			string firstDate = GetValidDateInput("Ange datum 1 på formatet yyyymmdd: ");
-			string secondDate = GetValidDateInput("Ange datum 2 på formatet yyyymmdd: ");
-			int yearFirstDate = int.Parse(firstDate.Substring(0, 4));
-			int monthFirstDate = int.Parse(firstDate.Substring(4, 2));
-			int dayFirstDate = int.Parse(firstDate.Substring(6, 2));
-			int yearSecondDate = int.Parse(secondDate.Substring(0, 4));
-			int monthSecondDate = int.Parse(secondDate.Substring(4, 2));
-			int daySecondDate = int.Parse(secondDate.Substring(6, 2));
-			Console.WriteLine($"Antalet dagar mellan {firstDate} och {secondDate} är " +
-				$"{Math.Abs(DaysSinceBeginningOfTime(yearFirstDate, monthFirstDate, dayFirstDate) 
-				- DaysSinceBeginningOfTime(yearSecondDate, monthSecondDate, daySecondDate))}");
+			while (true)
+			{
+				string firstDate = GetValidDateInput("Ange datum 1 på formatet yyyymmdd: ");
+				string secondDate = GetValidDateInput("Ange datum 2 på formatet yyyymmdd: ");
+				int yearFirstDate = int.Parse(firstDate.Substring(0, 4));
+				int monthFirstDate = int.Parse(firstDate.Substring(4, 2));
+				int dayFirstDate = int.Parse(firstDate.Substring(6, 2));
+				int yearSecondDate = int.Parse(secondDate.Substring(0, 4));
+				int monthSecondDate = int.Parse(secondDate.Substring(4, 2));
+				int daySecondDate = int.Parse(secondDate.Substring(6, 2));
+				Console.WriteLine($"Antalet dagar mellan {firstDate} och {secondDate} är " +
+					$"{Math.Abs(DaysSinceBeginningOfTime(yearFirstDate, monthFirstDate, dayFirstDate)
+					- DaysSinceBeginningOfTime(yearSecondDate, monthSecondDate, daySecondDate))}\n");
+				Console.Write("Tryck (q)uit för att avsluta. ");
+				ConsoleKeyInfo userInput = Console.ReadKey();
+				if (userInput.KeyChar == 'q')
+					break;
+			}
+			Console.WriteLine();
 		}
 		static string GetValidDateInput(string message)
 		{
