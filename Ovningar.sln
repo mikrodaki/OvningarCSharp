@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.23,24 - Fraction", "11.2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.25 - MyTemperature", "11.25 - MyTemperature\11.25 - MyTemperature.csproj", "{E27D583C-65AF-4976-98EE-74104EB3E7F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.26 - Sort Digits", "11.26 - Sort Digits\11.26 - Sort Digits.csproj", "{AEB61130-CB02-4A6B-92BB-AC0814C7893B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,10 @@ Global
 		{E27D583C-65AF-4976-98EE-74104EB3E7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E27D583C-65AF-4976-98EE-74104EB3E7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E27D583C-65AF-4976-98EE-74104EB3E7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB61130-CB02-4A6B-92BB-AC0814C7893B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB61130-CB02-4A6B-92BB-AC0814C7893B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB61130-CB02-4A6B-92BB-AC0814C7893B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB61130-CB02-4A6B-92BB-AC0814C7893B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
