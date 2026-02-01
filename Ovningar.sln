@@ -115,6 +115,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.7  - Välj räknesätt",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.11 - Beräkning mellan två dagar", "Övning 10.11 - Beräkning mellan två dagar\Övning 10.11 - Beräkning mellan två dagar.csproj", "{B32793A3-2A67-4B44-90B1-A69023537B78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.22 - Calculator", "11.22 - Calculator\11.22 - Calculator.csproj", "{0E9772AD-DB07-4D3C-A596-BC6EB0D81C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.23 - Fraction", "11.23a\11.23 - Fraction.csproj", "{598945BA-ABFC-4F99-AFE1-4A41581C06CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -345,6 +349,14 @@ Global
 		{B32793A3-2A67-4B44-90B1-A69023537B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B32793A3-2A67-4B44-90B1-A69023537B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B32793A3-2A67-4B44-90B1-A69023537B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9772AD-DB07-4D3C-A596-BC6EB0D81C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9772AD-DB07-4D3C-A596-BC6EB0D81C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9772AD-DB07-4D3C-A596-BC6EB0D81C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9772AD-DB07-4D3C-A596-BC6EB0D81C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598945BA-ABFC-4F99-AFE1-4A41581C06CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598945BA-ABFC-4F99-AFE1-4A41581C06CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598945BA-ABFC-4F99-AFE1-4A41581C06CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598945BA-ABFC-4F99-AFE1-4A41581C06CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
