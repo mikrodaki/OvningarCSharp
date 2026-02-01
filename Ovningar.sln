@@ -117,7 +117,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.11 - Beräkning 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.22 - Calculator", "11.22 - Calculator\11.22 - Calculator.csproj", "{0E9772AD-DB07-4D3C-A596-BC6EB0D81C29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.23 - Fraction", "11.23a\11.23 - Fraction.csproj", "{598945BA-ABFC-4F99-AFE1-4A41581C06CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.23,24 - Fraction", "11.23a\11.23,24 - Fraction.csproj", "{598945BA-ABFC-4F99-AFE1-4A41581C06CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.25 - MyTemperature", "11.25 - MyTemperature\11.25 - MyTemperature.csproj", "{E27D583C-65AF-4976-98EE-74104EB3E7F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -357,6 +359,10 @@ Global
 		{598945BA-ABFC-4F99-AFE1-4A41581C06CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{598945BA-ABFC-4F99-AFE1-4A41581C06CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{598945BA-ABFC-4F99-AFE1-4A41581C06CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E27D583C-65AF-4976-98EE-74104EB3E7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27D583C-65AF-4976-98EE-74104EB3E7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27D583C-65AF-4976-98EE-74104EB3E7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E27D583C-65AF-4976-98EE-74104EB3E7F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

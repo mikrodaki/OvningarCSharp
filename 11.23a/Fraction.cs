@@ -15,11 +15,21 @@ namespace _11._23a
 			FixDoubleNegative(ref inumerator, ref denumerator);
 		}
 
+		public static double Add(double a, double b) 
+		{
+			return a + b;
+		}
+
 		public static void Subtract(int a, int b, int c, int d, ref int inumerator, ref int denumerator)
 		{
 			inumerator = a * d - c * b;
 			denumerator = b * d;
 			FixDoubleNegative(ref inumerator, ref denumerator);
+		}
+
+		public static double Subtract(double a, double b) 
+		{
+			return a - b;
 		}
 
 		public static void Multiply(int a, int b, int c, int d, ref int inumerator, ref int denumerator)
