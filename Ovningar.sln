@@ -123,6 +123,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.25 - MyTemperature", "11
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.26 - Sort Digits", "11.26 - Sort Digits\11.26 - Sort Digits.csproj", "{AEB61130-CB02-4A6B-92BB-AC0814C7893B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.7 - ConsoleHelper", "12.7\12.7 - ConsoleHelper.csproj", "{E451FC5C-3FD1-4328-B69F-35016974073F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.8", "12.8\12.8.csproj", "{D5176C25-8EF1-4184-99E4-49DC09C36AD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +373,14 @@ Global
 		{AEB61130-CB02-4A6B-92BB-AC0814C7893B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB61130-CB02-4A6B-92BB-AC0814C7893B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEB61130-CB02-4A6B-92BB-AC0814C7893B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E451FC5C-3FD1-4328-B69F-35016974073F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E451FC5C-3FD1-4328-B69F-35016974073F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E451FC5C-3FD1-4328-B69F-35016974073F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E451FC5C-3FD1-4328-B69F-35016974073F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5176C25-8EF1-4184-99E4-49DC09C36AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5176C25-8EF1-4184-99E4-49DC09C36AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5176C25-8EF1-4184-99E4-49DC09C36AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5176C25-8EF1-4184-99E4-49DC09C36AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
