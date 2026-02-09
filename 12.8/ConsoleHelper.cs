@@ -61,11 +61,27 @@ namespace App.IO
 			{
 				Console.Write(text);
 				string? input = Console.ReadLine();
-				if (string.IsNullOrEmpty(input) || !input.All(char.IsLetter))
-					Console.WriteLine("Du måste ange ett namn!");
-				else
+				if (!string.IsNullOrEmpty(input) && input.All(c => char.IsLetter(c) || c == ' ' || c == '-'))
 					return input;
+				else
+					Console.WriteLine("Du måste ange ett namn!");
 			} 
+		}
+
+		public static void ClearScreen(string heading) 
+		{ 
+			Console.Clear();
+            Console.WriteLine(heading + "\n---------------------------------");
+		}
+
+		public static void PrintOptions() 
+		{
+            Console.WriteLine("Gör ett val");
+			string[] options = new string[] { "Ändra ett namn", "Lista alla namn", "Avsluta" };
+			for (int i = 0; i < options.Length; i++) 
+			{
+                Console.WriteLine($"{i+1}. {options[i]}");
+			}
 		}
 	}
 }
