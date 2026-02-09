@@ -127,6 +127,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.7 - ConsoleHelper", "12.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.8", "12.8\12.8.csproj", "{D5176C25-8EF1-4184-99E4-49DC09C36AD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.9 - Rita staplar", "12.9 - Rita staplar\12.9 - Rita staplar.csproj", "{C7B7868F-EE02-4CFB-9540-0843053D6787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.10 - Sista bokstaven", "12.10 - Sista bokstaven\12.10 - Sista bokstaven.csproj", "{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -381,6 +385,14 @@ Global
 		{D5176C25-8EF1-4184-99E4-49DC09C36AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5176C25-8EF1-4184-99E4-49DC09C36AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5176C25-8EF1-4184-99E4-49DC09C36AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B7868F-EE02-4CFB-9540-0843053D6787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B7868F-EE02-4CFB-9540-0843053D6787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B7868F-EE02-4CFB-9540-0843053D6787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B7868F-EE02-4CFB-9540-0843053D6787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
