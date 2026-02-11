@@ -131,6 +131,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.9 - Rita staplar", "12.9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.10 - Sista bokstaven", "12.10 - Sista bokstaven\12.10 - Sista bokstaven.csproj", "{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.11 - Heltalsvektor", "12.11 - Heltalsvektor\12.11 - Heltalsvektor.csproj", "{361A05A1-5EE0-412F-A358-4C6B5F179C7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.12 - Super Mario", "12.12 - Super Mario\12.12 - Super Mario.csproj", "{8A14FB79-8CBC-45D2-A061-149823789214}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -393,6 +397,14 @@ Global
 		{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FDEBBE7-9378-480B-9D85-B05CB3630DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361A05A1-5EE0-412F-A358-4C6B5F179C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361A05A1-5EE0-412F-A358-4C6B5F179C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361A05A1-5EE0-412F-A358-4C6B5F179C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361A05A1-5EE0-412F-A358-4C6B5F179C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A14FB79-8CBC-45D2-A061-149823789214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A14FB79-8CBC-45D2-A061-149823789214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A14FB79-8CBC-45D2-A061-149823789214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A14FB79-8CBC-45D2-A061-149823789214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
