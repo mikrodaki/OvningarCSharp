@@ -12,6 +12,7 @@
 				Console.Clear();
 				DrawMario();
 				DrawMarioFacingLeft();
+				DrawMarioFacingDown();
 				Console.CursorVisible = false;
 				Console.ReadKey();
 			}
@@ -86,7 +87,7 @@
 				for (int row = 0; row < sprite.GetLength(0); row++)
 				{
 					Console.SetCursorPosition(x, y);
-					for (int col = sprite.GetLength(1) - 1; col > 0 ; col--)
+					for (int col = sprite.GetLength(1) - 1; col > 0; col--)
 					{
 						int color = sprite[row, col];
 						if (color == 0)
@@ -106,6 +107,56 @@
 					y++;
 				}
 			}
+
+			static void DrawMarioFacingDown()
+			{
+				// 0 = Grey, 1 = Red, 2 = Black, 3 = Yellow, 4 = Blue
+				int[,] sprite = new int[,]
+									   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+										{0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0},
+										{0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0},
+										{0, 0, 0, 2, 2, 2, 2, 3, 3, 2, 3, 0, 0, 0, 0, 0},
+										{0, 0, 2, 2, 3, 2, 3, 3, 3, 2, 3, 3, 3, 0, 0, 0},
+										{0, 0, 2, 2, 3, 2, 2, 3, 3, 3, 2, 3, 3, 3, 0, 0},
+										{0, 0, 0, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 0, 0, 0},
+										{0, 0, 0, 0, 3, 3, 3, 3 ,3 ,3 ,3 ,3 ,0, 0, 0, 0},
+										{0, 0, 0, 1, 1, 4, 1, 1, 1, 1, 4, 1, 1, 0, 0, 0},
+										{0, 0, 1, 1, 1, 4, 1, 1, 1, 1, 4, 1, 1, 1, 0, 0},
+										{0, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 0},
+										{0, 3, 3, 1, 4, 3, 4, 4, 4, 4, 3, 4, 1, 3, 3, 0},
+										{0, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 0},
+										{0, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 0},
+										{0, 0, 0, 4, 4, 4, 4, 0, 0, 4, 4, 4, 4, 0, 0, 0},
+										{0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0},
+										{0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0}};
+
+				int x = 40;
+				int y = 0;
+
+				for (int col = 0; col < sprite.GetLength(1) ; col++)
+				{
+					Console.SetCursorPosition(x, y);
+					for (int row = sprite.GetLength(0) - 1; row > 0; row--)
+					{
+						int color = sprite[row, col];
+						if (color == 0)
+							Console.BackgroundColor = ConsoleColor.Gray;
+						else if (color == 1)
+							Console.BackgroundColor = ConsoleColor.Red;
+						else if (color == 2)
+							Console.BackgroundColor = ConsoleColor.Black;
+						else if (color == 3)
+							Console.BackgroundColor = ConsoleColor.Yellow;
+						else if (color == 4)
+							Console.BackgroundColor = ConsoleColor.Blue;
+
+						Console.Write(" ");
+					}
+					Console.WriteLine();
+					y++;
+				}
+			}
+
 		}
 	}
 }
