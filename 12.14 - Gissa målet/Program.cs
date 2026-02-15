@@ -9,21 +9,28 @@ namespace _12._14___Gissa_målet
 													 {"2  ","   ","   ","   ","   "},
 													 {"3  ","   ","   ","   ","   "},
 													 {"4  ","   ","   ","   ","   "},};
-		static (int x, int y) target = (2, 3);
+		static Random rnd = new Random();
 
 		static void Main(string[] args)
 		{
-			ConsoleHelper.ClearScreen("Gissa på vilken koordinat målet finns på.");
-			DrawGameBoard();
+			(int row, int col) target = RandomizeTarget();
+			bool gameOver = false;
 			while (true)
 			{
-				int x = ConsoleHelper.ReadInt("Ange x-koordinat: ", 1, 4);
-				int y = ConsoleHelper.ReadInt("Ange y-koordinat: ", 1, 4);
-				gameBoard[x, y] = " * ";
+				Console.Clear();
+				ConsoleHelper.ClearScreen("Gissa på vilken koordinat målet finns på.");
 				DrawGameBoard();
-				if (x == target.x && y == target.y) 
-				{ 
-					Console.WriteLine("Rätt!");
+				if (gameOver)
+				{
+					Console.WriteLine("\nRätt!");
+					break;
+				}
+				int row = ConsoleHelper.ReadInt("Ange rad: ", 1, 4);
+				int col = ConsoleHelper.ReadInt("Ange kolumn: ", 1, 4);
+				gameBoard[row, col] = " * ";
+				if (row == target.row && col == target.col)
+				{
+					gameOver = true;
 				}
 			}
 		}
@@ -38,6 +45,13 @@ namespace _12._14___Gissa_målet
 				}
 				Console.WriteLine();
 			}
+		}
+
+		static (int row, int col) RandomizeTarget()
+		{
+			int row = rnd.Next(1, 5);
+			int col = rnd.Next(1, 5);
+			return (row, col);
 		}
 	}
 }
