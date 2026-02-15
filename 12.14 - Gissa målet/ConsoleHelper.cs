@@ -80,7 +80,7 @@
 		public static void ClearScreen(string heading)
 		{
 			Console.Clear();
-			Console.WriteLine(heading + "\n---------------------------------");
+			Console.WriteLine(heading + "\n----------------------------------------------\n");
 		}
 
 		public static void PrintOptions()

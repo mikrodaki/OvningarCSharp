@@ -15,24 +15,25 @@ namespace _12._14___Gissa_målet
 		{
 			(int row, int col) target = RandomizeTarget();
 			bool gameOver = false;
-			while (true)
+			while (!gameOver)
 			{
-				Console.Clear();
 				ConsoleHelper.ClearScreen("Gissa på vilken koordinat målet finns på.");
 				DrawGameBoard();
-				if (gameOver)
-				{
-					Console.WriteLine("\nRätt!");
-					break;
-				}
-				int row = ConsoleHelper.ReadInt("Ange rad: ", 1, 4);
+				int row = ConsoleHelper.ReadInt("\nAnge rad: ", 1, 4);
 				int col = ConsoleHelper.ReadInt("Ange kolumn: ", 1, 4);
-				gameBoard[row, col] = " * ";
 				if (row == target.row && col == target.col)
 				{
+					gameBoard[row, col] = " X ";
 					gameOver = true;
 				}
+				else
+				{
+					gameBoard[row, col] = " * ";
+				}
 			}
+			ConsoleHelper.ClearScreen("Gissa på vilken koordinat målet finns på.");
+			DrawGameBoard();
+			Console.WriteLine("\nBOOM!\n");
 		}
 
 		static void DrawGameBoard()
