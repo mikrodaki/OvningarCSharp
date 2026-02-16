@@ -17,7 +17,7 @@ namespace _12._14___Gissa_målet
 			bool gameOver = false;
 			while (!gameOver)
 			{
-				ConsoleHelper.ClearScreen("Gissa på vilken koordinat målet finns på.");
+				ConsoleHelper.ClearScreen("SÄNKA SKEPP!");
 				DrawGameBoard();
 				int row = ConsoleHelper.ReadInt("\nAnge rad: ", 1, 4);
 				int col = ConsoleHelper.ReadInt("Ange kolumn: ", 1, 4);
