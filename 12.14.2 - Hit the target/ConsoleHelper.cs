@@ -36,6 +36,7 @@ namespace App.IO
                 string? input = Console.ReadLine();
                 string blank = new string(' ', text.Length + input.Length);
 
+                // If it isn't a number between 1-4
                 if (!int.TryParse(input, out int value) || value < min || value > max)
                 {
                     // Erase the faulty text. 
