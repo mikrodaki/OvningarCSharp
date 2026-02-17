@@ -11,10 +11,9 @@ namespace _12._13___Super_Mario
 			int x = 20;
 			for (int i = 0; i < 4; i++)
 			{
-				DrawMario(x, 5, Color.hatShirt[i], Color.pants[i]);
+				DrawMario(x, 5, Color.hatAndShirts[i], Color.pants[i]);
 				x += 20;
 			}
-			//DrawMario(80, 0, 10, 6);
 			Console.CursorVisible = false;
 		}
 

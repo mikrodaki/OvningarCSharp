@@ -139,6 +139,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.13 - Super Mario", "12.1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.14 - Gissa målet", "12.14 - Gissa målet\12.14 - Gissa målet.csproj", "{257B717D-8A33-4C9B-9088-9FE54CC2B520}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.14.2 - Hit the target", "12.14.2 - Hit the target\12.14.2 - Hit the target.csproj", "{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -417,6 +419,10 @@ Global
 		{257B717D-8A33-4C9B-9088-9FE54CC2B520}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{257B717D-8A33-4C9B-9088-9FE54CC2B520}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{257B717D-8A33-4C9B-9088-9FE54CC2B520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
