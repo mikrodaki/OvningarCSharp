@@ -4,8 +4,8 @@ namespace ConsoleGame.UI
 {
     class Board
     {
-		static Random rnd = new Random();
-		public static void Draw(int[,] shotsFired)
+        static Random rnd = new Random();
+        public static void Draw(int[,] shotsFired)
         {
             int x = 61;
             int y = 12;
@@ -18,25 +18,25 @@ namespace ConsoleGame.UI
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     if (shotsFired[i, j] == 1)
                         WriteAt(x, y, "*");
-                    else if (shotsFired[i, j] == 3) 
+                    else if (shotsFired[i, j] == 3)
                     {
-						Console.ForegroundColor = ConsoleColor.Red;
-						WriteAt(x, y, "X");
-                        Console.SetCursorPosition(55, 15);
-						Console.WriteLine("       BOOM!!!     ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        WriteAt(x, y, "X");
+                        Console.SetCursorPosition(61, 21);
+                        Console.WriteLine("BOOM!!!");
                     }
-					x += 2;
+                    x += 2;
                 }
                 y += 2;
                 x = 61;
             }
         }
 
-        public static void ClearNumbers(int x, int y, string text) 
+        public static void ClearNumbers(int x, int y, string text)
         {
             string blank = new string(' ', text.Length + 2);
             Console.SetCursorPosition(x, y);
-			Console.WriteLine(blank);
+            Console.WriteLine(blank);
         }
 
         /*
@@ -85,7 +85,6 @@ namespace ConsoleGame.UI
         }
 
 
-
         /*
          * DrawFrame
          * 
@@ -122,7 +121,6 @@ namespace ConsoleGame.UI
         }
 
 
-
         /*
          * WriteAt 
          * 
@@ -136,11 +134,11 @@ namespace ConsoleGame.UI
             Console.WriteLine(text);
         }
 
-		public static (int row, int col) RandomizeTarget()
-		{
-			int row = rnd.Next(1, 5);
-			int col = rnd.Next(1, 5);
-			return (row, col);
-		}
-	}
+        public static (int row, int col) RandomizeTarget()
+        {
+            int row = rnd.Next(1, 5);
+            int col = rnd.Next(1, 5);
+            return (row, col);
+        }
+    }
 }
