@@ -12,8 +12,8 @@ namespace _12._14._2___Hit_the_target
             Board.DrawConsoleFrame();
 
             // Set the target
-            (int x, int y) target = (1, 1);
-            shotsFired[target.x - 1, target.y - 1] = 2;
+            var target = Board.RandomizeTarget();
+            shotsFired[target.row - 1, target.col - 1] = 2;
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(10, 7);
