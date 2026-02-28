@@ -141,6 +141,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.14 - Gissa målet", "12.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.14.2 - Hit the target", "12.14.2 - Hit the target\12.14.2 - Hit the target.csproj", "{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.16 - Tärning", "12.16 - Tärning\12.16 - Tärning.csproj", "{1404548F-D19B-4292-983D-BF7A9918106C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.17 - Memorering", "12.17 - Memorering\12.17 - Memorering.csproj", "{F3CD443B-436F-4180-9CB5-358F38847964}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -423,6 +427,14 @@ Global
 		{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F239C9D1-6EFA-44B1-AE21-7BAEFAB24F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1404548F-D19B-4292-983D-BF7A9918106C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1404548F-D19B-4292-983D-BF7A9918106C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1404548F-D19B-4292-983D-BF7A9918106C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1404548F-D19B-4292-983D-BF7A9918106C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CD443B-436F-4180-9CB5-358F38847964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CD443B-436F-4180-9CB5-358F38847964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CD443B-436F-4180-9CB5-358F38847964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CD443B-436F-4180-9CB5-358F38847964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
