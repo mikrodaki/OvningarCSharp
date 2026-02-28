@@ -145,6 +145,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.16 - Tärning", "12.16 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.17 - Memorering", "12.17 - Memorering\12.17 - Memorering.csproj", "{F3CD443B-436F-4180-9CB5-358F38847964}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.18 - Poker", "12.18 - Poker\12.18 - Poker.csproj", "{B694B5E4-7599-45C0-9B73-4B31EB8AE724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -435,6 +437,10 @@ Global
 		{F3CD443B-436F-4180-9CB5-358F38847964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3CD443B-436F-4180-9CB5-358F38847964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3CD443B-436F-4180-9CB5-358F38847964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B694B5E4-7599-45C0-9B73-4B31EB8AE724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B694B5E4-7599-45C0-9B73-4B31EB8AE724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B694B5E4-7599-45C0-9B73-4B31EB8AE724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B694B5E4-7599-45C0-9B73-4B31EB8AE724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
