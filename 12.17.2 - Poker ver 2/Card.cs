@@ -35,9 +35,9 @@ class Card
 		for (int i = 0; i < numberOfCards; i++)
 		{
 			{
-				int randomCard = rnd.Next(0, 52);
-				myHand.Add(randomCard);
-				deck.Remove(randomCard);
+				int index = rnd.Next(0, deck.Count);
+				myHand.Add(deck[index]);
+				deck.Remove(index);
 			}
 		}
 	}

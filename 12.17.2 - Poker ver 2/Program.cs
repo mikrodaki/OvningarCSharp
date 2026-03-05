@@ -24,8 +24,8 @@ namespace Poker
 			var choice = Card.ReadYesNo("Vill du kasta några kort (j/n)? ");
 			if (choice == "j")
 			{
-				var numberOfCardsInHand = myHand.Count;
-				var indexesToRemove = Card.ReadStringIntPoker("Vilka index vill du kasta? ", numberOfCardsInHand - 1);
+				//var numberOfCardsInHand = myHand.Count;
+				var indexesToRemove = Card.ReadStringIntPoker("Vilka index vill du kasta? ", numberOfCards - 1);
 				Card.RemoveCardsFromMyHand(myHand, indexesToRemove);
 				int numberOfCardsRemoved = indexesToRemove.Length;
 				Card.AddCardsToMyHand(deck, myHand, numberOfCardsRemoved);
