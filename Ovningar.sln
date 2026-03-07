@@ -149,6 +149,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.18 - Poker", "12.18 - Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.17.2 - Poker ver 2", "12.17.2 - Poker ver 2\12.17.2 - Poker ver 2.csproj", "{4620A1D9-1A1E-447A-A04D-3FE0CB28C760}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.3 - Dog", "13.3 - Dog\13.3 - Dog.csproj", "{E20DB0CA-DC23-4A8B-A760-F6A373249905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.4 - Anv lösen", "13.4 - Anv lösen\13.4 - Anv lösen.csproj", "{8F539287-44A8-49B8-BD93-11EC0D0B1884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -447,6 +451,14 @@ Global
 		{4620A1D9-1A1E-447A-A04D-3FE0CB28C760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4620A1D9-1A1E-447A-A04D-3FE0CB28C760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4620A1D9-1A1E-447A-A04D-3FE0CB28C760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20DB0CA-DC23-4A8B-A760-F6A373249905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20DB0CA-DC23-4A8B-A760-F6A373249905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20DB0CA-DC23-4A8B-A760-F6A373249905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20DB0CA-DC23-4A8B-A760-F6A373249905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F539287-44A8-49B8-BD93-11EC0D0B1884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F539287-44A8-49B8-BD93-11EC0D0B1884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F539287-44A8-49B8-BD93-11EC0D0B1884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F539287-44A8-49B8-BD93-11EC0D0B1884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
