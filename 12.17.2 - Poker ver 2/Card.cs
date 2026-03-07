@@ -37,7 +37,7 @@ class Card
 			{
 				int index = rnd.Next(0, deck.Count);
 				myHand.Add(deck[index]);
-				deck.Remove(index);
+				deck.RemoveAt(index);
 			}
 		}
 	}
