@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Ghost
 {
@@ -15,11 +16,11 @@ namespace Ghost
 			Console.CursorVisible = false;
 
 			ghosts.Add(new Ghost(x, y, ConsoleColor.Red, 0));
-			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Green, 3));
-			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Cyan, 1));
-			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.DarkYellow, 2));
+			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Green, 1));
+			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Cyan, 2));
+			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.DarkYellow, 3));
 			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Red, 0));
-			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Magenta, 2));
+			ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Magenta, 1));
 
 
 			foreach (Ghost g in ghosts)
@@ -32,8 +33,14 @@ namespace Ghost
 				foreach (Ghost g in ghosts)
 				{
 					g.ChangeEyePosition();
-					Thread.Sleep(1000);
+					Thread.Sleep(500);
 					g.Draw();
+				}
+				for (int i = ghosts.Count - 2; i > 0; i--)
+				{
+					ghosts[i].ChangeEyePosition();
+					Thread.Sleep(500);
+					ghosts[i].Draw();
 				}
 			}
 
