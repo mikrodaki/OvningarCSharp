@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.4 - Anv lösen", "13.4 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.14 - Pacman ghosts", "13.14 - Pacman ghosts\13.14 - Pacman ghosts.csproj", "{88228362-5C89-4669-888D-FD29D6A43E00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.5 - Maze", "13.5 - Maze\13.5 - Maze.csproj", "{62771CE2-D72A-47F5-BAFD-18057423238E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -465,6 +467,10 @@ Global
 		{88228362-5C89-4669-888D-FD29D6A43E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88228362-5C89-4669-888D-FD29D6A43E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88228362-5C89-4669-888D-FD29D6A43E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62771CE2-D72A-47F5-BAFD-18057423238E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62771CE2-D72A-47F5-BAFD-18057423238E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62771CE2-D72A-47F5-BAFD-18057423238E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62771CE2-D72A-47F5-BAFD-18057423238E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
