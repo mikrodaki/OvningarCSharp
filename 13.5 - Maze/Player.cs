@@ -2,88 +2,119 @@ using System;
 
 namespace Maze
 {
-    class Player
-    {
-        public int x = 1;
-        public int y = 1;
-        public int direction = Constants.RIGHT;
-        public int nextdirection = Constants.IDLE;
+	class Player
+	{
+		public int x = 1;
+		public int y = 1;
+		public int direction = Constants.IDLE;
+		public int nextDirection = Constants.IDLE;
 
 
-        /*
+		/*
          * Draw
          * 
          * Draw X at current coordinate
          * 
          */
-        public void Draw()
-        {
-            Console.ForegroundColor = ConsoleColor.White;
-            WriteAt("X");
-        }
+		public void Draw()
+		{
+			Console.ForegroundColor = ConsoleColor.White;
+			WriteAt("X");
+		}
 
 
-        /*
+		/*
          * Delete
          * 
          * Deletes X from current coordinate
          * 
          */
-        public void Delete()
-        {
-            WriteAt(" ");
-        }
+		public void Delete()
+		{
+			WriteAt(" ");
+		}
 
 
-        public void Move(Maze maze) 
-        {
-            int dirX = 0;
-            int dirY = 0;
+		public void Move(Maze maze)
+		{
+			int dirX = 0;
+			int dirY = 0;
 
-            switch (direction) 
-            { 
-                case Constants.UP:
-                    dirY = -1;
-                    break;
-                case Constants.DOWN:
-                    dirY = 1; 
-                    break;
-                case Constants.LEFT:
-                    dirX = -1;
-                    break;
-                case Constants.RIGHT:
-                    dirX = 1;
-                    break;
-            }
+			switch (direction)
+			{
+				case Constants.UP:
+					dirY = -1;
+					break;
+				case Constants.DOWN:
+					dirY = 1;
+					break;
+				case Constants.LEFT:
+					dirX = -1;
+					break;
+				case Constants.RIGHT:
+					dirX = 1;
+					break;
+			}
 
-            int newX = x + dirX;
-            int newY = y + dirY;
+			int newX = x + dirX;
+			int newY = y + dirY;
 
-            if (maze.maze[newY,newX] != 1) 
-            { 
-                x = newX;
-                y = newY;
-            }
-        }
-
-
-        // public static void SetNextDirection..
+			if (maze.maze[newY, newX] != 1)
+			{
+				x = newX;
+				y = newY;
+			}
+		}
 
 
-        // public static void ChangeDirection..
+		public void SetNextDirection(int direction)
+		{
+			nextDirection = direction;
+		}
 
 
-        /*
+		public void ChangeDirection(Maze maze)
+		{
+			int dirX = 0;
+			int dirY = 0;
+
+			switch (nextDirection)
+			{
+				case Constants.UP:
+					dirY = -1;
+					break;
+				case Constants.DOWN:
+					dirY = 1;
+					break;
+				case Constants.LEFT:
+					dirX = -1;
+					break;
+				case Constants.RIGHT:
+					dirX = 1;
+					break;
+			}
+
+			int newX = x + dirX;
+			int newY = y + dirY;
+
+			if (maze.maze[newY, newX] != 1)
+			{
+				direction = nextDirection;
+			}
+		}
+
+
+		/*
          * WriteAt
          * 
          * Help method that prints a text
          * at a specific coordinate
          * 
          */
-        public void WriteAt(string text)
-        {
-            Console.SetCursorPosition(x + Constants.X_SCREEN_POS, y + Constants.Y_SCREEN_POS);
-            Console.Write(text);
-        }
-    }
+		public void WriteAt(string text)
+		{
+			Console.SetCursorPosition(x + Constants.X_SCREEN_POS, y + Constants.Y_SCREEN_POS);
+			Console.Write(text);
+		}
+	}
 }
