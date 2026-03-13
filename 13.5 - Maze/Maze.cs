@@ -43,9 +43,9 @@ namespace Maze
 
 					switch (value)
 					{
-						case 0:
-							Console.Write(" ");
-							break;
+						//case 0:
+						//	Console.Write(" ");
+						//	break;
 						case 1:
 							Console.ForegroundColor = ConsoleColor.DarkYellow;
 							Console.Write("▓");
