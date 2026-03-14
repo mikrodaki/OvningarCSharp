@@ -3,117 +3,115 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 3.1", "Övning 3.1\Övning 3.1.csproj", "{EADA0A8D-DAE5-4444-B8FB-CE4E95B9C18C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1", "Övning 3.1\3.1.csproj", "{EADA0A8D-DAE5-4444-B8FB-CE4E95B9C18C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 3.2", "Övning 3.2\Övning 3.2.csproj", "{0B64E39C-CB6F-48C7-84D3-4FFF4F4811FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2", "Övning 3.2\3.2.csproj", "{0B64E39C-CB6F-48C7-84D3-4FFF4F4811FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 3.3", "Övning 3.3\Övning 3.3.csproj", "{2E1FACF2-B099-44C4-BC47-158790CADB29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3", "Övning 3.3\3.3.csproj", "{2E1FACF2-B099-44C4-BC47-158790CADB29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 3.4", "Övning 3.4\Övning 3.4.csproj", "{138AFC0C-6046-453C-BA9C-A10A40654F07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.4", "Övning 3.4\3.4.csproj", "{138AFC0C-6046-453C-BA9C-A10A40654F07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 3.5", "Övning 3.5\Övning 3.5.csproj", "{DA8CFF4C-9960-4134-B27E-272EB396D7D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.5", "Övning 3.5\3.5.csproj", "{DA8CFF4C-9960-4134-B27E-272EB396D7D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 3.7", "Övning 3.7\Övning 3.7.csproj", "{8CF5A75A-690B-4DF0-AF10-2FB590C6B3F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.7", "Övning 3.7\3.7.csproj", "{8CF5A75A-690B-4DF0-AF10-2FB590C6B3F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.1", "Övning 4.1\Övning 4.1.csproj", "{C39D5562-7DC7-42B9-8B3D-D156A5F3F862}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1", "Övning 4.1\4.1.csproj", "{C39D5562-7DC7-42B9-8B3D-D156A5F3F862}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.13", "Övning 4.13\Övning 4.13.csproj", "{BD535935-EEF3-46F1-A9FB-564949259C88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.13", "Övning 4.13\4.13.csproj", "{BD535935-EEF3-46F1-A9FB-564949259C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.14", "Övning 4.15\Övning 4.14.csproj", "{3DDDBBE5-19E7-4926-9886-FA92CC14B817}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.4", "Övning 4.4\4.4.csproj", "{4FE24C9E-EE64-493A-A6D4-54D0A4B14C4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.4", "Övning 4.4\Övning 4.4.csproj", "{4FE24C9E-EE64-493A-A6D4-54D0A4B14C4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.5", "Övning 4.5\4.5.csproj", "{E3DA084B-E2AB-4D39-A62F-75F3D7D61725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.5", "Övning 4.5\Övning 4.5.csproj", "{E3DA084B-E2AB-4D39-A62F-75F3D7D61725}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.8", "Övning 4.8\4.8.csproj", "{3301A55C-57EB-488F-B657-88790C44D37F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.8", "Övning 4.8\Övning 4.8.csproj", "{3301A55C-57EB-488F-B657-88790C44D37F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.1", "Övning 5.1\5.1.csproj", "{BDAD6FA0-2578-483D-8B60-929ED5FF94B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.1", "Övning 5.1\Övning 5.1.csproj", "{BDAD6FA0-2578-483D-8B60-929ED5FF94B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2 - Try Catch", "Övning 5.2\5.2 - Try Catch.csproj", "{1F029400-4665-4B6E-AEFE-CF07B780A502}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.2", "Övning 5.2\Övning 5.2.csproj", "{1F029400-4665-4B6E-AEFE-CF07B780A502}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3 - Singla slant", "Övning 5.3\5.3 - Singla slant.csproj", "{AA479979-4E33-4439-B108-EEC7A2EF2DB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.3", "Övning 5.3\Övning 5.3.csproj", "{AA479979-4E33-4439-B108-EEC7A2EF2DB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.5 - Kokar vattnet", "Övning 5.5\5.5 - Kokar vattnet.csproj", "{FFFE7ED3-DFEC-43CF-8F98-F7920E4263FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.5", "Övning 5.5\Övning 5.5.csproj", "{FFFE7ED3-DFEC-43CF-8F98-F7920E4263FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.9", "Övning 4.9\4.9.csproj", "{F79879BC-35DD-4118-93FF-51432B6D5D01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.9", "Övning 4.9\Övning 4.9.csproj", "{F79879BC-35DD-4118-93FF-51432B6D5D01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.15", "Övning 4.15\4.15.csproj", "{3A448C2C-8F7E-4FC1-8EDF-C0BEDD307583}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.15", "Övning 4.15\Övning 4.15.csproj", "{3A448C2C-8F7E-4FC1-8EDF-C0BEDD307583}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.16 - Large Digits", "Övning 5.16\5.16 - Large Digits.csproj", "{E6EB0A56-B297-4CDD-B8E0-BEB3C33461E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.16", "Övning 5.16\Övning 5.16.csproj", "{E6EB0A56-B297-4CDD-B8E0-BEB3C33461E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.16", "Övning 4.16\4.16.csproj", "{DA0D25B4-018B-4372-A6E1-846216D19852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.16", "Övning 4.16\Övning 4.16.csproj", "{DA0D25B4-018B-4372-A6E1-846216D19852}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.18", "Övning 4.18\4.18.csproj", "{71D06198-AA15-44C9-BFA0-E435714FB378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 4.18", "Övning 4.18\Övning 4.18.csproj", "{71D06198-AA15-44C9-BFA0-E435714FB378}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.12", "Övning 5.12\5.12.csproj", "{DBA23BAE-DCB8-4DF9-9FE8-68AC4B5CF3FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.12", "Övning 5.12\Övning 5.12.csproj", "{DBA23BAE-DCB8-4DF9-9FE8-68AC4B5CF3FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.14", "Övning 5.14\5.14.csproj", "{B031210C-3AFF-4F1F-A35A-96B6BAD54156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.14", "Övning 5.14\Övning 5.14.csproj", "{B031210C-3AFF-4F1F-A35A-96B6BAD54156}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.15a", "Övning 5.15a\5.15a.csproj", "{4703F3CD-8B50-4BAB-81C1-DCD0D162842F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.15a", "Övning 5.15a\Övning 5.15a.csproj", "{4703F3CD-8B50-4BAB-81C1-DCD0D162842F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.16b - abbbbbbbbb", "Övning 5.16b\5.16b - abbbbbbbbb.csproj", "{A947DD7B-3070-4D51-B130-E2954C95C94D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.16b", "Övning 5.16b\Övning 5.16b.csproj", "{A947DD7B-3070-4D51-B130-E2954C95C94D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.18 - Tyska flaggan", "Övning 5.18\5.18 - Tyska flaggan.csproj", "{85476B5E-FD58-4284-BC49-D49A78C9B4A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.18", "Övning 5.18\Övning 5.18.csproj", "{85476B5E-FD58-4284-BC49-D49A78C9B4A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.19 - Italienska flaggan", "Övning 5.19\5.19 - Italienska flaggan.csproj", "{B3C350AD-C15C-48E9-BDD1-7C6759C06DB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.19", "Övning 5.19\Övning 5.19.csproj", "{B3C350AD-C15C-48E9-BDD1-7C6759C06DB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.20 - Slumpa bokstäver", "Övning 5.20\5.20 - Slumpa bokstäver.csproj", "{57AE2362-274A-4F6C-975D-65414F56A349}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.20", "Övning 5.20\Övning 5.20.csproj", "{57AE2362-274A-4F6C-975D-65414F56A349}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.21 - Julgran", "Övning 5.21\5.21 - Julgran.csproj", "{0D2E1C05-F9DA-44EE-93D6-0F44A5D3EE15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 5.21", "Övning 5.21\Övning 5.21.csproj", "{0D2E1C05-F9DA-44EE-93D6-0F44A5D3EE15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.10 - 21 spel", "Övning 6.10 - 21 spel\6.10 - 21 spel.csproj", "{8930E59E-D883-4E79-9216-393FE009C781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 6.10 - 21 spel", "Övning 6.10 - 21 spel\Övning 6.10 - 21 spel.csproj", "{8930E59E-D883-4E79-9216-393FE009C781}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.11 Moving letter", "Övning 6.11 Moving letter\6.11 Moving letter.csproj", "{15F334C5-2D88-4C45-8F04-BAE2CFAEBFAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 6.11 Moving letter", "Övning 6.11 Moving letter\Övning 6.11 Moving letter.csproj", "{15F334C5-2D88-4C45-8F04-BAE2CFAEBFAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.11 Fredriks facit", "Övning 6.11 Fredriks facit\6.11 Fredriks facit.csproj", "{B2CE7F8C-FAEE-463B-98B6-42F3C49F2524}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 6.11 Fredriks facit", "Övning 6.11 Fredriks facit\Övning 6.11 Fredriks facit.csproj", "{B2CE7F8C-FAEE-463B-98B6-42F3C49F2524}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.11 Moving letter v2", "Övning 6.11 Moving letter v2\6.11 Moving letter v2.csproj", "{AD0F5781-7FDA-4FD7-B67E-F8E0F961400A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 6.11 Moving letter v2", "Övning 6.11 Moving letter v2\Övning 6.11 Moving letter v2.csproj", "{AD0F5781-7FDA-4FD7-B67E-F8E0F961400A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 7.6", "Övning 7.6\Övning 7.6.csproj", "{9051096B-1783-4FE2-8411-D6F0A9E940B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.6", "Övning 7.6\7.6.csproj", "{9051096B-1783-4FE2-8411-D6F0A9E940B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning extra primtal", "Övning extra primtal\Övning extra primtal.csproj", "{EF95FF96-B019-44A2-BE6D-722495A7057E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.7 - Pacman ghost", "Övning 8.7 - Pacman ghost\Övning 8.7 - Pacman ghost.csproj", "{884BF9F7-2E94-4E7E-9F30-ACB1A47A5E33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.7 - Pacman ghost", "Övning 8.7 - Pacman ghost\8.7 - Pacman ghost.csproj", "{884BF9F7-2E94-4E7E-9F30-ACB1A47A5E33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.7 - Fredriks facit", "Övning 8.7 - Fredriks facit\Övning 8.7 - Fredriks facit.csproj", "{16FDD091-CD57-4DB8-A63A-73F13176F0A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.7 - Fredriks facit", "Övning 8.7 - Fredriks facit\8.7 - Fredriks facit.csproj", "{16FDD091-CD57-4DB8-A63A-73F13176F0A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.8 - Flying bird", "Övning 8.8 - Flying bird\Övning 8.8 - Flying bird.csproj", "{FC07FCEF-77D2-4780-A5C8-D9BBDC82FD50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.8 - Flying bird", "Övning 8.8 - Flying bird\8.8 - Flying bird.csproj", "{FC07FCEF-77D2-4780-A5C8-D9BBDC82FD50}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.9 - Ball", "8.9 - Ball\8.9 - Ball.csproj", "{0F52F9DF-C212-46AE-8F27-67F9F034FF2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.9 Ball - Fredriks facit", "8.9 Ball - Fredriks facit\8.9 Ball - Fredriks facit.csproj", "{00DAEACF-75C1-4758-96E0-39AF8FBC31F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.10 - Moving droid", "Övning 8.10 - Moving droid\Övning 8.10 - Moving droid.csproj", "{8D69AEC0-9BC4-4E26-B231-DBEE931E11A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.10 - Moving droid", "Övning 8.10 - Moving droid\8.10 - Moving droid.csproj", "{8D69AEC0-9BC4-4E26-B231-DBEE931E11A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.11 - Lista primtal", "Övning 8.11 - Lista primtal\Övning 8.11 - Lista primtal.csproj", "{77034026-FB6F-4A32-85B6-7A276E2F64D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.11 - Lista primtal", "Övning 8.11 - Lista primtal\8.11 - Lista primtal.csproj", "{77034026-FB6F-4A32-85B6-7A276E2F64D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 8.13 - Ghost moving", "Övning 8.13 - Ghost moving\Övning 8.13 - Ghost moving.csproj", "{98B63187-AF14-4DDE-B937-5770D47107B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.13 - Ghost moving", "Övning 8.13 - Ghost moving\8.13 - Ghost moving.csproj", "{98B63187-AF14-4DDE-B937-5770D47107B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.3 - Space wars", "Övning 9.3 - Space wars\Övning 9.3 - Space wars.csproj", "{6436031C-EB1F-4A35-AC7B-E0D768A2E9F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.3 - Space wars", "Övning 9.3 - Space wars\9.3 - Space wars.csproj", "{6436031C-EB1F-4A35-AC7B-E0D768A2E9F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.4 - Sjörövarspråket", "Övning 9.4 - Sjörövarspråket\Övning 9.4 - Sjörövarspråket.csproj", "{A9C2F678-3305-4023-A007-DB44D7AFC026}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.4 - Sjörövarspråket", "Övning 9.4 - Sjörövarspråket\9.4 - Sjörövarspråket.csproj", "{A9C2F678-3305-4023-A007-DB44D7AFC026}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.5 - Robot bug", "Övning 9.5 - Robot bug\Övning 9.5 - Robot bug.csproj", "{D6B70630-498E-4968-A402-53C1E9A87FBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.5 - Robot bug", "Övning 9.5 - Robot bug\9.5 - Robot bug.csproj", "{D6B70630-498E-4968-A402-53C1E9A87FBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.7 - Personnummertest", "Övning 9.7 - Personnummertest\Övning 9.7 - Personnummertest.csproj", "{CCA809C5-A3C3-4804-A398-739D9EEEC582}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.7 - Personnummertest", "Övning 9.7 - Personnummertest\9.7 - Personnummertest.csproj", "{CCA809C5-A3C3-4804-A398-739D9EEEC582}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 9.8 - Palindrom", "Övning 9.8 - Palindrom\Övning 9.8 - Palindrom.csproj", "{1C49BA26-48C5-42D8-8959-17E2684CF102}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.8 - Palindrom", "Övning 9.8 - Palindrom\9.8 - Palindrom.csproj", "{1C49BA26-48C5-42D8-8959-17E2684CF102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10e", "Övning 10e\Övning 10e.csproj", "{63B0A83A-99F3-4925-B3DD-20A908019BD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10e", "Övning 10e\10e.csproj", "{63B0A83A-99F3-4925-B3DD-20A908019BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.2 - Division", "Övning 10.2 - Division\Övning 10.2 - Division.csproj", "{7172BC39-67D2-4A60-BF02-CE212D10FBF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.2 - Division", "Övning 10.2 - Division\10.2 - Division.csproj", "{7172BC39-67D2-4A60-BF02-CE212D10FBF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.3 - Text Scroller", "Övning 10.3 - Text Scroller\Övning 10.3 - Text Scroller.csproj", "{8FC9F8C4-EC5B-421C-A5DB-EF33BA963117}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.3 - Text Scroller", "Övning 10.3 - Text Scroller\10.3 - Text Scroller.csproj", "{8FC9F8C4-EC5B-421C-A5DB-EF33BA963117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.4 - Binärtalsomvandlare", "Övning 10.4 - Binärtalsomvandlare\Övning 10.4 - Binärtalsomvandlare.csproj", "{D6A40246-A33C-4B41-A254-DADAB5122948}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.4 - Binärtalsomvandlare", "Övning 10.4 - Binärtalsomvandlare\10.4 - Binärtalsomvandlare.csproj", "{D6A40246-A33C-4B41-A254-DADAB5122948}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 11.10 - 11.12", "Övning 11.10\Övning 11.10 - 11.12.csproj", "{3A926392-B14A-49FB-9666-D6E5C979A136}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.10 - 11.12", "Övning 11.10\11.10 - 11.12.csproj", "{3A926392-B14A-49FB-9666-D6E5C979A136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 11.13", "Övning 11.13\Övning 11.13.csproj", "{7B63A402-D920-40A9-B0C8-7DE2330290E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.13", "Övning 11.13\11.13.csproj", "{7B63A402-D920-40A9-B0C8-7DE2330290E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.7  - Välj räknesätt", "10.7  - Välj räknesätt\10.7  - Välj räknesätt.csproj", "{0565D5F8-A7DC-478C-BF9D-8ADD91312FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 10.11 - Beräkning mellan två dagar", "Övning 10.11 - Beräkning mellan två dagar\Övning 10.11 - Beräkning mellan två dagar.csproj", "{B32793A3-2A67-4B44-90B1-A69023537B78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.11 - Beräkning mellan två dagar", "Övning 10.11 - Beräkning mellan två dagar\10.11 - Beräkning mellan två dagar.csproj", "{B32793A3-2A67-4B44-90B1-A69023537B78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.22 - Calculator", "11.22 - Calculator\11.22 - Calculator.csproj", "{0E9772AD-DB07-4D3C-A596-BC6EB0D81C29}"
 EndProject
@@ -125,7 +123,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.26 - Sort Digits", "11.2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.7 - ConsoleHelper", "12.7\12.7 - ConsoleHelper.csproj", "{E451FC5C-3FD1-4328-B69F-35016974073F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.8", "12.8\12.8.csproj", "{D5176C25-8EF1-4184-99E4-49DC09C36AD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.8 - Namnlista", "12.8\12.8 - Namnlista.csproj", "{D5176C25-8EF1-4184-99E4-49DC09C36AD0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.9 - Rita staplar", "12.9 - Rita staplar\12.9 - Rita staplar.csproj", "{C7B7868F-EE02-4CFB-9540-0843053D6787}"
 EndProject
@@ -156,6 +154,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.14 - Pacman ghosts", "13.14 - Pacman ghosts\13.14 - Pacman ghosts.csproj", "{88228362-5C89-4669-888D-FD29D6A43E00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.5 - Maze", "13.5 - Maze\13.5 - Maze.csproj", "{62771CE2-D72A-47F5-BAFD-18057423238E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.16 - Large Digits 2D-array", "5.16 - Large Digits 2D-array\5.16 - Large Digits 2D-array.csproj", "{E98ADBBA-2905-4E6E-8EED-8E3748664916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,10 +195,6 @@ Global
 		{BD535935-EEF3-46F1-A9FB-564949259C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD535935-EEF3-46F1-A9FB-564949259C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD535935-EEF3-46F1-A9FB-564949259C88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3DDDBBE5-19E7-4926-9886-FA92CC14B817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DDDBBE5-19E7-4926-9886-FA92CC14B817}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DDDBBE5-19E7-4926-9886-FA92CC14B817}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DDDBBE5-19E7-4926-9886-FA92CC14B817}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4FE24C9E-EE64-493A-A6D4-54D0A4B14C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FE24C9E-EE64-493A-A6D4-54D0A4B14C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FE24C9E-EE64-493A-A6D4-54D0A4B14C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -471,6 +467,10 @@ Global
 		{62771CE2-D72A-47F5-BAFD-18057423238E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62771CE2-D72A-47F5-BAFD-18057423238E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62771CE2-D72A-47F5-BAFD-18057423238E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98ADBBA-2905-4E6E-8EED-8E3748664916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98ADBBA-2905-4E6E-8EED-8E3748664916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98ADBBA-2905-4E6E-8EED-8E3748664916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98ADBBA-2905-4E6E-8EED-8E3748664916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

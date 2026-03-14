@@ -4,33 +4,33 @@
 	{
 		static void Main(string[] args)
 		{
-			int i = 1;
-			int j = 1;
-			int k = 1;
-			int numberOfRows = 10;
+			int row = 1;
+			int numberOfRows = 9;
 			int numberOfA = 1;
 			int numberOfB = 9;
+			int i = 1;
 
-
-			while (i <= numberOfRows)
+			while (row <= numberOfRows)
 			{
-				while (j <= numberOfA) 
+				while (i <= numberOfA)
 				{
 					Console.Write("a");
-					j++;
+					i++;
 				}
 
-				while (k <= numberOfB)
+				i = 1;
+
+				while (i <= numberOfB)
 				{
 					Console.Write("b");
-					k++;
+					i++;
 				}
+
+				Console.WriteLine();
+				row++;
 				numberOfA++;
 				numberOfB--;
-				i++;
-				j--;
-				k--;
-				Console.WriteLine();
+				i = 1;
 			}
 		}
 	}
