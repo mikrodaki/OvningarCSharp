@@ -18,7 +18,7 @@ namespace Poker
 			List<int> myHand = new List<int>();
 			Card.AddCardsToMyHand(deck, myHand, numberOfCards);
 			Card.DrawCards(myHand);
-			Console.SetCursorPosition(0,15);
+			//Console.SetCursorPosition(0,15);
 			Console.CursorVisible = true;
 			Console.ForegroundColor = ConsoleColor.Black;
 			var choice = Card.ReadYesNo("Vill du kasta några kort (j/n)? ");

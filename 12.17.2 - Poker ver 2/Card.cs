@@ -13,6 +13,9 @@ class Card
          * 39-51 Clubs
          *
          */
+	static string emptyLine = new string(' ', Console.WindowWidth);
+	static int textX = 15;
+	static int textY = 16;
 	public static void AddCardsToDeck(List<int> deck)
 	{
 		for (int i = 0; i < 52; i++)
@@ -82,13 +85,13 @@ class Card
 	}
 
 	public static string ReadStringIntPoker(string text, int max)
-
 	{
 		List<int> indexes = new List<int>();
 
 		while (true)
 		{
-			Console.Write(text);
+			WriteAt(textX, textY, emptyLine);
+			WriteAt(textX, textY, text);
 			string? input = Console.ReadLine();
 
 			if (!string.IsNullOrEmpty(input))
@@ -122,10 +125,13 @@ class Card
 				}
 
 				if (ok)
+				{
+					WriteAt(textX, textY, emptyLine);
+					WriteAt(textX, textY, "Spelet är nu slut.");
 					return input;
+				}
 			}
-
-			Console.WriteLine("Felaktig inmatning!");
+			WriteAt(textX, textY, emptyLine);
 			indexes.Clear();
 		}
 	}
@@ -134,7 +140,10 @@ class Card
 	{
 		while (true)
 		{
-			Console.Write(text);
+			Console.ForegroundColor = ConsoleColor.Black;
+			Console.BackgroundColor = ConsoleColor.DarkGreen;
+			WriteAt(textX, textY, emptyLine);
+			WriteAt(textX, textY, text);
 			string? input = Console.ReadLine();
 
 			if (!string.IsNullOrEmpty(input))
@@ -143,7 +152,7 @@ class Card
 				if (input == "j" || input == "n")
 					return input;
 			}
-			Console.WriteLine("Felaktigt val!");
+			WriteAt(textX, textY, emptyLine);
 		}
 	}
 
@@ -200,6 +209,6 @@ class Card
 	static void WriteAt(int x, int y, string text)
 	{
 		Console.SetCursorPosition(x, y);
-		Console.WriteLine(text);
+		Console.Write(text);
 	}
 }
