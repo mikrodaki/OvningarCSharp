@@ -43,11 +43,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.16", "Övning 4.16\4.16.c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.18", "Övning 4.18\4.18.csproj", "{71D06198-AA15-44C9-BFA0-E435714FB378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.12", "Övning 5.12\5.12.csproj", "{DBA23BAE-DCB8-4DF9-9FE8-68AC4B5CF3FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.12 - Sten sax påse", "Övning 5.12\5.12 - Sten sax påse.csproj", "{DBA23BAE-DCB8-4DF9-9FE8-68AC4B5CF3FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.14", "Övning 5.14\5.14.csproj", "{B031210C-3AFF-4F1F-A35A-96B6BAD54156}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.14 - Moving o", "Övning 5.14\5.14 - Moving o.csproj", "{B031210C-3AFF-4F1F-A35A-96B6BAD54156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.15a", "Övning 5.15a\5.15a.csproj", "{4703F3CD-8B50-4BAB-81C1-DCD0D162842F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.15a - Rita triangel", "Övning 5.15a\5.15a - Rita triangel.csproj", "{4703F3CD-8B50-4BAB-81C1-DCD0D162842F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.16b - abbbbbbbbb", "Övning 5.16b\5.16b - abbbbbbbbb.csproj", "{A947DD7B-3070-4D51-B130-E2954C95C94D}"
 EndProject
@@ -156,6 +156,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.5 - Maze", "13.5 - Maze\13.5 - Maze.csproj", "{62771CE2-D72A-47F5-BAFD-18057423238E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.16 - Large Digits 2D-array", "5.16 - Large Digits 2D-array\5.16 - Large Digits 2D-array.csproj", "{E98ADBBA-2905-4E6E-8EED-8E3748664916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.11 - Digital klocka", "5.11 - Digital klocka\5.11 - Digital klocka.csproj", "{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -471,6 +473,10 @@ Global
 		{E98ADBBA-2905-4E6E-8EED-8E3748664916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E98ADBBA-2905-4E6E-8EED-8E3748664916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E98ADBBA-2905-4E6E-8EED-8E3748664916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
