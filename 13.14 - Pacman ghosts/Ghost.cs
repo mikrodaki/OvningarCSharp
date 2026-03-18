@@ -6,7 +6,7 @@
 		private int y;
 		private ConsoleColor color;
 		private int eyePos;
-		private List<string> eyes = new List<string>();
+		private List<string> eyes = new List<string> { "▀ ", " ▀", " ▄", "▄ " };
 
 
 		public Ghost(int x, int y, ConsoleColor color, int eyePosition)
@@ -15,10 +15,6 @@
 			this.y = y;
 			this.color = color;
 			this.eyePos = eyePosition;
-			eyes.Add("▀ ");
-			eyes.Add(" ▀");
-			eyes.Add(" ▄");
-			eyes.Add("▄ ");
 		}
 
 		public void Draw()

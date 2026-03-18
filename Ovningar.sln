@@ -151,13 +151,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.3 - Dog", "13.3 - Dog\13
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.4 - Anv lösen", "13.4 - Anv lösen\13.4 - Anv lösen.csproj", "{8F539287-44A8-49B8-BD93-11EC0D0B1884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.14 - Pacman ghosts", "13.14 - Pacman ghosts\13.14 - Pacman ghosts.csproj", "{88228362-5C89-4669-888D-FD29D6A43E00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.11 - Pacman ghosts", "13.14 - Pacman ghosts\13.11 - Pacman ghosts.csproj", "{88228362-5C89-4669-888D-FD29D6A43E00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.5 - Maze", "13.5 - Maze\13.5 - Maze.csproj", "{62771CE2-D72A-47F5-BAFD-18057423238E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.16 - Large Digits 2D-array", "5.16 - Large Digits 2D-array\5.16 - Large Digits 2D-array.csproj", "{E98ADBBA-2905-4E6E-8EED-8E3748664916}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.11 - Digital klocka", "5.11 - Digital klocka\5.11 - Digital klocka.csproj", "{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.12 - Maze 2", "13.12 - Maze 2\13.12 - Maze 2.csproj", "{1AB5939B-F675-4573-95F9-335F52FF9C64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -477,6 +479,10 @@ Global
 		{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{348BFDF4-307F-4BA5-942A-5FCF9C89E1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB5939B-F675-4573-95F9-335F52FF9C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB5939B-F675-4573-95F9-335F52FF9C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB5939B-F675-4573-95F9-335F52FF9C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB5939B-F675-4573-95F9-335F52FF9C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
