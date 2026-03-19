@@ -19,8 +19,6 @@ namespace Ghost
             ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Green, 1));
             ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Cyan, 2));
             ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.DarkYellow, 3));
-            ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Red, 0));
-            ghosts.Add(new Ghost(x += spaceBetween, y, ConsoleColor.Magenta, 1));
 
 
             foreach (Ghost g in ghosts)

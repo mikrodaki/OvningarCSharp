@@ -64,6 +64,7 @@
                         player = new Player();
                     }
                 }
+                Thread.Sleep(200);
                 if (maze.maze[player.y, player.x] == 2)
                 {
                     Console.SetCursorPosition(Constants.X_SCREEN_POS + maze.maze.GetLength(1) / 3, Constants.Y_SCREEN_POS + maze.maze.GetLength(0) + 1);
@@ -73,7 +74,6 @@
                     Console.ReadKey();
                     break;
                 }
-                Thread.Sleep(200);
             }
         }
 

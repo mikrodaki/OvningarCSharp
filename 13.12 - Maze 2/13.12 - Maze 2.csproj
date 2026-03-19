@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\13.14 - Pacman ghosts\13.11 - Pacman ghosts.csproj" />
+  </ItemGroup>
+
 </Project>
