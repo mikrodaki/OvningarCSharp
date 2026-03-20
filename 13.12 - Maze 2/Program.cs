@@ -16,7 +16,7 @@
                 enemies.Add(new Enemy(enemyX[i], enemyY[i], enemyDir[i]));
             }
 
-            Console.CursorVisible = false;
+            //Console.CursorVisible = false;
             maze.Draw();
             while (true)
             {
@@ -29,21 +29,8 @@
                  *  Ändra direction-variablen i player till nextDirection
                  *  om det går. */
                 player.ChangeDirection(maze);
-                foreach (Enemy enemy in enemies)
-                {
-                    enemy.ChangeDirection(maze.maze);
-                }
                 player.Delete();
-                foreach (Enemy enemy in enemies)
-                {
-                    enemy.Delete();
-                }
                 player.Move(maze);
-                foreach (Enemy enemy in enemies)
-                {
-                    enemy.Move(maze.maze);
-                }
-                player.Draw();
                 foreach (Enemy enemy in enemies)
                 {
                     if (enemy.x == player.x && enemy.y == player.y)
@@ -52,9 +39,18 @@
                         player = new Player();
                     }
                 }
+                player.Draw();
                 foreach (Enemy enemy in enemies)
                 {
-                    enemy.Draw();
+                    enemy.ChangeDirection(maze.maze);
+                }
+                foreach (Enemy enemy in enemies)
+                {
+                    enemy.Delete();
+                }
+                foreach (Enemy enemy in enemies)
+                {
+                    enemy.Move(maze.maze);
                 }
                 foreach(Enemy enemy in enemies) 
                 {
@@ -64,7 +60,10 @@
                         player = new Player();
                     }
                 }
-                Thread.Sleep(200);
+                foreach (Enemy enemy in enemies)
+                {
+                    enemy.Draw();
+                }
                 if (maze.maze[player.y, player.x] == 2)
                 {
                     Console.SetCursorPosition(Constants.X_SCREEN_POS + maze.maze.GetLength(1) / 3, Constants.Y_SCREEN_POS + maze.maze.GetLength(0) + 1);
@@ -74,6 +73,7 @@
                     Console.ReadKey();
                     break;
                 }
+                Thread.Sleep(150);
             }
         }
 
