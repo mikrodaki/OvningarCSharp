@@ -161,6 +161,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.11 - Digital klocka", "5.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.12 - Maze 2", "13.12 - Maze 2\13.12 - Maze 2.csproj", "{1AB5939B-F675-4573-95F9-335F52FF9C64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.6 - Linjär sökning", "14.6 - Linjär sökning\14.6 - Linjär sökning.csproj", "{A3641F32-E18D-4DC7-84F9-0FF74E4E3697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.7 - Binärsökning", "14.7 - Binärsökning\14.7 - Binärsökning.csproj", "{9EF13826-6F5F-40D6-97AB-0B2BF2768757}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -483,6 +487,14 @@ Global
 		{1AB5939B-F675-4573-95F9-335F52FF9C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AB5939B-F675-4573-95F9-335F52FF9C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AB5939B-F675-4573-95F9-335F52FF9C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3641F32-E18D-4DC7-84F9-0FF74E4E3697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3641F32-E18D-4DC7-84F9-0FF74E4E3697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3641F32-E18D-4DC7-84F9-0FF74E4E3697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3641F32-E18D-4DC7-84F9-0FF74E4E3697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF13826-6F5F-40D6-97AB-0B2BF2768757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF13826-6F5F-40D6-97AB-0B2BF2768757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF13826-6F5F-40D6-97AB-0B2BF2768757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF13826-6F5F-40D6-97AB-0B2BF2768757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
