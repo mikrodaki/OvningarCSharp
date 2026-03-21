@@ -7,39 +7,38 @@
 		static void Main(string[] args)
 		{
 			Console.CursorVisible = false;
-			for (int j = 0; j < 5; j++)
+
+			Console.Clear();
+			var numbers = PopulateVector(new List<int>());
+			var numbersUnsorted = new List<int>(numbers);
+			var key = rnd.Next(vectorLength);
+			var result = BinarySearch(numbers, key);
+			Console.Write("BINÄR SÖKNING \n------------------\nLISTAN: ");
+			bool keyFound = false;
+			int lineBreak = 0;
+			foreach (int number in numbersUnsorted)
 			{
-				Console.Clear();
-				var numbers = PopulateVector(new List<int>());
-				var numbersUnsorted = new List<int>(numbers);
-				var key = rnd.Next(vectorLength);
-				var result = BinarySearch(numbers, key);
-				Console.Write("BINÄR SÖKNING \n------------------\nLISTAN: ");
-				bool keyFound = false;
-				int lineBreak = 0;
-				foreach (int number in numbersUnsorted)
+				if (key == number && !keyFound)
 				{
-					if (key == number && !keyFound)
-					{
-						Console.ForegroundColor = ConsoleColor.Green;
-						Console.Write(number + " ");
-						keyFound = true;
-						Console.ForegroundColor = ConsoleColor.White;
-					}
-					else
-						Console.Write(number + " ");
-					lineBreak++;
+					Console.ForegroundColor = ConsoleColor.Green;
+					Console.Write(number + " ");
+					keyFound = true;
+					Console.ForegroundColor = ConsoleColor.White;
 				}
-				Console.WriteLine("\n");
-				if (result.index != -1)
-					Console.WriteLine($"Talet {key} finns på index {numbersUnsorted.IndexOf(key)} i listan. " +
-						$"Det tog {result.steps} iterationer för att hitta talet.");
 				else
-					Console.WriteLine($"Talet {key} finns inte med i listan. " +
-						$"Det tog {result.steps} iterationer för att komma fram till det.");
-				Console.ReadKey();
+					Console.Write(number + " ");
+				lineBreak++;
 			}
+			Console.WriteLine("\n");
+			if (result.index != -1)
+				Console.WriteLine($"Talet {key} finns på index {numbersUnsorted.IndexOf(key)} i listan. " +
+					$"Det tog {result.steps} iterationer för att hitta talet.");
+			else
+				Console.WriteLine($"Talet {key} finns inte med i listan. " +
+					$"Det tog {result.steps} iterationer för att komma fram till det.");
+			Console.ReadKey();
 		}
+
 
 		static (int index, int steps) BinarySearch(List<int> numbers, int key)
 		{
