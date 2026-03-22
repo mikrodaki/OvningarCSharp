@@ -7,15 +7,15 @@ namespace Binärsökning_2
 		static Random rnd = new Random();
 		static int vectorLength = 10;
 		static int range = 10;
-		static List<int> numbers = new List<int> { 1, 3, 4, 5, 5, 5, 6, 8, 9, 10 };
+		//static List<int> numbers = new List<int> { 1, 3, 4, 5, 5, 5, 6, 8, 9, 10 };
 		static void Main(string[] args)
 		{
 			Console.CursorVisible = false;
 			while (true)
 			{
 				Console.Clear();
-				//var numbers = PopulateVector(new List<int>());
-				var key = 5;
+				var numbers = PopulateVector(new List<int>());
+				var key = rnd.Next(vectorLength);
 				numbers.Sort();
 				int x = 0;
 				int y = 0;
@@ -32,7 +32,7 @@ namespace Binärsökning_2
 				Console.WriteLine();
 				Console.WriteLine();
 				Console.WriteLine($"Siffran vi söker: {key}");
-				var result = BinarySearchSimple(numbers, key);
+				var result = BinarySearchSlaskFindFirst(numbers, key);
 				if (result != -1)
 					Console.WriteLine($"Siffran {key} är på index {result}");
 				else
@@ -165,6 +165,77 @@ namespace Binärsökning_2
 				numbers.Add(rnd.Next(range));
 			}
 			return numbers;
+		}
+
+		static int BinarySearchSlask(List<int> numbers, int key) 
+		{
+			int first = 0;
+			int last = numbers.Count - 1;
+
+			while (first <= last) 
+			{ 
+				int mid = (first + last) / 2;
+
+				if (key == numbers[mid]) 
+					return mid;
+				else if (key > numbers[mid])
+					first = mid + 1;
+				else if (key < numbers[mid])
+					last = mid - 1;
+			}
+			return -1;
+		}
+
+		static int BinarySearchSlaskFindFirst(List<int> numbers, int key)
+		{
+			int first = 0;
+			int last = numbers.Count - 1;
+			int result = -1;
+			int mid = 0;
+
+			while (first <= last)
+			{
+				mid = (first + last) / 2;
+
+				Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
+
+				if (key == numbers[mid]) 
+				{
+					result = mid;
+					last = mid - 1;
+				}
+				else if (key > numbers[mid])
+					first = mid + 1;
+				else if (key < numbers[mid])
+					last = mid - 1;
+				Console.ReadKey();
+			}
+			Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
+
+			return result;
+		}
+
+		static int BinarySearchSlaskFindLast(List<int> numbers, int key)
+		{
+			int first = 0;
+			int last = numbers.Count - 1;
+			int result = -1;
+
+			while (first <= last)
+			{
+				int mid = (first + last) / 2;
+
+				if (key == numbers[mid]) 
+				{ 
+					result = mid;
+					first = mid + 1;
+				}
+				else if (key > numbers[mid])
+					first = mid + 1;
+				else if (key < numbers[mid])
+					last = mid - 1;
+			}
+			return result;
 		}
 	}
 }
