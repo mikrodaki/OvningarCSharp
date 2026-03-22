@@ -6,15 +6,16 @@ namespace Binärsökning_2
 	{
 		static Random rnd = new Random();
 		static int vectorLength = 10;
-		static int range = 15;
+		static int range = 10;
+		static List<int> numbers = new List<int> { 1, 3, 4, 5, 5, 5, 6, 8, 9, 10 };
 		static void Main(string[] args)
 		{
 			Console.CursorVisible = false;
 			while (true)
 			{
 				Console.Clear();
-				var numbers = PopulateVector(new List<int>());
-				var key = rnd.Next(range);
+				//var numbers = PopulateVector(new List<int>());
+				var key = 5;
 				numbers.Sort();
 				int x = 0;
 				int y = 0;
@@ -31,7 +32,7 @@ namespace Binärsökning_2
 				Console.WriteLine();
 				Console.WriteLine();
 				Console.WriteLine($"Siffran vi söker: {key}");
-				var result = BinarySearchFirstOccurence(numbers, key);
+				var result = BinarySearchSimple(numbers, key);
 				if (result != -1)
 					Console.WriteLine($"Siffran {key} är på index {result}");
 				else
@@ -74,6 +75,7 @@ namespace Binärsökning_2
 
 			while (first <= last)
 			{
+				List<int> tempList = new List<int>();
 				mid = (first + last) / 2;
 				Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
 				Console.ReadKey();
@@ -88,6 +90,72 @@ namespace Binärsökning_2
 				}
 			}
 			return result;
+		}
+
+		static int BinarySearchLastOccurence(List<int> numbers, int key)
+		{
+			if (numbers.Count == 0)
+				return -1;
+
+			int first = 0;
+			int last = numbers.Count - 1;
+			int result = -1;
+
+			while (first <= last)
+			{
+				int mid = (first + last) / 2;
+
+				Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
+				Console.ReadKey();
+
+				if (key == numbers[mid])
+				{
+					result = mid;
+					first = mid + 1;   // fortsätt höger
+				}
+				else if (key < numbers[mid])
+				{
+					last = mid - 1;    // gå vänster
+				}
+				else
+				{
+					first = mid + 1;   // gå höger 
+				}
+			}
+
+			return result;
+		}
+
+		static int BinarySearchSimple(List<int> numbers, int key)
+		{
+			int first = 0;
+			int last = numbers.Count - 1;
+			int mid = 0;
+
+			while (first <= last)
+			{
+				mid = (first + last) / 2;
+
+
+				Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
+				Console.ReadKey();
+
+				if (numbers[mid] < key)
+				{
+					first = mid + 1;   // för litet → gå höger
+				}
+				else
+				{
+					last = mid - 1;    // tillräckligt stort → gå vänster
+				}
+			}
+
+			// efter loopen
+			Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
+			if (first < numbers.Count && numbers[first] == key)
+				return first;
+
+			return -1;
 		}
 
 		static List<int> PopulateVector(List<int> numbers)
