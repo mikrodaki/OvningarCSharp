@@ -167,6 +167,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.7 - Binärsökning", "14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.8 - Binärsökning 2", "14.8 - Binärsökning 2\14.8 - Binärsökning 2.csproj", "{D564FADF-EBA4-4F97-8FDC-008116F04201}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.3 Linjär- och binärsökning", "14.3\14.3 Linjär- och binärsökning.csproj", "{8EF4DDA0-240F-4558-A02F-C73C09E0D158}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -501,6 +503,10 @@ Global
 		{D564FADF-EBA4-4F97-8FDC-008116F04201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D564FADF-EBA4-4F97-8FDC-008116F04201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D564FADF-EBA4-4F97-8FDC-008116F04201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF4DDA0-240F-4558-A02F-C73C09E0D158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF4DDA0-240F-4558-A02F-C73C09E0D158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF4DDA0-240F-4558-A02F-C73C09E0D158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF4DDA0-240F-4558-A02F-C73C09E0D158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
