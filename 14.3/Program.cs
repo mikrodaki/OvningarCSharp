@@ -27,8 +27,8 @@ namespace _14._34
             BinarySearch(numbers, key);
             sw.Stop();
             var ticks = sw.ElapsedTicks;
-            var microSeconds = ticks * (1000000.0 / Stopwatch.Frequency);
-            Console.WriteLine($"Det tog {sw.ElapsedMilliseconds} milisekunder att göra en binärsökning. ");
+            var microSeconds = (long)(ticks * (1000000.0 / Stopwatch.Frequency));
+            //Console.WriteLine($"Det tog {sw.ElapsedMilliseconds} milisekunder att göra en binärsökning. ");
             Console.WriteLine($"Det tog {microSeconds} mikrosekunder att göra en binärsökning. ");
 
             Console.WriteLine(result != -1 ? "Värdet fanns inte i listan" : "Värdet fanns i listan");
