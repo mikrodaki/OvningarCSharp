@@ -20,6 +20,29 @@
 			}
 		}
 
+		public static void BubbleSortImproved(int[] numbers)
+		{
+			int max = numbers.Length - 1;
+			for (int i = 0; i < max; i++)
+			{
+				bool isSorted = true;
+				int nrLeft = max - i;
+				for (int j = 0; j < nrLeft; j++)
+				{
+					if (numbers[j] > numbers[j + 1])
+					{
+						isSorted = false;
+						int temp = numbers[j];
+						numbers[j] = numbers[j + 1];
+						numbers[j + 1] = temp;
+					}
+				}
+				if (isSorted)
+					break;
+			}
+		}
+
+
 		public static void BubbleSortDecending(int[] numbers)
 		{
 			int max = numbers.Length - 1;
@@ -46,12 +69,9 @@
 					if ((numbers[minIndex] > numbers[j]))
 						minIndex = j;
 				}
-				if (minIndex != i)
-				{
-					int temp = numbers[i];
-					numbers[i] = numbers[minIndex];
-					numbers[minIndex] = temp;
-				}	
+				int temp = numbers[i];
+				numbers[i] = numbers[minIndex];
+				numbers[minIndex] = temp;
 			}
 		}
 
@@ -64,6 +84,26 @@
 				for (int j = i + 1; j < numbers.Length; j++)
 				{
 					if ((numbers[minIndex] < numbers[j]))
+						minIndex = j;
+				}
+				if (minIndex != i)
+				{
+					int temp = numbers[i];
+					numbers[i] = numbers[minIndex];
+					numbers[minIndex] = temp;
+				}
+			}
+		}
+
+		public static void SelectionSortImproved(int[] numbers)
+		{
+			for (int i = 0; i < numbers.Length - 1; i++)
+			{
+				int minIndex = i;
+
+				for (int j = i + 1; j < numbers.Length; j++)
+				{
+					if ((numbers[minIndex] > numbers[j]))
 						minIndex = j;
 				}
 				if (minIndex != i)
