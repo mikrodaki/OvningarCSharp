@@ -32,7 +32,7 @@ namespace Binärsökning_2
 				Console.WriteLine();
 				Console.WriteLine();
 				Console.WriteLine($"Siffran vi söker: {key}");
-				var result = BinarySearchSlaskFindFirst(numbers, key);
+				var result = BinarySearchFirstOccurence(numbers, key);
 				if (result != -1)
 					Console.WriteLine($"Siffran {key} är på index {result}");
 				else
@@ -75,10 +75,9 @@ namespace Binärsökning_2
 
 			while (first <= last)
 			{
-				List<int> tempList = new List<int>();
 				mid = (first + last) / 2;
 				Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
-				Console.ReadKey();
+				//Console.ReadKey();
 				if (key > numbers[mid])
 					first = mid + 1;
 				else if (key < numbers[mid])
@@ -105,8 +104,8 @@ namespace Binärsökning_2
 			{
 				int mid = (first + last) / 2;
 
-				Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
-				Console.ReadKey();
+				//Console.WriteLine($"First = {first} Last = {last} Mid = {mid}");
+				//Console.ReadKey();
 
 				if (key == numbers[mid])
 				{

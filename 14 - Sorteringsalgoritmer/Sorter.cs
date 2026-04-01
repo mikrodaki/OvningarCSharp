@@ -16,7 +16,21 @@
 			}
 		}
 
-		public static void SelectionSort(int[] numbers)
+        public static void BubbleSortDecending(int[] numbers)
+        {
+            int max = numbers.Length - 1;
+            for (int i = 0; i < max; i++)
+            {
+                int nrLeft = max - i;
+                for (int j = 0; j < nrLeft; j++)
+                {
+                    if (numbers[j] < numbers[j + 1])
+                        Swap(ref numbers[j], ref numbers[j + 1]);
+                }
+            }
+        }
+
+        public static void SelectionSort(int[] numbers)
 		{
 			for (int i = 0; i < numbers.Length - 1; i++)
 			{
