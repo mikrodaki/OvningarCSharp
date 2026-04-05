@@ -64,7 +64,7 @@
                 {
                     enemy.Draw();
                 }
-                if (maze.maze[player.y, player.x] == 2)
+                if (maze.maze[player.y, player.x] == Constants.GOAL)
                 {
                     Console.SetCursorPosition(Constants.X_SCREEN_POS + maze.maze.GetLength(1) / 3, Constants.Y_SCREEN_POS + maze.maze.GetLength(0) + 1);
                     Console.ForegroundColor = ConsoleColor.Green;
