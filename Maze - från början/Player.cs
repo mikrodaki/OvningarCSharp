@@ -5,7 +5,7 @@ namespace MazeGame
 		public int x = 1;
 		public int y = 1;
 		private int direction = Constants.IDLE;
-		private int nextdirection = Constants.IDLE;
+		private int nextDirection = Constants.IDLE;
 
 
 		/*
@@ -56,7 +56,7 @@ namespace MazeGame
 					return;
 			}
 
-			if (maze.grid[newY, newX] != 1)
+			if (!maze.IsWall(newX, newY))
 			{
 				Delete();
 				x = newX;
@@ -66,18 +66,18 @@ namespace MazeGame
 		}
 
 
-		public void SetNextDirection(int direction) 
-		{ 
-			nextdirection = direction;
+		public void SetNextDirection(int nextDirection)
+		{
+			this.nextDirection = nextDirection;
 		}
 
 
-		public void ChangeDirection(Maze maze) 
+		public void ChangeDirection(Maze maze)
 		{
 			int newX = x;
 			int newY = y;
 
-			switch (nextdirection)
+			switch (nextDirection)
 			{
 				case Constants.UP:
 					newY--;
@@ -93,9 +93,9 @@ namespace MazeGame
 					break;
 			}
 
-			if (maze.grid[newY, newX] != 1)
+			if (!maze.IsWall(newX, newY))
 			{
-				direction = nextdirection;
+				direction = nextDirection;
 			}
 		}
 

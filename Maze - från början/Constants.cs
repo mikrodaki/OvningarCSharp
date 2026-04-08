@@ -10,5 +10,8 @@ namespace MazeGame
         public const int DOWN = 2;
         public const int LEFT = 3;
         public const int RIGHT = 4;
-    }
+
+		public const int WALL = 1;
+        public const int GOAL = 2;
+	}
 }
