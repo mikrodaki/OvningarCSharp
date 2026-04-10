@@ -34,12 +34,12 @@ namespace MazeGame
 				for (int col = 0; col < grid.GetLength(1); col++)
 				{
 					Console.SetCursorPosition(col + Constants.X_SCREEN_POS, row + Constants.Y_SCREEN_POS);
-					if (IsWall(col, row))
+					if (IsWall(row, col))
 					{
 						Console.ForegroundColor = ConsoleColor.Yellow;
 						Console.WriteLine("▓");
 					}
-					else if (IsGoal(col, row))
+					else if (IsGoal(row, col))
 					{
 						Console.ForegroundColor = ConsoleColor.Green;
 						Console.WriteLine("»");
@@ -48,14 +48,14 @@ namespace MazeGame
 			}
 		}
 
-		public bool IsWall(int x, int y)
+		public bool IsWall(int row, int col)
 		{
-			return (grid[y, x] == Constants.WALL);
+			return (grid[row, col] == Constants.WALL);
 		}
 
-		public bool IsGoal(int x, int y)
+		public bool IsGoal(int row, int col)
 		{
-			return (grid[y, x] == Constants.GOAL);
+			return (grid[row, col] == Constants.GOAL);
 		}
 
 		// ▓   Använd detta tecken som vägg

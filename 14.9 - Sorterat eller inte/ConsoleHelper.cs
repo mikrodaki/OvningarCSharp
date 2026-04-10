@@ -39,10 +39,8 @@ namespace App.IO
 				string? input = Console.ReadLine();
 
 				// ENTER = klart
-				if (string.IsNullOrWhiteSpace(input))
-				{
+				if (string.IsNullOrEmpty(input))
 					return null;
-				}
 
 				if (!int.TryParse(input, out int value))
 				{
