@@ -56,7 +56,7 @@ namespace MazeGame
 					return;
 			}
 
-			if (!maze.IsWall(newY, newX))
+			if (!maze.IsWall(newY, newX) && !maze.IsBlocked(newY, newX))
 			{
 				Delete();
 				x = newX;
@@ -93,7 +93,7 @@ namespace MazeGame
 					break;
 			}
 
-			if (!maze.IsWall(newY, newX))
+			if (!maze.IsWall(newY, newX) && !maze.IsBlocked(newY, newX))
 			{
 				direction = nextDirection;
 			}

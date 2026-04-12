@@ -19,12 +19,7 @@
 			player.Draw();
 			while (true)
 			{
-				if (maze.IsGoal(player.y, player.x))
-				{
-					Console.SetCursorPosition(Constants.X_SCREEN_POS, Constants.Y_SCREEN_POS + maze.grid.GetLength(0) + 1);
-					Console.WriteLine("GOAL! GAME OVER");
-					break;
-				}
+				ReadKeys(player);
 
 				player.ChangeDirection(maze);
 				foreach (Enemy enemy in enemies)
@@ -32,16 +27,30 @@
 
 				player.Move(maze);
 
-				if (CheckCollision(player, enemies))
-					player = ResetPlayer();
+				if (maze.IsGoal(player.y, player.x))
+				{
+					Console.SetCursorPosition(Constants.X_SCREEN_POS, Constants.Y_SCREEN_POS + maze.grid.GetLength(0) + 1);
+					Console.ForegroundColor = ConsoleColor.Yellow;
+					Console.WriteLine("GOAL! GAME OVER");
+					Console.ForegroundColor = ConsoleColor.White;
+					break;
+				}
+
+				//if (CheckCollision(player, enemies)) 
+				//{ 
+				//	player = ResetPlayer();
+				//	continue;
+				//}
 
 				foreach (Enemy enemy in enemies)
 					enemy.Move(maze);
 
-				if (CheckCollision(player, enemies))
-					player = ResetPlayer();
+				//if (CheckCollision(player, enemies))
+				//{
+				//	player = ResetPlayer();
+				//	continue;
+				//}
 
-				ReadKeys(player);
 				Thread.Sleep(120);
 			}
 		}
@@ -58,7 +67,7 @@
 			ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
 
 			if (Console.KeyAvailable)
-				keyInfo = Console.ReadKey();
+				keyInfo = Console.ReadKey(true);
 
 			switch (keyInfo.Key)
 			{
