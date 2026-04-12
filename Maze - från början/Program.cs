@@ -23,40 +23,40 @@
 		}
 
 
-		/*
+        /*
          * ReadKeys
          * 
          * Reads arrow keys and store the next direction
          * 
          */
-		static void ReadKeys(Player player)
-		{
-			ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
+        static void ReadKeys(Player player)
+        {
+            ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
 
-			if (Console.KeyAvailable)
-				keyInfo = Console.ReadKey();
+            if (Console.KeyAvailable)
+                keyInfo = Console.ReadKey();
 
-			switch (keyInfo.Key)
-			{
-				case ConsoleKey.UpArrow:
-					player.SetNextDirection(Constants.UP);
-					break;
+            switch (keyInfo.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    player.SetNextDirection(Constants.UP);
+                    break;
 
-				case ConsoleKey.DownArrow:
-					player.SetNextDirection(Constants.DOWN);
-					break;
+                case ConsoleKey.DownArrow:
+                    player.SetNextDirection(Constants.DOWN);
+                    break;
 
-				case ConsoleKey.LeftArrow:
-					player.SetNextDirection(Constants.LEFT);
-					break;
+                case ConsoleKey.LeftArrow:
+                    player.SetNextDirection(Constants.LEFT);
+                    break;
 
-				case ConsoleKey.RightArrow:
-					player.SetNextDirection(Constants.RIGHT);
-					break;
+                case ConsoleKey.RightArrow:
+                    player.SetNextDirection(Constants.RIGHT);
+                    break;
 
-				default:
-					break;
-			}
-		}
-	}
+                default:
+                    break;
+            }
+        }
+    }
 }

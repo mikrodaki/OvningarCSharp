@@ -29,15 +29,18 @@ namespace _14._9___Sorterat_eller_inte
 					Console.WriteLine();
 					bool isSortedAscending = IsSortedAscending(userList);
 					bool isSortedDescending = IsSortedDescending(userList);
+					bool hasOnlySameNumber = HasOnlySameNumber(userList);
 					foreach (int number in userList)
 					{
 						Console.Write(number + " ");
 					}
-					if (isSortedAscending)
-						Console.WriteLine("\nListan du angav är sorterad i stigande ordning");
+                    if (hasOnlySameNumber)
+                        Console.WriteLine("\nListan du angav består bara av samma nummer");
 					else if (isSortedDescending)
 						Console.WriteLine("\nListan du angav är sorterad i fallande ordning");
-					else
+					else if (isSortedAscending)
+						Console.WriteLine("\nListan du angav är sorterad i stigande ordning");
+                    else
 						Console.WriteLine("\nListan du angav är inte sorterad");
 				}
 				Console.Write("\nTryck ENTER för att köra igen eller 'q' för att avsluta");
@@ -67,5 +70,15 @@ namespace _14._9___Sorterat_eller_inte
 			}
 			return true;
 		}
-	}
+
+        static bool HasOnlySameNumber(List<int> numbers)
+        {
+            for (int i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] != numbers[i + 1])
+                    return false;
+            }
+            return true;
+        }
+    }
 }
