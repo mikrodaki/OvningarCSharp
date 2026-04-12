@@ -67,7 +67,7 @@ namespace MazeGame
 							break;
 						case Constants.DOOR3:
 							Console.ForegroundColor = ConsoleColor.Magenta;
-							Console.Write("║");
+							Console.Write("═");
 							break;
 					}
 				}
@@ -118,6 +118,19 @@ namespace MazeGame
 			return (IsWall(row, col) || IsDoor(row, col));
 		}
 
+		public void OpenDoorAndRemoveKey(int key)
+		{
+			switch (key)
+			{
+				case Constants.KEY1:
+					break;
+				case Constants.KEY2:
+					break;
+				case Constants.KEY3:
+					break;
+			}
+		}
+
 		// ▓   Använd detta tecken som vägg
 		// »   Använd detta tecken som mål
 		// ⚷   Tecknet som ska föreställa en nyckel
@@ -132,5 +145,5 @@ namespace MazeGame
 		   (28, 5)  - Blå dörr
 		   (29, 16)	- Magenta dörr
 		*/
-}
+	}
 }
