@@ -8,13 +8,15 @@
 			var maze = new Maze();
 			maze.Draw();
 			var player = new Player();
+			var enemy = new Enemy(5, 1, Constants.DOWN);
 			player.Draw();
+			enemy.Draw();
 			while (true)
 			{
-				//player.Draw();
-				//player.Delete();
 				player.ChangeDirection(maze);
+				enemy.ChangeDirection(maze);
 				player.Move(maze);
+				enemy.Move(maze);
 				ReadKeys(player);
 				Thread.Sleep(120);
 			}
