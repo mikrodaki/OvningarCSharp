@@ -69,7 +69,7 @@ namespace MazeGame
 					return;
 			}
 
-			if (!maze.IsWall(newX, newY))
+			if (!maze.IsWall(newY, newX))
 			{
 				Delete();
 				x = newX;
@@ -91,24 +91,25 @@ namespace MazeGame
 			switch (direction)
 			{
 				case Constants.UP:
-					if (maze.IsWall(x, y - 1))
+					if (maze.IsWall(y - 1, x))
 						direction = Constants.DOWN;
 					break;
 
 				case Constants.DOWN:
-					if (maze.IsWall(x, y + 1))
+					if (maze.IsWall(y + 1, x))
 						direction = Constants.UP;
 					break;
 
 				case Constants.LEFT:
-					if (maze.IsWall(x - 1, y))
+					if (maze.IsWall(y, x - 1))
 						direction = Constants.RIGHT;
 					break;
 
 				case Constants.RIGHT:
-					if (maze.IsWall(x + 1, y))
+					if (maze.IsWall(y, x + 1))
 						direction = Constants.LEFT;
 					break;
+
 				default:
 					break;
 			}
