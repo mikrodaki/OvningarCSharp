@@ -36,6 +36,11 @@
 					break;
 				}
 
+				if (maze.IsYellowKey(player.y, player.x)) 
+				{
+					maze.OpenDoorAndRemoveKey(Constants.KEY1);
+				}
+
 				//if (CheckCollision(player, enemies)) 
 				//{ 
 				//	player = ResetPlayer();
