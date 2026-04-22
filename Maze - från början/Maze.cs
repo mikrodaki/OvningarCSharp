@@ -118,30 +118,35 @@ namespace MazeGame
             return (IsWall(row, col) || IsDoor(row, col));
         }
 
-		public void OpenDoorAndRemoveKey(int key)
-		{
-			switch (key)
-			{
-				case Constants.KEY1:
-					grid[6, 9] = Constants.PATH;
-					grid[19, 1] = Constants.PATH;
-					Console.SetCursorPosition(Constants.X_SCREEN_POS + 9,Constants.Y_SCREEN_POS + 6);
-					Console.Write(" ");
-					break;
-				case Constants.KEY2:
-					grid[5, 28] = Constants.PATH;
-					grid[11, 19] = Constants.PATH;
-					Console.SetCursorPosition(Constants.X_SCREEN_POS + 28, Constants.Y_SCREEN_POS + 5);
-					Console.Write(" ");
-					break;
-				case Constants.KEY3:
-					grid[16, 29] = Constants.PATH;
-					grid[19, 17] = Constants.PATH;
-					Console.SetCursorPosition(Constants.X_SCREEN_POS + 29, Constants.Y_SCREEN_POS + 16);
-					Console.Write(" ");
-					break;
-			}
-		}
+        public void OpenDoorAndRemoveKey(int key)
+        {
+            switch (key)
+            {
+                case Constants.KEY1:
+                    ClearCell(6, 9); // Door
+                    ClearCell(19, 1); // Key
+                    break;
+                case Constants.KEY2:
+                    ClearCell(5, 28); // Door
+                    ClearCell(11, 19); // Key
+                    break;
+                case Constants.KEY3:
+                    ClearCell(16, 29); // Door
+                    ClearCell(19, 17); // Key
+                    break;
+            }
+
+        }
+
+        private void ClearCell(int row, int col)
+        {
+            grid[row, col] = Constants.PATH;
+            Console.SetCursorPosition(
+                Constants.X_SCREEN_POS + col,
+                Constants.Y_SCREEN_POS + row
+            );
+            Console.Write(" ");
+        }
 
         // ▓   Använd detta tecken som vägg
         // »   Använd detta tecken som mål

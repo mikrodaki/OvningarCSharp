@@ -1,4 +1,4 @@
-﻿namespace SortingAlgorithms
+﻿1namespace SortingAlgorithms
 {
 	public static class Sorter
 	{
