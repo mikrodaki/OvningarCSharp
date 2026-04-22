@@ -36,25 +36,27 @@
 					break;
 				}
 
-				if (maze.IsYellowKey(player.y, player.x)) 
-				{
+				if (maze.IsYellowKey(player.y, player.x))
 					maze.OpenDoorAndRemoveKey(Constants.KEY1);
-				}
+				else if (maze.IsBlueKey(player.y, player.x))
+					maze.OpenDoorAndRemoveKey(Constants.KEY2);
+				else if (maze.IsMagentaKey(player.y, player.x))
+					maze.OpenDoorAndRemoveKey(Constants.KEY3);
 
-				//if (CheckCollision(player, enemies)) 
-				//{ 
-				//	player = ResetPlayer();
-				//	continue;
-				//}
+				if (CheckCollision(player, enemies))
+				{
+					player = ResetPlayer();
+					continue;
+				}
 
 				foreach (Enemy enemy in enemies)
 					enemy.Move(maze);
 
-				//if (CheckCollision(player, enemies))
-				//{
-				//	player = ResetPlayer();
-				//	continue;
-				//}
+				if (CheckCollision(player, enemies))
+				{
+					player = ResetPlayer();
+					continue;
+				}
 
 				Thread.Sleep(120);
 			}

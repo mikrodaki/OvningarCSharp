@@ -118,22 +118,30 @@ namespace MazeGame
             return (IsWall(row, col) || IsDoor(row, col));
         }
 
-        public void OpenDoorAndRemoveKey(int key)
-        {
-            switch (key)
-            {
-                case Constants.KEY1:
-                    grid[1, 19] = Constants.PATH;
-                    grid[9, 6] = Constants.PATH;
-                    Console.SetCursorPosition(Constants.X_SCREEN_POS + 9, Constants.Y_SCREEN_POS + 6);
-                    Console.Write(" ");
-                    break;
-                case Constants.KEY2:
-                    break;
-                case Constants.KEY3:
-                    break;
-            }
-        }
+		public void OpenDoorAndRemoveKey(int key)
+		{
+			switch (key)
+			{
+				case Constants.KEY1:
+					grid[6, 9] = Constants.PATH;
+					grid[19, 1] = Constants.PATH;
+					Console.SetCursorPosition(Constants.X_SCREEN_POS + 9,Constants.Y_SCREEN_POS + 6);
+					Console.Write(" ");
+					break;
+				case Constants.KEY2:
+					grid[5, 28] = Constants.PATH;
+					grid[11, 19] = Constants.PATH;
+					Console.SetCursorPosition(Constants.X_SCREEN_POS + 28, Constants.Y_SCREEN_POS + 5);
+					Console.Write(" ");
+					break;
+				case Constants.KEY3:
+					grid[16, 29] = Constants.PATH;
+					grid[19, 17] = Constants.PATH;
+					Console.SetCursorPosition(Constants.X_SCREEN_POS + 29, Constants.Y_SCREEN_POS + 16);
+					Console.Write(" ");
+					break;
+			}
+		}
 
         // ▓   Använd detta tecken som vägg
         // »   Använd detta tecken som mål
