@@ -50,6 +50,11 @@ namespace PacmanGame
             "└───────────────────────────┘"
         };
 
+        public bool IsWall(int row, int col)
+        {
+            return (maze[row, col] == Constants.WALL);
+        }
+
         public bool IsPellet(int x, int y)
         {
             if (maze[y, x] == 2)

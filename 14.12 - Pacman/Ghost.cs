@@ -43,13 +43,11 @@
                     return;
             }
 
-            //if (!maze.IsWall(newY, newX))
-            //{
-            //    Delete();
-            //    x = newX;
-            //    y = newY;
-            //    Draw();
-            //}
+            if (!maze.IsWall(newY, newX))
+            {
+                x = newX;
+                y = newY;
+            }
         }
 
 
