@@ -19,8 +19,8 @@ namespace PacmanGame
         }
 
 		public void IncreaseScore() 
-        { 
-            
+        {
+            score++;
         }
 
 
