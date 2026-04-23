@@ -7,6 +7,7 @@ namespace PacmanGame
         int direction;
         int nextdirection;
         public int score = 0;
+        public int livesLeft = 3;
 
 
 
@@ -22,8 +23,6 @@ namespace PacmanGame
         {
             score++;
         }
-
-
 
 		/*
          * Draw

@@ -124,8 +124,11 @@ namespace PacmanGame
          */
 		public void Delete(int[,] maze)
 		{
-			if (maze[y, x] == Constants.PELLET)
+			if (maze[y, x] == Constants.PELLET) 
+			{
+				Console.ForegroundColor = ConsoleColor.White;
 				WriteAt(".");
+			}
 			else
 				WriteAt(" ");
 		}

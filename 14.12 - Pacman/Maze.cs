@@ -52,7 +52,7 @@ namespace PacmanGame
 
         public bool IsPellet(int x, int y)
         {
-            if (maze[y, x] == 2)
+            if (maze[y, x] == Constants.PELLET)
             {
                 return true;
             }
@@ -61,8 +61,8 @@ namespace PacmanGame
 
         public void DeletePellet(int x, int y)
         {
-            if (maze[y, x] == 2)
-                maze[y, x] = 0;
+            if (maze[y, x] == Constants.PELLET)
+                maze[y, x] = Constants.PATH;
         }
 
 
