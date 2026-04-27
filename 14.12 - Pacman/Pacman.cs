@@ -24,6 +24,12 @@ namespace PacmanGame
             score++;
         }
 
+        public void ResetDirection() 
+        { 
+            direction = Constants.IDLE;
+            nextdirection = Constants.IDLE;
+        }
+
 		/*
          * Draw
          * 

@@ -52,14 +52,8 @@ namespace PacmanGame
 
                 if (CheckCollision(pacman, ghosts))
                 {
-                    pacman.livesLeft--;
-                    maze.Draw();
-                    DrawLives(pacman.livesLeft);
-                    if (pacman.livesLeft == 0)
-                    {
-                        gameOver = true;
-                        break;
-                    }
+                    gameOver = HandlePacmanDeath(maze, pacman, ghosts);
+                    if (gameOver) break;
                 }
 
                 foreach (Ghost ghost in ghosts)
@@ -69,14 +63,8 @@ namespace PacmanGame
 
                 if (CheckCollision(pacman, ghosts))
                 {
-                    pacman.livesLeft--;
-                    maze.Draw();
-                    DrawLives(pacman.livesLeft);
-                    if (pacman.livesLeft == 0)
-                    {
-                        gameOver = true;
-                        break;
-                    }
+                    gameOver = HandlePacmanDeath(maze, pacman, ghosts);
+                    if (gameOver) break;
                 }
 
                 if (maze.IsPellet(pacman.x, pacman.y))
@@ -105,6 +93,28 @@ namespace PacmanGame
                 GameOver();
         }
 
+        static bool HandlePacmanDeath(Maze maze, Pacman pacman, List<Ghost> ghosts)
+        {
+            pacman.livesLeft--;
+
+            ResetGameBoard(maze, pacman, ghosts);
+            DrawLives(pacman.livesLeft);
+
+            // Nollställ riktning (viktigt!)
+            pacman.ResetDirection();
+
+            // Kort paus så döden känns tydlig (valfritt men bra)
+            Thread.Sleep(300);
+
+            // Töm alla kvarhängande knapptryck
+            while (Console.KeyAvailable)
+            {
+                Console.ReadKey(true);
+            }
+
+            return pacman.livesLeft == 0;
+        }
+
         static bool CheckCollision(Pacman pacman, List<Ghost> ghosts)
         {
             foreach (Ghost ghost in ghosts)
@@ -116,6 +126,17 @@ namespace PacmanGame
                 }
             }
             return false;
+        }
+
+        static void ResetGameBoard(Maze maze, Pacman pacman, List<Ghost> ghosts) 
+        {
+            pacman.x = 14;
+            pacman.y = 9;
+            ghosts.Clear();
+            ghosts.Add(new Ghost(1, 1, ConsoleColor.Red));
+            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, 1, ConsoleColor.Cyan));
+            ghosts.Add(new Ghost(1, maze.maze.GetLength(0) - 2, ConsoleColor.Green));
+            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, maze.maze.GetLength(0) - 2, ConsoleColor.Magenta));
         }
 
         /*

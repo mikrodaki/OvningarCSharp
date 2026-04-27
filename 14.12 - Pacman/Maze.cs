@@ -76,6 +76,7 @@ namespace PacmanGame
          */
         public void Draw()
         {
+            maxPoints = 0;
             for (int row = 0; row < consoleMaze.Length; row++)
                 for (int col = 0; col < consoleMaze[row].Length; col++)
                 {
