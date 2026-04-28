@@ -13,10 +13,11 @@ namespace PacmanGame
             Console.CursorVisible = false;
 
             Maze maze = new Maze();
-            Pacman pacman = new Pacman();
+            Pacman pacman = new Pacman(14, 9);
             List<Ghost> ghosts = new List<Ghost>();
             bool levelCompleted = false;
             bool gameOver = false;
+            bool quitGame = false;
 
             Sound.LoadPellet();
 
@@ -28,69 +29,102 @@ namespace PacmanGame
             DrawLives(pacman.livesLeft);
 
             ghosts.Add(new Ghost(1, 1, ConsoleColor.Red));
-            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, 1, ConsoleColor.Cyan));
-            ghosts.Add(new Ghost(1, maze.maze.GetLength(0) - 2, ConsoleColor.Green));
-            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, maze.maze.GetLength(0) - 2, ConsoleColor.Magenta));
+            //ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, 1, ConsoleColor.Cyan));
+            //ghosts.Add(new Ghost(1, maze.maze.GetLength(0) - 2, ConsoleColor.Green));
+            //ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, maze.maze.GetLength(0) - 2, ConsoleColor.Magenta));
 
 
-            while (true)
+            while (!quitGame)
             {
-                ReadKeys(pacman);
-                pacman.ChangeDirection(maze.maze);
-                foreach (Ghost ghost in ghosts)
+                levelCompleted = false;
+                gameOver = false;
+
+                while (true)
                 {
-                    ghost.ChangeDirection(maze.maze);
+                    ReadKeys(pacman);
+                    pacman.ChangeDirection(maze.maze);
+                    foreach (Ghost ghost in ghosts)
+                    {
+                        ghost.ChangeDirection(maze.maze);
+                    }
+
+                    pacman.Delete();
+                    foreach (Ghost ghost in ghosts)
+                    {
+                        ghost.Delete(maze.maze);
+                    }
+
+                    pacman.Move(maze.maze);
+
+                    if (CheckCollision(pacman, ghosts))
+                    {
+                        gameOver = HandlePacmanDeath(maze, pacman, ghosts);
+                        if (gameOver) break;
+                    }
+
+                    foreach (Ghost ghost in ghosts)
+                    {
+                        ghost.Move(maze.maze);
+                    }
+
+                    if (CheckCollision(pacman, ghosts))
+                    {
+                        gameOver = HandlePacmanDeath(maze, pacman, ghosts);
+                        if (gameOver) break;
+                    }
+
+                    if (maze.IsPellet(pacman.x, pacman.y))
+                    {
+                        maze.DeletePellet(pacman.x, pacman.y);
+                        pacman.IncreaseScore();
+                        DrawScore(pacman.score);
+                    }
+
+                    pacman.Draw();
+                    foreach (Ghost ghost in ghosts)
+                    {
+                        ghost.Draw();
+                    }
+
+                    if (pacman.LevelScore == maze.maxPoints)
+                    {
+                        levelCompleted = true;
+                        break;
+                    }
+                    Thread.Sleep(120);
                 }
 
-                pacman.Delete();
-                foreach (Ghost ghost in ghosts)
+                if (gameOver)
                 {
-                    ghost.Delete(maze.maze);
+                    GameOver();
+                    quitGame = true;
+                }
+                else if (levelCompleted)
+                {
+                    LevelCompleted();
+                    StartNewLevel(maze, pacman, ghosts);
                 }
 
-                pacman.Move(maze.maze);
-
-                if (CheckCollision(pacman, ghosts))
-                {
-                    gameOver = HandlePacmanDeath(maze, pacman, ghosts);
-                    if (gameOver) break;
-                }
-
-                foreach (Ghost ghost in ghosts)
-                {
-                    ghost.Move(maze.maze);
-                }
-
-                if (CheckCollision(pacman, ghosts))
-                {
-                    gameOver = HandlePacmanDeath(maze, pacman, ghosts);
-                    if (gameOver) break;
-                }
-
-                if (maze.IsPellet(pacman.x, pacman.y))
-                {
-                    maze.DeletePellet(pacman.x, pacman.y);
-                    pacman.IncreaseScore();
-                    DrawScore(pacman.score);
-                }
-
-                pacman.Draw();
-                foreach (Ghost ghost in ghosts)
-                {
-                    ghost.Draw();
-                }
-
-                if (pacman.score == maze.maxPoints)
-                {
-                    levelCompleted = true;
-                    break;
-                }
-                Thread.Sleep(120);
             }
-            if (levelCompleted)
-                LevelCompleted();
-            else
-                GameOver();
+        }
+
+        static void StartNewLevel(Maze maze, Pacman pacman, List<Ghost> ghosts)
+        {
+            maze.Reset();
+            maze.Draw();
+
+            DrawScore(pacman.score);
+            DrawLives(pacman.livesLeft);
+
+            pacman.ResetPosition();
+            pacman.ResetDirection();
+            pacman.Draw();
+
+            foreach (Ghost ghost in ghosts)
+            {
+                ghost.ResetPosition();
+                ghost.Draw();
+            }
         }
 
         static bool HandlePacmanDeath(Maze maze, Pacman pacman, List<Ghost> ghosts)
@@ -128,15 +162,14 @@ namespace PacmanGame
             return false;
         }
 
-        static void ResetGameBoard(Maze maze, Pacman pacman, List<Ghost> ghosts) 
+        static void ResetGameBoard(Maze maze, Pacman pacman, List<Ghost> ghosts)
         {
-            pacman.x = 14;
-            pacman.y = 9;
-            ghosts.Clear();
-            ghosts.Add(new Ghost(1, 1, ConsoleColor.Red));
-            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, 1, ConsoleColor.Cyan));
-            ghosts.Add(new Ghost(1, maze.maze.GetLength(0) - 2, ConsoleColor.Green));
-            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, maze.maze.GetLength(0) - 2, ConsoleColor.Magenta));
+            pacman.ResetPosition();
+            pacman.ResetDirection();
+            foreach (Ghost ghost in ghosts)
+            {
+                ghost.ResetPosition();
+            }
         }
 
         /*

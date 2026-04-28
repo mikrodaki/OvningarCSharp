@@ -9,10 +9,17 @@ namespace PacmanGame
 		ConsoleColor color;
 		int direction;
 		Random random = new Random();
-		public Ghost(int x, int y, ConsoleColor color)
+		private int startX;
+		private int startY;
+		public Ghost(int startX, int startY, ConsoleColor color)
 		{
-			this.x = x;
-			this.y = y;
+
+            this.startX = startX;
+            this.startY = startY;
+
+            this.x = startX;
+			this.y = startY;
+
 			this.color = color;
 		}
 
@@ -132,5 +139,11 @@ namespace PacmanGame
 			else
 				WriteAt(" ");
 		}
-	}
+        public void ResetPosition()
+        {
+            x = startX;
+            y = startY;
+        }
+
+    }
 }

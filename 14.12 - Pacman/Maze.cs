@@ -3,6 +3,12 @@ namespace PacmanGame
     class Maze
     {
         public int maxPoints = 0;
+        private readonly int[,] originalMaze;
+
+        public Maze() 
+        {
+            originalMaze = (int[,])maze.Clone();
+        }
 
         public int[,] maze = new int[,]
         {
@@ -94,6 +100,12 @@ namespace PacmanGame
                         Console.Write(consoleMaze[row][col]);
                     }
                 }
+        }
+
+        public void Reset() 
+        {
+            maze = (int[,])originalMaze.Clone();
+            maxPoints = 0;
         }
     }
 }

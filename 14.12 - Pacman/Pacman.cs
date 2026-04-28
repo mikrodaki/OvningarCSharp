@@ -8,21 +8,42 @@ namespace PacmanGame
         int nextdirection;
         public int score = 0;
         public int livesLeft = 3;
+        private int startX;
+        private int startY;
+        public int LevelScore { get; private set; }
 
 
 
-        public Pacman()
+        public Pacman(int startX, int startY)
         {
-            x = 14;
-            y = 9;
+            this.startX = startX;
+            this.startY = startY;
+
+            x = startX;
+            y = startY;
+
             direction = Constants.IDLE;
             nextdirection = Constants.IDLE;
         }
 
-		public void IncreaseScore() 
+        public void IncreaseScore() 
         {
             score++;
+            LevelScore++;
         }
+
+        public void ResetLevelScore()
+        {
+            LevelScore = 0;
+        }
+
+
+        public void ResetPosition()
+        {
+            this.x = startX;
+            this.y = startY;
+        }
+
 
         public void ResetDirection() 
         { 
