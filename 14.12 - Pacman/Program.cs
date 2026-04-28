@@ -19,7 +19,7 @@ namespace PacmanGame
             bool gameOver = false;
             bool quitGame = false;
 
-            Sound.LoadPellet();
+            //Sound.LoadPellet();
 
             Intro();
 
@@ -118,6 +118,7 @@ namespace PacmanGame
 
             pacman.ResetPosition();
             pacman.ResetDirection();
+            pacman.ResetLevelScore();
             pacman.Draw();
 
             foreach (Ghost ghost in ghosts)
@@ -147,6 +148,7 @@ namespace PacmanGame
             }
 
             return pacman.livesLeft == 0;
+            Intro();
         }
 
         static bool CheckCollision(Pacman pacman, List<Ghost> ghosts)
