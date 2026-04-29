@@ -179,6 +179,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.5 - Maze - från början
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.12 - Pacman", "14.12 - Pacman\14.12 - Pacman.csproj", "{69A1FFFA-41D9-4BBB-8F6B-CDAEAB2BAE75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.5 - Poängtavla", "15.5 - Poängtavla\15.5 - Poängtavla.csproj", "{F87C4AED-75D1-4B9E-85E1-F2C32AB09902}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -537,6 +539,10 @@ Global
 		{69A1FFFA-41D9-4BBB-8F6B-CDAEAB2BAE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69A1FFFA-41D9-4BBB-8F6B-CDAEAB2BAE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69A1FFFA-41D9-4BBB-8F6B-CDAEAB2BAE75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87C4AED-75D1-4B9E-85E1-F2C32AB09902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87C4AED-75D1-4B9E-85E1-F2C32AB09902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87C4AED-75D1-4B9E-85E1-F2C32AB09902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87C4AED-75D1-4B9E-85E1-F2C32AB09902}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
