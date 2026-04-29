@@ -25,6 +25,8 @@ namespace PacmanGame
 
             maze.Draw();
 
+            pacman.LevelScore = 120;
+
             DrawScore(pacman.score);
             DrawLives(pacman.livesLeft);
 
@@ -104,18 +106,19 @@ namespace PacmanGame
                     LevelCompleted();
                     StartNewLevel(maze, pacman, ghosts);
                 }
-
             }
         }
 
         static void StartNewLevel(Maze maze, Pacman pacman, List<Ghost> ghosts)
         {
+            //Intro();
             maze.Reset();
             maze.Draw();
 
             DrawScore(pacman.score);
             DrawLives(pacman.livesLeft);
 
+            pacman.ResetLevelScore();
             pacman.ResetPosition();
             pacman.ResetDirection();
             pacman.ResetLevelScore();

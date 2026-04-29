@@ -10,7 +10,7 @@ namespace PacmanGame
         public int livesLeft = 3;
         private int startX;
         private int startY;
-        public int LevelScore { get; private set; }
+        public int LevelScore { get; set; }
 
 
 
