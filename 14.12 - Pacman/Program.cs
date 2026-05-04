@@ -31,9 +31,9 @@ namespace PacmanGame
             DrawLives(pacman.livesLeft);
 
             ghosts.Add(new Ghost(1, 1, ConsoleColor.Red));
-            //ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, 1, ConsoleColor.Cyan));
-            //ghosts.Add(new Ghost(1, maze.maze.GetLength(0) - 2, ConsoleColor.Green));
-            //ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, maze.maze.GetLength(0) - 2, ConsoleColor.Magenta));
+            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, 1, ConsoleColor.Cyan));
+            ghosts.Add(new Ghost(1, maze.maze.GetLength(0) - 2, ConsoleColor.Green));
+            ghosts.Add(new Ghost(maze.maze.GetLength(1) - 2, maze.maze.GetLength(0) - 2, ConsoleColor.Magenta));
 
 
             while (!quitGame)

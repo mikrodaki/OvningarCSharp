@@ -117,80 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAwayGoal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblAwayScore.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnAwayGoal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
     <value>312, 324</value>
   </data>
-  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblAwayScore.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btnAwayGoal.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 34</value>
   </data>
-  <data name="lblDash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 82</value>
+  <data name="lblAwayScore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 82</value>
   </data>
-  <data name="lblHomeScore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 72pt</value>
-  </data>
-  <data name="lblAwayScore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 72pt</value>
-  </data>
-  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblHomeScore.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblAwayScore.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 34</value>
-  </data>
-  <data name="lblAwayScore.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;lblDash.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;lblDash.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnHomeGoal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 34</value>
-  </data>
-  <data name="lblDash.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;btnAwayGoal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblAwayScore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 191</value>
-  </data>
-  <data name="lblDash.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 72pt</value>
-  </data>
-  <data name="btnReset.Text" xml:space="preserve">
-    <value>Nollställ</value>
-  </data>
-  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblDash.Name" xml:space="preserve">
-    <value>lblDash</value>
-  </data>
-  <data name="lblDash.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblDash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 191</value>
   </data>
   <data name="&gt;&gt;btnAwayGoal.Name" xml:space="preserve">
     <value>btnAwayGoal</value>
@@ -198,56 +146,127 @@
   <data name="lblDash.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="btnHomeGoal.Text" xml:space="preserve">
+  <data name="btnAwayGoal.Text" xml:space="preserve">
     <value>Mål</value>
   </data>
-  <data name="lblDash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 191</value>
-  </data>
-  <data name="btnHomeGoal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 324</value>
-  </data>
-  <data name="&gt;&gt;btnAwayGoal.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Poängtavla</value>
-  </data>
-  <data name="lblAwayScore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 82</value>
-  </data>
-  <data name="&gt;&gt;lblAwayScore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblHomeScore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblHomeScore.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblAwayScore.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblHomeScore.Name" xml:space="preserve">
     <value>lblHomeScore</value>
   </data>
-  <data name="&gt;&gt;lblAwayScore.Name" xml:space="preserve">
-    <value>lblAwayScore</value>
+  <data name="lblDash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 82</value>
   </data>
-  <data name="&gt;&gt;btnHomeGoal.Name" xml:space="preserve">
-    <value>btnHomeGoal</value>
+  <data name="&gt;&gt;lblDash.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblHomeScore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblHomeScore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 82</value>
+  <data name="&gt;&gt;btnHomeGoal.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblHomeScore.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;btnAwayGoal.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblAwayScore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Poängtavla</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>Nollställ</value>
+  </data>
+  <data name="lblDash.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="btnAwayGoal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 324</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="lblAwayScore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 191</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <data name="btnAwayGoal.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblDash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnHomeGoal.Text" xml:space="preserve">
+    <value>Mål</value>
+  </data>
+  <data name="btnHomeGoal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 324</value>
+  </data>
+  <data name="&gt;&gt;lblHomeScore.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblDash.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnHomeGoal.Name" xml:space="preserve">
+    <value>btnHomeGoal</value>
+  </data>
+  <data name="&gt;&gt;btnHomeGoal.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblAwayScore.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 72pt</value>
+  </data>
+  <data name="&gt;&gt;btnAwayGoal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnHomeGoal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="lblAwayScore.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnHomeGoal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblHomeScore.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblDash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblAwayScore.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblHomeScore.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblAwayScore.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblAwayScore.Name" xml:space="preserve">
+    <value>lblAwayScore</value>
+  </data>
+  <data name="&gt;&gt;lblHomeScore.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
@@ -255,64 +274,49 @@
   <data name="lblAwayScore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
-    <value>btnReset</value>
+  <data name="lblDash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 72pt</value>
   </data>
-  <data name="lblHomeScore.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblHomeScore.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 191</value>
   </data>
-  <data name="lblDash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="&gt;&gt;lblDash.Name" xml:space="preserve">
+    <value>lblDash</value>
+  </data>
+  <data name="lblHomeScore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 82</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblHomeScore.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 72pt</value>
+  </data>
+  <data name="btnHomeGoal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 34</value>
+  </data>
+  <data name="btnAwayGoal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblHomeScore.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblDash.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnHomeGoal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAwayGoal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 324</value>
-  </data>
-  <data name="&gt;&gt;lblAwayScore.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnAwayGoal.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnHomeGoal.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>10, 25</value>
   </data>
-  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnAwayGoal.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblAwayScore.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnAwayGoal.Text" xml:space="preserve">
-    <value>Mål</value>
-  </data>
-  <data name="btnHomeGoal.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblDash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnHomeGoal.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>aa</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>
