@@ -72,10 +72,12 @@ namespace _15._7___Enkel_additionskalkulator
 
         private void buttonEquals_Click(object sender, EventArgs e)
         {
-            AddNumberToList();
+            if (txtResult.Text != " ")
+                AddNumberToList();
             txtResult.ResetText();
             var result = CalculateSum();
-            txtResult.Text = result.ToString();
+            if (result != 0)
+                txtResult.Text = result.ToString();
             numbers.Clear();
         }
 
