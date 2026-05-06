@@ -1,4 +1,4 @@
-namespace _15._9___ColorPicker
+namespace ColorPicker
 {
     internal static class Program
     {
