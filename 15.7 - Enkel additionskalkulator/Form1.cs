@@ -2,7 +2,7 @@ namespace _15._7___Enkel_additionskalkulator
 {
     public partial class Form1 : Form
     {
-        List<int> numbers = new List<int>();
+        List<double> numbers = new List<double>();
         public Form1()
         {
             InitializeComponent();
@@ -11,11 +11,6 @@ namespace _15._7___Enkel_additionskalkulator
         private void button1_Click(object sender, EventArgs e)
         {
             txtResult.Text += "1";
-        }
-
-        private void txtResult_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -72,45 +67,49 @@ namespace _15._7___Enkel_additionskalkulator
 
         private void buttonEquals_Click(object sender, EventArgs e)
         {
-            if (txtResult.Text != " ")
+            if (!string.IsNullOrWhiteSpace(txtResult.Text))
                 AddNumberToList();
-            txtResult.ResetText();
             var result = CalculateSum();
-            if (result != 0)
-                txtResult.Text = result.ToString();
+            txtResult.Text = result.ToString("0.##");
             numbers.Clear();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void button0_Click(object sender, EventArgs e)
         {
-
+            txtResult.Text += "0";
         }
 
-        private int CalculateSum()
+        private double CalculateSum()
         {
-            int result = 0;
-            result = numbers[0];
-            for (int i = 0; i < numbers.Count - 1; i++)
-            {
-                result += numbers[i + 1];
-            }
-            return result;
+            //if (numbers.Count == 0)
+            //    return 0;
+            //int result = 0;
+            //foreach (int n in numbers)
+            //{
+            //    result += n;
+            //}
+            //return result;
+            return numbers.Sum();
         }
 
         private void AddNumberToList()
         {
-            int.TryParse(txtResult.Text, out int number);
-            numbers.Add(number);
+            if (double.TryParse(txtResult.Text, out double number))
+                numbers.Add(number);
         }
 
         private void buttonDEL_Click(object sender, EventArgs e)
         {
-            txtResult.ResetText();
+            if (txtResult.Text.Length > 0)
+                txtResult.Text = txtResult.Text.Substring(0, txtResult.Text.Length - 1);
+        }
+
+        private void buttonComma_Click(object sender, EventArgs e)
+        {
+            if (!txtResult.Text.Contains(","))
+                txtResult.Text += ",";
         }
     }
 }

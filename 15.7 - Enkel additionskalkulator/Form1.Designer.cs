@@ -43,6 +43,7 @@
             buttonEquals = new Button();
             button0 = new Button();
             buttonDEL = new Button();
+            buttonComma = new Button();
             SuspendLayout();
             // 
             // txtResult
@@ -54,7 +55,6 @@
             txtResult.Size = new Size(186, 34);
             txtResult.TabIndex = 0;
             txtResult.TextAlign = HorizontalAlignment.Right;
-            txtResult.TextChanged += txtResult_TextChanged;
             // 
             // button1
             // 
@@ -202,7 +202,7 @@
             // buttonDEL
             // 
             buttonDEL.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonDEL.Location = new Point(97, 405);
+            buttonDEL.Location = new Point(97, 403);
             buttonDEL.Name = "buttonDEL";
             buttonDEL.Size = new Size(50, 47);
             buttonDEL.TabIndex = 14;
@@ -210,12 +210,24 @@
             buttonDEL.UseVisualStyleBackColor = true;
             buttonDEL.Click += buttonDEL_Click;
             // 
+            // buttonComma
+            // 
+            buttonComma.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonComma.Location = new Point(165, 403);
+            buttonComma.Name = "buttonComma";
+            buttonComma.Size = new Size(50, 47);
+            buttonComma.TabIndex = 15;
+            buttonComma.Text = ",";
+            buttonComma.UseVisualStyleBackColor = true;
+            buttonComma.Click += buttonComma_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.GrayText;
+            BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(249, 487);
+            Controls.Add(buttonComma);
             Controls.Add(buttonDEL);
             Controls.Add(button0);
             Controls.Add(buttonEquals);
@@ -233,7 +245,6 @@
             Controls.Add(txtResult);
             Name = "Form1";
             Text = "Calculator";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -255,5 +266,6 @@
         private Button buttonEquals;
         private Button button0;
         private Button buttonDEL;
+        private Button buttonComma;
     }
 }
