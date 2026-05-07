@@ -20,295 +20,305 @@
             base.Dispose(disposing);
         }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			redScrollBar = new VScrollBar();
-			lblRedNumber = new Label();
-			lblRed = new Label();
-			lblGreen = new Label();
-			lblGreenNumber = new Label();
-			vScrollBar2 = new VScrollBar();
-			lblBlue = new Label();
-			lblBlueNumber = new Label();
-			blueScrollBar = new VScrollBar();
-			pictureBox1 = new PictureBox();
-			pictureBox2 = new PictureBox();
-			pictureBox3 = new PictureBox();
-			pictureBox4 = new PictureBox();
-			pictureBox5 = new PictureBox();
-			pictureBox6 = new PictureBox();
-			button1 = new Button();
-			button2 = new Button();
-			button3 = new Button();
-			button4 = new Button();
-			button5 = new Button();
-			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-			SuspendLayout();
-			// 
-			// redScrollBar
-			// 
-			redScrollBar.Location = new Point(832, 78);
-			redScrollBar.Maximum = 264;
-			redScrollBar.Name = "redScrollBar";
-			redScrollBar.Size = new Size(50, 330);
-			redScrollBar.TabIndex = 0;
-			redScrollBar.Scroll += redScrollBar_Scroll;
-			// 
-			// lblRedNumber
-			// 
-			lblRedNumber.AutoSize = true;
-			lblRedNumber.Location = new Point(832, 438);
-			lblRedNumber.Margin = new Padding(4, 0, 4, 0);
-			lblRedNumber.MinimumSize = new Size(50, 0);
-			lblRedNumber.Name = "lblRedNumber";
-			lblRedNumber.Size = new Size(50, 25);
-			lblRedNumber.TabIndex = 1;
-			lblRedNumber.Text = "0";
-			lblRedNumber.TextAlign = ContentAlignment.MiddleCenter;
-			// 
-			// lblRed
-			// 
-			lblRed.AutoSize = true;
-			lblRed.Location = new Point(832, 27);
-			lblRed.Margin = new Padding(4, 0, 4, 0);
-			lblRed.MinimumSize = new Size(50, 0);
-			lblRed.Name = "lblRed";
-			lblRed.Size = new Size(50, 25);
-			lblRed.TabIndex = 2;
-			lblRed.Text = "Röd";
-			lblRed.TextAlign = ContentAlignment.MiddleCenter;
-			// 
-			// lblGreen
-			// 
-			lblGreen.AutoSize = true;
-			lblGreen.Location = new Point(928, 27);
-			lblGreen.Margin = new Padding(4, 0, 4, 0);
-			lblGreen.MinimumSize = new Size(50, 0);
-			lblGreen.Name = "lblGreen";
-			lblGreen.Size = new Size(51, 25);
-			lblGreen.TabIndex = 5;
-			lblGreen.Text = "Grön";
-			lblGreen.TextAlign = ContentAlignment.MiddleCenter;
-			lblGreen.Click += lblGreen_Click;
-			// 
-			// lblGreenNumber
-			// 
-			lblGreenNumber.AutoSize = true;
-			lblGreenNumber.Location = new Point(928, 438);
-			lblGreenNumber.Margin = new Padding(4, 0, 4, 0);
-			lblGreenNumber.MinimumSize = new Size(50, 0);
-			lblGreenNumber.Name = "lblGreenNumber";
-			lblGreenNumber.Size = new Size(50, 25);
-			lblGreenNumber.TabIndex = 4;
-			lblGreenNumber.Text = "0";
-			lblGreenNumber.TextAlign = ContentAlignment.MiddleCenter;
-			// 
-			// vScrollBar2
-			// 
-			vScrollBar2.Location = new Point(928, 78);
-			vScrollBar2.Maximum = 264;
-			vScrollBar2.Name = "vScrollBar2";
-			vScrollBar2.Size = new Size(50, 330);
-			vScrollBar2.TabIndex = 3;
-			vScrollBar2.Scroll += greenScrollBar_Scroll;
-			// 
-			// lblBlue
-			// 
-			lblBlue.AutoSize = true;
-			lblBlue.Location = new Point(1015, 27);
-			lblBlue.Margin = new Padding(4, 0, 4, 0);
-			lblBlue.MinimumSize = new Size(50, 0);
-			lblBlue.Name = "lblBlue";
-			lblBlue.Size = new Size(50, 25);
-			lblBlue.TabIndex = 8;
-			lblBlue.Text = "Blå";
-			lblBlue.TextAlign = ContentAlignment.MiddleCenter;
-			// 
-			// lblBlueNumber
-			// 
-			lblBlueNumber.AutoSize = true;
-			lblBlueNumber.Location = new Point(1015, 438);
-			lblBlueNumber.Margin = new Padding(4, 0, 4, 0);
-			lblBlueNumber.MinimumSize = new Size(50, 0);
-			lblBlueNumber.Name = "lblBlueNumber";
-			lblBlueNumber.Size = new Size(50, 25);
-			lblBlueNumber.TabIndex = 7;
-			lblBlueNumber.Text = "0";
-			lblBlueNumber.TextAlign = ContentAlignment.MiddleCenter;
-			// 
-			// blueScrollBar
-			// 
-			blueScrollBar.Location = new Point(1015, 78);
-			blueScrollBar.Maximum = 264;
-			blueScrollBar.Name = "blueScrollBar";
-			blueScrollBar.Size = new Size(50, 330);
-			blueScrollBar.TabIndex = 6;
-			blueScrollBar.Scroll += blueScrollBar_Scroll;
-			// 
-			// pictureBox1
-			// 
-			pictureBox1.BackColor = Color.Black;
-			pictureBox1.Location = new Point(50, 78);
-			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(722, 330);
-			pictureBox1.TabIndex = 9;
-			pictureBox1.TabStop = false;
-			// 
-			// pictureBox2
-			// 
-			pictureBox2.Location = new Point(51, 436);
-			pictureBox2.Name = "pictureBox2";
-			pictureBox2.Size = new Size(116, 75);
-			pictureBox2.TabIndex = 10;
-			pictureBox2.TabStop = false;
-			pictureBox2.Click += pictureBox2_Click;
-			// 
-			// pictureBox3
-			// 
-			pictureBox3.Location = new Point(202, 436);
-			pictureBox3.Name = "pictureBox3";
-			pictureBox3.Size = new Size(116, 75);
-			pictureBox3.TabIndex = 11;
-			pictureBox3.TabStop = false;
-			// 
-			// pictureBox4
-			// 
-			pictureBox4.Location = new Point(356, 436);
-			pictureBox4.Name = "pictureBox4";
-			pictureBox4.Size = new Size(116, 75);
-			pictureBox4.TabIndex = 12;
-			pictureBox4.TabStop = false;
-			// 
-			// pictureBox5
-			// 
-			pictureBox5.Location = new Point(506, 436);
-			pictureBox5.Name = "pictureBox5";
-			pictureBox5.Size = new Size(116, 75);
-			pictureBox5.TabIndex = 13;
-			pictureBox5.TabStop = false;
-			// 
-			// pictureBox6
-			// 
-			pictureBox6.Location = new Point(656, 436);
-			pictureBox6.Name = "pictureBox6";
-			pictureBox6.Size = new Size(116, 75);
-			pictureBox6.TabIndex = 14;
-			pictureBox6.TabStop = false;
-			// 
-			// button1
-			// 
-			button1.Location = new Point(55, 528);
-			button1.Name = "button1";
-			button1.Size = new Size(112, 34);
-			button1.TabIndex = 15;
-			button1.Text = "Spara";
-			button1.UseVisualStyleBackColor = true;
-			button1.Click += button1_Click;
-			// 
-			// button2
-			// 
-			button2.Location = new Point(202, 528);
-			button2.Name = "button2";
-			button2.Size = new Size(112, 34);
-			button2.TabIndex = 16;
-			button2.Text = "Spara";
-			button2.UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			button3.Location = new Point(356, 528);
-			button3.Name = "button3";
-			button3.Size = new Size(112, 34);
-			button3.TabIndex = 17;
-			button3.Text = "Spara";
-			button3.UseVisualStyleBackColor = true;
-			// 
-			// button4
-			// 
-			button4.Location = new Point(506, 528);
-			button4.Name = "button4";
-			button4.Size = new Size(112, 34);
-			button4.TabIndex = 18;
-			button4.Text = "Spara";
-			button4.UseVisualStyleBackColor = true;
-			// 
-			// button5
-			// 
-			button5.Location = new Point(656, 528);
-			button5.Name = "button5";
-			button5.Size = new Size(112, 34);
-			button5.TabIndex = 19;
-			button5.Text = "Spara";
-			button5.UseVisualStyleBackColor = true;
-			// 
-			// Form1
-			// 
-			AutoScaleDimensions = new SizeF(10F, 25F);
-			AutoScaleMode = AutoScaleMode.Font;
-			BackColor = SystemColors.ActiveBorder;
-			ClientSize = new Size(1105, 588);
-			Controls.Add(button5);
-			Controls.Add(button4);
-			Controls.Add(button3);
-			Controls.Add(button2);
-			Controls.Add(button1);
-			Controls.Add(pictureBox6);
-			Controls.Add(pictureBox5);
-			Controls.Add(pictureBox4);
-			Controls.Add(pictureBox3);
-			Controls.Add(pictureBox2);
-			Controls.Add(pictureBox1);
-			Controls.Add(lblBlue);
-			Controls.Add(lblBlueNumber);
-			Controls.Add(blueScrollBar);
-			Controls.Add(lblGreen);
-			Controls.Add(lblGreenNumber);
-			Controls.Add(vScrollBar2);
-			Controls.Add(lblRed);
-			Controls.Add(lblRedNumber);
-			Controls.Add(redScrollBar);
-			Margin = new Padding(4);
-			Name = "Form1";
-			Text = "ColorPicker";
-			Load += Form1_Load;
-			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-			ResumeLayout(false);
-			PerformLayout();
-		}
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            redScrollBar = new VScrollBar();
+            lblRedNumber = new Label();
+            lblRed = new Label();
+            lblGreen = new Label();
+            lblGreenNumber = new Label();
+            greenScrollBar = new VScrollBar();
+            lblBlue = new Label();
+            lblBlueNumber = new Label();
+            blueScrollBar = new VScrollBar();
+            pictureBoxLarge = new PictureBox();
+            pictureBoxSmall1 = new PictureBox();
+            pictureBoxSmall2 = new PictureBox();
+            pictureBoxSmall3 = new PictureBox();
+            pictureBoxSmall4 = new PictureBox();
+            pictureBoxSmall5 = new PictureBox();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLarge).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall5).BeginInit();
+            SuspendLayout();
+            // 
+            // redScrollBar
+            // 
+            redScrollBar.Location = new Point(666, 62);
+            redScrollBar.Maximum = 264;
+            redScrollBar.Name = "redScrollBar";
+            redScrollBar.Size = new Size(50, 264);
+            redScrollBar.TabIndex = 0;
+            redScrollBar.Scroll += redScrollBar_Scroll;
+            // 
+            // lblRedNumber
+            // 
+            lblRedNumber.AutoSize = true;
+            lblRedNumber.Location = new Point(666, 350);
+            lblRedNumber.MinimumSize = new Size(40, 0);
+            lblRedNumber.Name = "lblRedNumber";
+            lblRedNumber.Size = new Size(40, 20);
+            lblRedNumber.TabIndex = 1;
+            lblRedNumber.Text = "0";
+            lblRedNumber.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblRed
+            // 
+            lblRed.AutoSize = true;
+            lblRed.Location = new Point(666, 22);
+            lblRed.MinimumSize = new Size(40, 0);
+            lblRed.Name = "lblRed";
+            lblRed.Size = new Size(40, 20);
+            lblRed.TabIndex = 2;
+            lblRed.Text = "Röd";
+            lblRed.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblGreen
+            // 
+            lblGreen.AutoSize = true;
+            lblGreen.Location = new Point(742, 22);
+            lblGreen.MinimumSize = new Size(40, 0);
+            lblGreen.Name = "lblGreen";
+            lblGreen.Size = new Size(41, 20);
+            lblGreen.TabIndex = 5;
+            lblGreen.Text = "Grön";
+            lblGreen.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblGreenNumber
+            // 
+            lblGreenNumber.AutoSize = true;
+            lblGreenNumber.Location = new Point(742, 350);
+            lblGreenNumber.MinimumSize = new Size(40, 0);
+            lblGreenNumber.Name = "lblGreenNumber";
+            lblGreenNumber.Size = new Size(40, 20);
+            lblGreenNumber.TabIndex = 4;
+            lblGreenNumber.Text = "0";
+            lblGreenNumber.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // greenScrollBar
+            // 
+            greenScrollBar.Location = new Point(742, 62);
+            greenScrollBar.Maximum = 264;
+            greenScrollBar.Name = "greenScrollBar";
+            greenScrollBar.Size = new Size(50, 264);
+            greenScrollBar.TabIndex = 3;
+            greenScrollBar.Scroll += greenScrollBar_Scroll;
+            // 
+            // lblBlue
+            // 
+            lblBlue.AutoSize = true;
+            lblBlue.Location = new Point(812, 22);
+            lblBlue.MinimumSize = new Size(40, 0);
+            lblBlue.Name = "lblBlue";
+            lblBlue.Size = new Size(40, 20);
+            lblBlue.TabIndex = 8;
+            lblBlue.Text = "Blå";
+            lblBlue.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblBlueNumber
+            // 
+            lblBlueNumber.AutoSize = true;
+            lblBlueNumber.Location = new Point(812, 350);
+            lblBlueNumber.MinimumSize = new Size(40, 0);
+            lblBlueNumber.Name = "lblBlueNumber";
+            lblBlueNumber.Size = new Size(40, 20);
+            lblBlueNumber.TabIndex = 7;
+            lblBlueNumber.Text = "0";
+            lblBlueNumber.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // blueScrollBar
+            // 
+            blueScrollBar.Location = new Point(812, 62);
+            blueScrollBar.Maximum = 264;
+            blueScrollBar.Name = "blueScrollBar";
+            blueScrollBar.Size = new Size(50, 264);
+            blueScrollBar.TabIndex = 6;
+            blueScrollBar.Scroll += blueScrollBar_Scroll;
+            // 
+            // pictureBoxLarge
+            // 
+            pictureBoxLarge.BackColor = Color.Black;
+            pictureBoxLarge.Location = new Point(40, 62);
+            pictureBoxLarge.Margin = new Padding(2);
+            pictureBoxLarge.Name = "pictureBoxLarge";
+            pictureBoxLarge.Size = new Size(578, 264);
+            pictureBoxLarge.TabIndex = 9;
+            pictureBoxLarge.TabStop = false;
+            // 
+            // pictureBoxSmall1
+            // 
+            pictureBoxSmall1.Location = new Point(41, 349);
+            pictureBoxSmall1.Margin = new Padding(2);
+            pictureBoxSmall1.Name = "pictureBoxSmall1";
+            pictureBoxSmall1.Size = new Size(93, 60);
+            pictureBoxSmall1.TabIndex = 10;
+            pictureBoxSmall1.TabStop = false;
+            pictureBoxSmall1.Click += pictureBoxSmall1_Click;
+            // 
+            // pictureBoxSmall2
+            // 
+            pictureBoxSmall2.Location = new Point(162, 349);
+            pictureBoxSmall2.Margin = new Padding(2);
+            pictureBoxSmall2.Name = "pictureBoxSmall2";
+            pictureBoxSmall2.Size = new Size(93, 60);
+            pictureBoxSmall2.TabIndex = 11;
+            pictureBoxSmall2.TabStop = false;
+            pictureBoxSmall2.Click += pictureBoxSmall2_Click;
+            // 
+            // pictureBoxSmall3
+            // 
+            pictureBoxSmall3.Location = new Point(285, 349);
+            pictureBoxSmall3.Margin = new Padding(2);
+            pictureBoxSmall3.Name = "pictureBoxSmall3";
+            pictureBoxSmall3.Size = new Size(93, 60);
+            pictureBoxSmall3.TabIndex = 12;
+            pictureBoxSmall3.TabStop = false;
+            pictureBoxSmall3.Click += pictureBoxSmall3_Click;
+            // 
+            // pictureBoxSmall4
+            // 
+            pictureBoxSmall4.Location = new Point(405, 349);
+            pictureBoxSmall4.Margin = new Padding(2);
+            pictureBoxSmall4.Name = "pictureBoxSmall4";
+            pictureBoxSmall4.Size = new Size(93, 60);
+            pictureBoxSmall4.TabIndex = 13;
+            pictureBoxSmall4.TabStop = false;
+            pictureBoxSmall4.Click += pictureBoxSmall4_Click;
+            // 
+            // pictureBoxSmall5
+            // 
+            pictureBoxSmall5.Location = new Point(525, 349);
+            pictureBoxSmall5.Margin = new Padding(2);
+            pictureBoxSmall5.Name = "pictureBoxSmall5";
+            pictureBoxSmall5.Size = new Size(93, 60);
+            pictureBoxSmall5.TabIndex = 14;
+            pictureBoxSmall5.TabStop = false;
+            pictureBoxSmall5.Click += pictureBoxSmall5_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(44, 422);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 27);
+            button1.TabIndex = 15;
+            button1.Text = "Spara";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(162, 422);
+            button2.Margin = new Padding(2);
+            button2.Name = "button2";
+            button2.Size = new Size(90, 27);
+            button2.TabIndex = 16;
+            button2.Text = "Spara";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(285, 422);
+            button3.Margin = new Padding(2);
+            button3.Name = "button3";
+            button3.Size = new Size(90, 27);
+            button3.TabIndex = 17;
+            button3.Text = "Spara";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(405, 422);
+            button4.Margin = new Padding(2);
+            button4.Name = "button4";
+            button4.Size = new Size(90, 27);
+            button4.TabIndex = 18;
+            button4.Text = "Spara";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(525, 422);
+            button5.Margin = new Padding(2);
+            button5.Name = "button5";
+            button5.Size = new Size(90, 27);
+            button5.TabIndex = 19;
+            button5.Text = "Spara";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveBorder;
+            ClientSize = new Size(884, 470);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(pictureBoxSmall5);
+            Controls.Add(pictureBoxSmall4);
+            Controls.Add(pictureBoxSmall3);
+            Controls.Add(pictureBoxSmall2);
+            Controls.Add(pictureBoxSmall1);
+            Controls.Add(pictureBoxLarge);
+            Controls.Add(lblBlue);
+            Controls.Add(lblBlueNumber);
+            Controls.Add(blueScrollBar);
+            Controls.Add(lblGreen);
+            Controls.Add(lblGreenNumber);
+            Controls.Add(greenScrollBar);
+            Controls.Add(lblRed);
+            Controls.Add(lblRedNumber);
+            Controls.Add(redScrollBar);
+            Name = "Form1";
+            Text = "ColorPicker";
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLarge).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSmall5).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		#endregion
+        #endregion
 
-		private VScrollBar redScrollBar;
+        private VScrollBar redScrollBar;
         private Label lblRedNumber;
 		private Label lblRed;
 		private Label lblGreen;
 		private Label lblGreenNumber;
-		private VScrollBar vScrollBar2;
+		private VScrollBar greenScrollBar;
 		private Label lblBlue;
 		private Label lblBlueNumber;
 		private VScrollBar blueScrollBar;
-		private PictureBox pictureBox1;
-		private PictureBox pictureBox2;
-		private PictureBox pictureBox3;
-		private PictureBox pictureBox4;
-		private PictureBox pictureBox5;
-		private PictureBox pictureBox6;
+		private PictureBox pictureBoxLarge;
+		private PictureBox pictureBoxSmall1;
+		private PictureBox pictureBoxSmall2;
+		private PictureBox pictureBoxSmall3;
+		private PictureBox pictureBoxSmall4;
+		private PictureBox pictureBoxSmall5;
 		private Button button1;
 		private Button button2;
 		private Button button3;
