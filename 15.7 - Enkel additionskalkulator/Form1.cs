@@ -67,6 +67,8 @@ namespace _15._7___Enkel_additionskalkulator
 
         private void buttonEquals_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtResult.Text) && numbers.Count == 0)
+                return;
             if (!string.IsNullOrWhiteSpace(txtResult.Text))
                 AddNumberToList();
             var result = CalculateSum();

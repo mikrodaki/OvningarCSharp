@@ -49,10 +49,10 @@
             // txtResult
             // 
             txtResult.Enabled = false;
-            txtResult.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtResult.Font = new Font("Cascadia Code", 16F);
             txtResult.Location = new Point(29, 39);
             txtResult.Name = "txtResult";
-            txtResult.Size = new Size(186, 34);
+            txtResult.Size = new Size(234, 38);
             txtResult.TabIndex = 0;
             txtResult.TextAlign = HorizontalAlignment.Right;
             // 
@@ -61,7 +61,7 @@
             button1.Font = new Font("Tahoma", 12F);
             button1.Location = new Point(29, 97);
             button1.Name = "button1";
-            button1.Size = new Size(50, 47);
+            button1.Size = new Size(74, 65);
             button1.TabIndex = 1;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             // button2
             // 
             button2.Font = new Font("Tahoma", 12F);
-            button2.Location = new Point(97, 97);
+            button2.Location = new Point(109, 97);
             button2.Name = "button2";
-            button2.Size = new Size(50, 47);
+            button2.Size = new Size(74, 65);
             button2.TabIndex = 2;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // button3
             // 
             button3.Font = new Font("Tahoma", 12F);
-            button3.Location = new Point(165, 97);
+            button3.Location = new Point(189, 97);
             button3.Name = "button3";
-            button3.Size = new Size(50, 47);
+            button3.Size = new Size(74, 65);
             button3.TabIndex = 3;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@
             // button4
             // 
             button4.Font = new Font("Tahoma", 12F);
-            button4.Location = new Point(29, 169);
+            button4.Location = new Point(29, 168);
             button4.Name = "button4";
-            button4.Size = new Size(50, 47);
+            button4.Size = new Size(74, 65);
             button4.TabIndex = 4;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
@@ -103,9 +103,9 @@
             // button5
             // 
             button5.Font = new Font("Tahoma", 12F);
-            button5.Location = new Point(97, 169);
+            button5.Location = new Point(109, 169);
             button5.Name = "button5";
-            button5.Size = new Size(50, 47);
+            button5.Size = new Size(74, 65);
             button5.TabIndex = 5;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
@@ -114,9 +114,9 @@
             // button6
             // 
             button6.Font = new Font("Tahoma", 12F);
-            button6.Location = new Point(165, 169);
+            button6.Location = new Point(189, 169);
             button6.Name = "button6";
-            button6.Size = new Size(50, 47);
+            button6.Size = new Size(74, 65);
             button6.TabIndex = 6;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
@@ -125,9 +125,9 @@
             // button7
             // 
             button7.Font = new Font("Tahoma", 12F);
-            button7.Location = new Point(29, 247);
+            button7.Location = new Point(29, 239);
             button7.Name = "button7";
-            button7.Size = new Size(50, 47);
+            button7.Size = new Size(74, 65);
             button7.TabIndex = 7;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
@@ -136,9 +136,9 @@
             // button8
             // 
             button8.Font = new Font("Tahoma", 12F);
-            button8.Location = new Point(97, 247);
+            button8.Location = new Point(109, 240);
             button8.Name = "button8";
-            button8.Size = new Size(50, 47);
+            button8.Size = new Size(74, 65);
             button8.TabIndex = 8;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
@@ -147,9 +147,9 @@
             // button9
             // 
             button9.Font = new Font("Tahoma", 12F);
-            button9.Location = new Point(165, 247);
+            button9.Location = new Point(189, 240);
             button9.Name = "button9";
-            button9.Size = new Size(50, 47);
+            button9.Size = new Size(74, 65);
             button9.TabIndex = 9;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
@@ -158,9 +158,9 @@
             // buttonClear
             // 
             buttonClear.Font = new Font("Tahoma", 12F);
-            buttonClear.Location = new Point(29, 325);
+            buttonClear.Location = new Point(29, 310);
             buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(50, 47);
+            buttonClear.Size = new Size(74, 65);
             buttonClear.TabIndex = 10;
             buttonClear.Text = "C";
             buttonClear.UseVisualStyleBackColor = true;
@@ -169,9 +169,9 @@
             // buttonAddition
             // 
             buttonAddition.Font = new Font("Tahoma", 12F);
-            buttonAddition.Location = new Point(165, 325);
+            buttonAddition.Location = new Point(189, 310);
             buttonAddition.Name = "buttonAddition";
-            buttonAddition.Size = new Size(50, 47);
+            buttonAddition.Size = new Size(74, 65);
             buttonAddition.TabIndex = 11;
             buttonAddition.Text = "+";
             buttonAddition.UseVisualStyleBackColor = true;
@@ -180,9 +180,9 @@
             // buttonEquals
             // 
             buttonEquals.Font = new Font("Tahoma", 12F);
-            buttonEquals.Location = new Point(29, 403);
+            buttonEquals.Location = new Point(29, 381);
             buttonEquals.Name = "buttonEquals";
-            buttonEquals.Size = new Size(50, 47);
+            buttonEquals.Size = new Size(74, 65);
             buttonEquals.TabIndex = 12;
             buttonEquals.Text = "=";
             buttonEquals.UseVisualStyleBackColor = true;
@@ -191,9 +191,9 @@
             // button0
             // 
             button0.Font = new Font("Tahoma", 12F);
-            button0.Location = new Point(97, 325);
+            button0.Location = new Point(109, 310);
             button0.Name = "button0";
-            button0.Size = new Size(50, 47);
+            button0.Size = new Size(74, 65);
             button0.TabIndex = 13;
             button0.Text = "0";
             button0.UseVisualStyleBackColor = true;
@@ -202,9 +202,9 @@
             // buttonDEL
             // 
             buttonDEL.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonDEL.Location = new Point(97, 403);
+            buttonDEL.Location = new Point(109, 381);
             buttonDEL.Name = "buttonDEL";
-            buttonDEL.Size = new Size(50, 47);
+            buttonDEL.Size = new Size(74, 65);
             buttonDEL.TabIndex = 14;
             buttonDEL.Text = "DEL";
             buttonDEL.UseVisualStyleBackColor = true;
@@ -213,9 +213,9 @@
             // buttonComma
             // 
             buttonComma.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonComma.Location = new Point(165, 403);
+            buttonComma.Location = new Point(189, 381);
             buttonComma.Name = "buttonComma";
-            buttonComma.Size = new Size(50, 47);
+            buttonComma.Size = new Size(74, 65);
             buttonComma.TabIndex = 15;
             buttonComma.Text = ",";
             buttonComma.UseVisualStyleBackColor = true;
@@ -226,7 +226,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowFrame;
-            ClientSize = new Size(249, 487);
+            ClientSize = new Size(291, 491);
             Controls.Add(buttonComma);
             Controls.Add(buttonDEL);
             Controls.Add(button0);

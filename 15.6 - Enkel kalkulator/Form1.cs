@@ -7,10 +7,10 @@ namespace _15._6___Enkel_kalkulator
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void btnSubtract_Click(object sender, EventArgs e)
         {
@@ -38,11 +38,9 @@ namespace _15._6___Enkel_kalkulator
             bool validA = double.TryParse(txtNumber1.Text, out double a);
             bool validB = double.TryParse(txtNumber2.Text, out double b);
 
-            bool validNumbers = validA && validB;
-
             double result = 0;
 
-            if (validNumbers)
+            if (validA && validB)
             {
                 switch (lblOperator.Text)
                 {
@@ -56,16 +54,29 @@ namespace _15._6___Enkel_kalkulator
                         result = a * b;
                         break;
                     case "/":
+                        if (b == 0)
+                        {
+                            lblResult.Text = "Kan ej dela med 0";
+                            return;
+                        }
                         result = a / b;
+                        break;
+                    default:
+                        lblResult.Text = "Okänd operator";
                         break;
                 }
 
-                lblResult.Text = result.ToString();
+                lblResult.Text = result.ToString("0.###");
             }
             else
             {
                 lblResult.Text = "Fel";
             }
         }
+
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

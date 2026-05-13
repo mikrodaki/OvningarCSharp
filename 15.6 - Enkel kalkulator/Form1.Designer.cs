@@ -42,7 +42,7 @@
             // 
             // txtNumber1
             // 
-            txtNumber1.Location = new Point(120, 169);
+            txtNumber1.Location = new Point(41, 57);
             txtNumber1.Margin = new Padding(4);
             txtNumber1.Name = "txtNumber1";
             txtNumber1.Size = new Size(170, 34);
@@ -50,7 +50,7 @@
             // 
             // txtNumber2
             // 
-            txtNumber2.Location = new Point(503, 171);
+            txtNumber2.Location = new Point(322, 57);
             txtNumber2.Margin = new Padding(4);
             txtNumber2.Name = "txtNumber2";
             txtNumber2.Size = new Size(170, 34);
@@ -58,7 +58,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(120, 302);
+            btnAdd.Location = new Point(40, 132);
             btnAdd.Margin = new Padding(4);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(150, 41);
@@ -69,7 +69,7 @@
             // 
             // btnSubtract
             // 
-            btnSubtract.Location = new Point(393, 302);
+            btnSubtract.Location = new Point(221, 132);
             btnSubtract.Margin = new Padding(4);
             btnSubtract.Name = "btnSubtract";
             btnSubtract.Size = new Size(164, 41);
@@ -80,7 +80,7 @@
             // 
             // btnMultiply
             // 
-            btnMultiply.Location = new Point(120, 388);
+            btnMultiply.Location = new Point(40, 218);
             btnMultiply.Margin = new Padding(4);
             btnMultiply.Name = "btnMultiply";
             btnMultiply.Size = new Size(150, 41);
@@ -91,7 +91,7 @@
             // 
             // btnDivide
             // 
-            btnDivide.Location = new Point(393, 388);
+            btnDivide.Location = new Point(221, 218);
             btnDivide.Margin = new Padding(4);
             btnDivide.Name = "btnDivide";
             btnDivide.Size = new Size(164, 41);
@@ -102,7 +102,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(803, 343);
+            button5.Location = new Point(404, 218);
             button5.Margin = new Padding(4);
             button5.Name = "button5";
             button5.Size = new Size(214, 41);
@@ -115,7 +115,7 @@
             // 
             lblOperator.AutoSize = true;
             lblOperator.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblOperator.Location = new Point(370, 156);
+            lblOperator.Location = new Point(253, 40);
             lblOperator.Margin = new Padding(4, 0, 4, 0);
             lblOperator.Name = "lblOperator";
             lblOperator.Size = new Size(50, 54);
@@ -126,7 +126,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(745, 156);
+            label2.Location = new Point(528, 40);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(50, 54);
@@ -137,7 +137,7 @@
             // 
             lblResult.AutoSize = true;
             lblResult.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblResult.Location = new Point(857, 156);
+            lblResult.Location = new Point(600, 40);
             lblResult.Margin = new Padding(4, 0, 4, 0);
             lblResult.Name = "lblResult";
             lblResult.Size = new Size(45, 54);
@@ -149,7 +149,7 @@
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(1100, 630);
+            ClientSize = new Size(1076, 319);
             Controls.Add(lblResult);
             Controls.Add(label2);
             Controls.Add(lblOperator);
@@ -164,7 +164,7 @@
             Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
+            //Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
