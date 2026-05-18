@@ -187,6 +187,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.7 - Enkel additionskalku
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.9 - ColorPicker", "15.9 - ColorPicker\15.9 - ColorPicker.csproj", "{A42F49AD-E158-4C85-80F0-7CBB4682B3D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.10 - Kontaktlista", "15.10 - Kontaktlista\15.10 - Kontaktlista.csproj", "{DD0B8893-0521-4C5D-A5DB-DF9D1332B884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -561,6 +563,10 @@ Global
 		{A42F49AD-E158-4C85-80F0-7CBB4682B3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A42F49AD-E158-4C85-80F0-7CBB4682B3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A42F49AD-E158-4C85-80F0-7CBB4682B3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0B8893-0521-4C5D-A5DB-DF9D1332B884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0B8893-0521-4C5D-A5DB-DF9D1332B884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0B8893-0521-4C5D-A5DB-DF9D1332B884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0B8893-0521-4C5D-A5DB-DF9D1332B884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
