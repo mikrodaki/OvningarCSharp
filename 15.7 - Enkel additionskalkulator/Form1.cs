@@ -111,7 +111,12 @@ namespace _15._7___Enkel_additionskalkulator
         private void buttonComma_Click(object sender, EventArgs e)
         {
             if (!txtResult.Text.Contains(","))
-                txtResult.Text += ",";
+            {
+                if (string.IsNullOrEmpty(txtResult.Text))
+                    txtResult.Text = "0,";
+                else
+                    txtResult.Text += ",";
+            }
         }
     }
 }

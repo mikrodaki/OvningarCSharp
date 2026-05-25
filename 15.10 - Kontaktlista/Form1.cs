@@ -1,17 +1,15 @@
+using System.Windows.Forms;
+
 namespace ContactList
 {
 	public partial class Form1 : Form
 	{
-		List<Person> contacs = new List<Person>();
+		List<Person> contacts = new List<Person>();
 		public Form1()
 		{
 			InitializeComponent();
 		}
 
-		//private void Form1_Load(object sender, EventArgs e)
-		//{
-
-		//}
 
 		private void buttonRemove_Click(object sender, EventArgs e)
 		{
@@ -19,13 +17,33 @@ namespace ContactList
 			if (index != -1)
 			{
 				listBoxContacts.Items.RemoveAt(index);
-				contacs.RemoveAt(index);
-				if (contacs.Count == 0)
-					buttonRemove.Enabled = false;
+				contacts.RemoveAt(index);
+				//if (contacts.Count == 0)
+				//	buttonRemove.Enabled = false;
 			}
 		}
 
-		private void buttonAdd_Click(object sender, EventArgs e)
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            listBoxContacts.ClearSelected();
+        }
+
+		/* 
+			Används så att namn i lisboxen avmarkeras
+			när man försöker lägga till en ny
+		*/
+        private void textBox_Enter(object sender, EventArgs e)
+        {
+            listBoxContacts.ClearSelected();
+        }
+
+        private void listBoxContacts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            buttonRemove.Enabled = listBoxContacts.SelectedIndex != -1;
+        }
+
+
+        private void buttonAdd_Click(object sender, EventArgs e)
 		{
 			labelError.Text = "";
 			var name = textBoxName.Text;
@@ -33,8 +51,8 @@ namespace ContactList
 			if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(telephoneNumber))
 			{
 				var person = new Person(name, telephoneNumber);
-				contacs.Add(person);
-				buttonRemove.Enabled = true;
+				contacts.Add(person);
+				//buttonRemove.Enabled = true;
 				listBoxContacts.Items.Add(person.Name);
 				textBoxName.Clear();
 				textBoxTelephoneNumber.Clear();
