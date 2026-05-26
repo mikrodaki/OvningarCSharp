@@ -1,13 +1,23 @@
+using System.Reflection.Metadata.Ecma335;
 using System.Windows.Forms;
 
 namespace ContactList
 {
 	public partial class Form1 : Form
 	{
-		List<Person> contacts = new List<Person>();
+		List<Person> contacts = new List<Person>()
+		{
+			new Person("Anna", "0701234567"),
+			new Person("Erik", "0739876543"),
+			new Person("Lisa", "0765554433")
+		};
 		public Form1()
 		{
 			InitializeComponent();
+			foreach (Person person in contacts)
+			{
+				listBoxContacts.Items.Add(person.Name);
+			}
 		}
 
 
@@ -18,32 +28,51 @@ namespace ContactList
 			{
 				listBoxContacts.Items.RemoveAt(index);
 				contacts.RemoveAt(index);
-				//if (contacts.Count == 0)
-				//	buttonRemove.Enabled = false;
+				buttonRemove.Enabled = false;
+				buttonShow.Enabled = false;
+				buttonEdit.Enabled = false;
 			}
 		}
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            listBoxContacts.ClearSelected();
-        }
+		private void buttonShow_Click(object sender, EventArgs e)
+		{
+			var index = listBoxContacts.SelectedIndex;
+			var person = contacts[index];
+			MessageBox.Show(person.Name + "\n" + person.TelephoneNumber);
+		}
+
+		private void Form1_MouseDown(object sender, MouseEventArgs e)
+		{
+			listBoxContacts.ClearSelected();
+			if (listBoxContacts.SelectedIndex == -1)
+			{
+				buttonRemove.Enabled = false;
+				buttonShow.Enabled = false;
+				buttonEdit.Enabled = false;
+			}
+		}
 
 		/* 
 			Används så att namn i lisboxen avmarkeras
 			när man försöker lägga till en ny
 		*/
-        private void textBox_Enter(object sender, EventArgs e)
-        {
-            listBoxContacts.ClearSelected();
-        }
+		private void textBox_Enter(object sender, EventArgs e)
+		{
+			listBoxContacts.ClearSelected();
+		}
 
-        private void listBoxContacts_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            buttonRemove.Enabled = listBoxContacts.SelectedIndex != -1;
-        }
+		private void listBoxContacts_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (listBoxContacts.SelectedIndex != -1)
+			{
+				buttonRemove.Enabled = true;
+				buttonShow.Enabled = true;
+				buttonEdit.Enabled = true;
+			}
+		}
 
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+		private void buttonAdd_Click(object sender, EventArgs e)
 		{
 			labelError.Text = "";
 			var name = textBoxName.Text;
@@ -69,6 +98,15 @@ namespace ContactList
 		private void textBoxTelephoneNumber_KeyPress(object sender, KeyPressEventArgs e)
 		{
 			e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+		}
+
+		private void buttonEdit_Click(object sender, EventArgs e)
+		{
+			var index = listBoxContacts.SelectedIndex;
+			var person = contacts[index];
+			textBoxName.Text = person.Name;
+			textBoxTelephoneNumber.Text = person.TelephoneNumber;
+			listBoxContacts.ClearSelected();
 		}
 	}
 }
