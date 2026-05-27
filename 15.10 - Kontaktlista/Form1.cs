@@ -31,6 +31,7 @@ namespace ContactList
 				buttonRemove.Enabled = false;
 				buttonShow.Enabled = false;
 				buttonEdit.Enabled = false;
+				buttonAdd.Enabled = true;
 			}
 		}
 
@@ -46,6 +47,8 @@ namespace ContactList
 			listBoxContacts.ClearSelected();
 			if (listBoxContacts.SelectedIndex == -1)
 			{
+				labelError.Text = "";
+				buttonAdd.Enabled = true;
 				buttonRemove.Enabled = false;
 				buttonShow.Enabled = false;
 				buttonEdit.Enabled = false;
@@ -65,6 +68,7 @@ namespace ContactList
 		{
 			if (listBoxContacts.SelectedIndex != -1)
 			{
+				buttonAdd.Enabled = false;
 				buttonRemove.Enabled = true;
 				buttonShow.Enabled = true;
 				buttonEdit.Enabled = true;
@@ -107,6 +111,12 @@ namespace ContactList
 			textBoxName.Text = person.Name;
 			textBoxTelephoneNumber.Text = person.TelephoneNumber;
 			listBoxContacts.ClearSelected();
+			listBoxContacts.Items.RemoveAt(index);
+			contacts.RemoveAt(index);
+			buttonAdd.Enabled = true;
+			buttonRemove.Enabled = false;
+			buttonShow.Enabled = false;
+			buttonEdit.Enabled = false;
 		}
 	}
 }
