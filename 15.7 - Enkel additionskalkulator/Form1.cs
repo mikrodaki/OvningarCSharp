@@ -2,7 +2,7 @@ namespace _15._7___Enkel_additionskalkulator
 {
     public partial class Form1 : Form
     {
-        List<double> numbers = new List<double>();
+        List<decimal> numbers = new List<decimal>();
         public Form1()
         {
             InitializeComponent();
@@ -83,7 +83,7 @@ namespace _15._7___Enkel_additionskalkulator
             txtResult.Text += "0";
         }
 
-        private double CalculateSum()
+        private decimal CalculateSum()
         {
             //if (numbers.Count == 0)
             //    return 0;
@@ -98,7 +98,7 @@ namespace _15._7___Enkel_additionskalkulator
 
         private void AddNumberToList()
         {
-            if (double.TryParse(txtResult.Text, out double number))
+            if (decimal.TryParse(txtResult.Text, out decimal number))
                 numbers.Add(number);
         }
 
