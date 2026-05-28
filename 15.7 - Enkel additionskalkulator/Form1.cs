@@ -60,6 +60,7 @@ namespace _15._7___Enkel_additionskalkulator
 			else 
 			{
 				txtResult.Text = "Error";
+				this.Enabled = false;
 				errorTimer.Start();
 			}
 		}
@@ -78,7 +79,8 @@ namespace _15._7___Enkel_additionskalkulator
 				if (!AddNumberToList())
 				{
 					txtResult.Text = "Error";
-					errorTimer.Start();
+                    this.Enabled = false;
+                    errorTimer.Start();
 					return;
 				}
 			var result = CalculateSum();
@@ -137,6 +139,7 @@ namespace _15._7___Enkel_additionskalkulator
 		{
 			txtResult.ResetText();
 			errorTimer.Stop();
+			this.Enabled = true;
 			numbers.Clear();
 		}
 	}
