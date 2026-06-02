@@ -57,16 +57,21 @@ namespace ContactList
             }
         }
 
-        /* 
+		/* 
 			Används så att namn i lisboxen avmarkeras
 			när man försöker lägga till en ny
 		*/
-        private void textBox_Enter(object sender, EventArgs e)
-        {
-            listBoxContacts.ClearSelected();
-        }
+		private void textBox_Enter(object sender, EventArgs e)
+		{
+			listBoxContacts.ClearSelected();
 
-        private void listBoxContacts_SelectedIndexChanged(object sender, EventArgs e)
+			buttonAdd.Enabled = true;
+			buttonRemove.Enabled = false;
+			buttonShow.Enabled = false;
+			buttonEdit.Enabled = false;
+		}
+
+		private void listBoxContacts_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBoxContacts.SelectedIndex != -1)
             {
@@ -156,15 +161,18 @@ namespace ContactList
 		}
 
 		private void buttonCancel_Click(object sender, EventArgs e)
-        {
+		{
 			textBoxName.Clear();
-            textBoxTelephoneNumber.Clear();
-            buttonAdd.Enabled = true;
-            buttonRemove.Enabled = false;
-            buttonShow.Enabled = false;
-            buttonEdit.Enabled = false;
-            buttonSave.Visible = false;
-            buttonCancel.Visible = false;
-        }
-    }
+			textBoxTelephoneNumber.Clear();
+
+			editingIndex = -1;
+
+			buttonAdd.Enabled = true;
+			buttonRemove.Enabled = false;
+			buttonShow.Enabled = false;
+			buttonEdit.Enabled = false;
+			buttonSave.Visible = false;
+			buttonCancel.Visible = false;
+		}
+	}
 }
