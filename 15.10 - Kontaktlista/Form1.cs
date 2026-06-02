@@ -12,8 +12,7 @@ namespace ContactList
             new Person("Lisa", "0765554433")
         };
 
-        int currentIndex = 0;
-        bool editSuccess = false;
+        int editingIndex = -1;
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +23,7 @@ namespace ContactList
         }
 
 
-        private void buttonRemove_Click(object sender, EventArgs e)
+		private void buttonRemove_Click(object sender, EventArgs e)
         {
             var index = listBoxContacts.SelectedIndex;
             if (index != -1)
@@ -88,7 +87,6 @@ namespace ContactList
             {
                 var person = new Person(name, telephoneNumber);
                 contacts.Add(person);
-                //buttonRemove.Enabled = true;
                 listBoxContacts.Items.Add(person.Name);
                 textBoxName.Clear();
                 textBoxTelephoneNumber.Clear();
@@ -111,12 +109,10 @@ namespace ContactList
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             var index = listBoxContacts.SelectedIndex;
-            currentIndex = index;
-            var person = contacts[index];
+            editingIndex = index;
+            var person = contacts[editingIndex];
             textBoxName.Text = person.Name;
             textBoxTelephoneNumber.Text = person.TelephoneNumber;
-            listBoxContacts.ClearSelected();
-            listBoxContacts.Items.RemoveAt(index);
             buttonAdd.Enabled = false;
             buttonRemove.Enabled = false;
             buttonShow.Enabled = false;
@@ -125,43 +121,43 @@ namespace ContactList
             buttonCancel.Visible = true;
         }
 
-        private void buttonSave_Click(object sender, EventArgs e)
-        {
-            labelError.Text = "";
-            var name = textBoxName.Text;
-            var telephoneNumber = textBoxTelephoneNumber.Text;
-            if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(telephoneNumber))
-            {
-                contacts[currentIndex].Name = name;
-                contacts[currentIndex].TelephoneNumber = telephoneNumber;
-                listBoxContacts.Items.Add(contacts[currentIndex].Name);
-                textBoxName.Clear();
-                textBoxTelephoneNumber.Clear();
-                editSuccess = true;
-            }
-            else
-            {
-                if (string.IsNullOrEmpty(name))
-                    labelError.Text += "Namn saknas ";
-                if (string.IsNullOrEmpty(telephoneNumber))
-                    labelError.Text += "\nTelefonnummer saknas ";
-            }
-            if (editSuccess)
-            {
-                buttonAdd.Enabled = true;
-                buttonRemove.Enabled = false;
-                buttonShow.Enabled = false;
-                buttonEdit.Enabled = false;
-                buttonSave.Visible = false;
-                buttonCancel.Visible = false;
-                editSuccess = false;
-            }
-        }
+		private void buttonSave_Click(object sender, EventArgs e)
+		{
+			labelError.Text = "";
 
-        private void buttonCancel_Click(object sender, EventArgs e)
+			var name = textBoxName.Text;
+			var telephoneNumber = textBoxTelephoneNumber.Text;
+
+			if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(telephoneNumber))
+			{
+				if (string.IsNullOrEmpty(name))
+					labelError.Text += "Namn saknas ";
+				if (string.IsNullOrEmpty(telephoneNumber))
+					labelError.Text += "\nTelefonnummer saknas ";
+
+				return;
+			}
+
+			contacts[editingIndex].Name = name;
+			contacts[editingIndex].TelephoneNumber = telephoneNumber;
+			listBoxContacts.Items[editingIndex] = name;
+
+			textBoxName.Clear();
+			textBoxTelephoneNumber.Clear();
+
+			editingIndex = -1;
+
+			buttonAdd.Enabled = true;
+			buttonRemove.Enabled = false;
+			buttonShow.Enabled = false;
+			buttonEdit.Enabled = false;
+			buttonSave.Visible = false;
+			buttonCancel.Visible = false;
+		}
+
+		private void buttonCancel_Click(object sender, EventArgs e)
         {
-            listBoxContacts.Items.Add(contacts[currentIndex].Name);
-            textBoxName.Clear();
+			textBoxName.Clear();
             textBoxTelephoneNumber.Clear();
             buttonAdd.Enabled = true;
             buttonRemove.Enabled = false;
@@ -169,7 +165,6 @@ namespace ContactList
             buttonEdit.Enabled = false;
             buttonSave.Visible = false;
             buttonCancel.Visible = false;
-            editSuccess = false;
         }
     }
 }
