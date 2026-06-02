@@ -24,38 +24,36 @@ namespace ContactList
 
 
 		private void buttonRemove_Click(object sender, EventArgs e)
-        {
-            var index = listBoxContacts.SelectedIndex;
-            if (index != -1)
-            {
-                listBoxContacts.Items.RemoveAt(index);
-                contacts.RemoveAt(index);
-                buttonRemove.Enabled = false;
-                buttonShow.Enabled = false;
-                buttonEdit.Enabled = false;
-                buttonAdd.Enabled = true;
-            }
-        }
+		{
+			int index = listBoxContacts.SelectedIndex;
 
-        private void buttonShow_Click(object sender, EventArgs e)
+			if (index == -1)
+				return;
+
+			listBoxContacts.Items.RemoveAt(index);
+			contacts.RemoveAt(index);
+
+			UpdateUI();
+		}
+
+		private void buttonShow_Click(object sender, EventArgs e)
         {
             var index = listBoxContacts.SelectedIndex;
-            var person = contacts[index];
+
+			if (index == -1)
+				return;
+			
+			var person = contacts[index];
             MessageBox.Show(person.Name + "\n" + person.TelephoneNumber);
         }
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            listBoxContacts.ClearSelected();
-            if (listBoxContacts.SelectedIndex == -1)
-            {
-                labelError.Text = "";
-                buttonAdd.Enabled = true;
-                buttonRemove.Enabled = false;
-                buttonShow.Enabled = false;
-                buttonEdit.Enabled = false;
-            }
-        }
+		private void Form1_MouseDown(object sender, MouseEventArgs e)
+		{
+			listBoxContacts.ClearSelected();
+			labelError.Text = "";
+
+			UpdateUI();
+		}
 
 		/* 
 			Används så att namn i lisboxen avmarkeras
@@ -64,26 +62,16 @@ namespace ContactList
 		private void textBox_Enter(object sender, EventArgs e)
 		{
 			listBoxContacts.ClearSelected();
-
-			buttonAdd.Enabled = true;
-			buttonRemove.Enabled = false;
-			buttonShow.Enabled = false;
-			buttonEdit.Enabled = false;
+			UpdateUI();
 		}
 
 		private void listBoxContacts_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBoxContacts.SelectedIndex != -1)
-            {
-                buttonAdd.Enabled = false;
-                buttonRemove.Enabled = true;
-                buttonShow.Enabled = true;
-                buttonEdit.Enabled = true;
-            }
-        }
+		{
+			UpdateUI();
+		}
 
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+		private void buttonAdd_Click(object sender, EventArgs e)
         {
             labelError.Text = "";
             var name = textBoxName.Text;
@@ -98,11 +86,13 @@ namespace ContactList
             }
             else
             {
-                if (string.IsNullOrEmpty(name))
-                    labelError.Text += "Namn saknas ";
-                if (string.IsNullOrEmpty(telephoneNumber))
-                    labelError.Text += "\nTelefonnummer saknas ";
-            }
+				if (string.IsNullOrEmpty(name))
+					labelError.Text += "Namn saknas ";
+
+				if (string.IsNullOrEmpty(telephoneNumber))
+					labelError.Text += "\nTelefonnummer saknas ";
+			}
+			UpdateUI();
 
         }
 
@@ -114,16 +104,15 @@ namespace ContactList
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             var index = listBoxContacts.SelectedIndex;
-            editingIndex = index;
+
+			if (index == -1)
+				return;
+			
+			editingIndex = index;
             var person = contacts[editingIndex];
             textBoxName.Text = person.Name;
             textBoxTelephoneNumber.Text = person.TelephoneNumber;
-            buttonAdd.Enabled = false;
-            buttonRemove.Enabled = false;
-            buttonShow.Enabled = false;
-            buttonEdit.Enabled = false;
-            buttonSave.Visible = true;
-            buttonCancel.Visible = true;
+			UpdateUI();
         }
 
 		private void buttonSave_Click(object sender, EventArgs e)
@@ -152,12 +141,7 @@ namespace ContactList
 
 			editingIndex = -1;
 
-			buttonAdd.Enabled = true;
-			buttonRemove.Enabled = false;
-			buttonShow.Enabled = false;
-			buttonEdit.Enabled = false;
-			buttonSave.Visible = false;
-			buttonCancel.Visible = false;
+			UpdateUI() ;
 		}
 
 		private void buttonCancel_Click(object sender, EventArgs e)
@@ -167,12 +151,41 @@ namespace ContactList
 
 			editingIndex = -1;
 
+			UpdateUI();
+		}
+
+		private void UpdateUI()
+		{
+			bool isEditing = editingIndex != -1;
+			bool contactSelected = listBoxContacts.SelectedIndex != -1;
+
+			// Standardläge
 			buttonAdd.Enabled = true;
-			buttonRemove.Enabled = false;
 			buttonShow.Enabled = false;
 			buttonEdit.Enabled = false;
+			buttonRemove.Enabled = false;
 			buttonSave.Visible = false;
 			buttonCancel.Visible = false;
+
+			// Om en kontakt är vald
+			if (contactSelected)
+			{
+				buttonAdd.Enabled = false;
+				buttonShow.Enabled = true;
+				buttonEdit.Enabled = true;
+				buttonRemove.Enabled = true;
+			}
+
+			// Om vi redigerar
+			if (isEditing)
+			{
+				buttonAdd.Enabled = false;
+				buttonShow.Enabled = false;
+				buttonEdit.Enabled = false;
+				buttonRemove.Enabled = false;
+				buttonSave.Visible = true;
+				buttonCancel.Visible = true;
+			}
 		}
 	}
 }
