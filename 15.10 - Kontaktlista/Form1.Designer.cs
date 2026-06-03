@@ -80,6 +80,7 @@
 			textBoxName.Name = "textBoxName";
 			textBoxName.Size = new Size(169, 31);
 			textBoxName.TabIndex = 3;
+			textBoxName.Enter += textBox_Enter;
 			// 
 			// textBoxTelephoneNumber
 			// 
@@ -99,7 +100,7 @@
 			listBoxContacts.Margin = new Padding(2);
 			listBoxContacts.Name = "listBoxContacts";
 			listBoxContacts.Size = new Size(198, 204);
-			listBoxContacts.TabIndex = 5;
+			listBoxContacts.TabIndex = 0;
 			listBoxContacts.SelectedIndexChanged += listBoxContacts_SelectedIndexChanged;
 			// 
 			// buttonAdd

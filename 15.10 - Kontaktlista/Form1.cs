@@ -12,6 +12,7 @@ namespace ContactList
             new Person("Lisa", "0765554433")
         };
 
+		// Index that is currently being edited
         int editingIndex = -1;
         public Form1()
         {
@@ -21,6 +22,7 @@ namespace ContactList
                 listBoxContacts.Items.Add(person.Name);
             }
         }
+
 
 
 		private void buttonRemove_Click(object sender, EventArgs e)
@@ -47,17 +49,21 @@ namespace ContactList
             MessageBox.Show(person.Name + "\n" + person.TelephoneNumber);
         }
 
+		/* 
+		   If the user clicks anywhere on the form (other than in another controller) 
+		   the form is reset.  	
+		*/
 		private void Form1_MouseDown(object sender, MouseEventArgs e)
 		{
 			listBoxContacts.ClearSelected();
 			labelError.Text = "";
-
+			listBoxContacts.Focus();
 			UpdateUI();
 		}
 
 		/* 
-			Används så att namn i lisboxen avmarkeras
-			när man försöker lägga till en ny
+			Used to clear the contact in the listBox if the user
+			decides to insted enter a new contact
 		*/
 		private void textBox_Enter(object sender, EventArgs e)
 		{
@@ -159,7 +165,7 @@ namespace ContactList
 			bool isEditing = editingIndex != -1;
 			bool contactSelected = listBoxContacts.SelectedIndex != -1;
 
-			// Standardläge
+			// Default state
 			buttonAdd.Enabled = true;
 			buttonShow.Enabled = false;
 			buttonEdit.Enabled = false;
@@ -167,7 +173,7 @@ namespace ContactList
 			buttonSave.Visible = false;
 			buttonCancel.Visible = false;
 
-			// Om en kontakt är vald
+			// If a contact is selected
 			if (contactSelected)
 			{
 				buttonAdd.Enabled = false;
@@ -176,7 +182,7 @@ namespace ContactList
 				buttonRemove.Enabled = true;
 			}
 
-			// Om vi redigerar
+			// If the user is editing a contact
 			if (isEditing)
 			{
 				buttonAdd.Enabled = false;
