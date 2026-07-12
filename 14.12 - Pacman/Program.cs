@@ -25,7 +25,7 @@ namespace PacmanGame
 
             maze.Draw();
 
-            pacman.LevelScore = 120;
+            pacman.LevelScore = 0;
 
             DrawScore(pacman.score);
             DrawLives(pacman.livesLeft);
