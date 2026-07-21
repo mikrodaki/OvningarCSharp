@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design;
-
-namespace Övning_5._15a
+﻿namespace Övning_5._15a
 {
 	internal class Program
 	{

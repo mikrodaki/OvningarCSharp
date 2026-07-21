@@ -17,12 +17,12 @@
 				Console.SetCursorPosition(x, y);
 				for (int j = 0; j < i; j++)
 				{
-					randomNumber = random.Next(0,9);
-					randomColor = random.Next(1,4);
-					if (randomNumber == 0) 
-					{ 
-						switch (randomColor) 
-						{ 
+					randomNumber = random.Next(0, 9);
+					randomColor = random.Next(1, 4);
+					if (randomNumber == 0)
+					{
+						switch (randomColor)
+						{
 							case 1:
 								Console.ForegroundColor = ConsoleColor.Red;
 								break;
@@ -43,8 +43,7 @@
 			}
 			Console.ReadKey();
 			Console.BackgroundColor = ConsoleColor.Black;
-			Console.ForegroundColor = ConsoleColor.White
-				;
+			Console.ForegroundColor = ConsoleColor.White;
 		}
 	}
 }
