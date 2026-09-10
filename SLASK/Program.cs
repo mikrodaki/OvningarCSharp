@@ -29,5 +29,27 @@ internal class Program
         Console.WriteLine("        Console.Write(\"P1\");");
         Console.WriteLine("    }");
         Console.WriteLine("}");
+
+        string name = "Anna Olsson";
+
+        int x = 1;
+        double y = 2;
+        double z = x + y;
+
+        char xs = 'a';
+
+        bool xp = true;
+
+        int minValue = 2;
+
+        double averageValue = 24.25;
+
+        string phoneNumber = "bo.eriksson@gmail.com";
+
+        int number = 5;
+
+        string inte = "47";
+
+         string dog = "Tax";
     }
 }

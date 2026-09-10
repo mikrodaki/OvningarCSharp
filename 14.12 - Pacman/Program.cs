@@ -1,8 +1,4 @@
-﻿using System;
-using System.Numerics;
-using static System.Formats.Asn1.AsnWriter;
-
-namespace PacmanGame
+﻿namespace PacmanGame
 {
     internal class Program
     {
